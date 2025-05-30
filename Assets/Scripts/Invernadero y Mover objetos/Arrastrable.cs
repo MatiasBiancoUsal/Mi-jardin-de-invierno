@@ -18,7 +18,6 @@ public class Arrastrable : MonoBehaviour
         camara = Camera.main;
         limitador = GetComponent<LimitadorUbicacion>();
 
-        // Guardamos el material original
         rend = GetComponent<Renderer>();
         if (rend != null)
         {
@@ -38,7 +37,7 @@ public class Arrastrable : MonoBehaviour
         {
             transform.position = ObtenerPuntoMouse() + offset;
 
-            // Cambiar color según si está en posición válida
+            // Color segun posicion
             if (rend != null)
             {
                 if (limitador.EstaDentroDelInvernadero())
@@ -52,10 +51,10 @@ public class Arrastrable : MonoBehaviour
     void OnMouseUp()
     {
         arrastrando = false;
-        limitador.IntentarUbicar();
         limitador.AjustarAGrilla();
+        limitador.IntentarUbicar();
 
-        // Volver al color original
+        // Volver color original
         if (rend != null)
         {
             rend.material.color = colorOriginal;

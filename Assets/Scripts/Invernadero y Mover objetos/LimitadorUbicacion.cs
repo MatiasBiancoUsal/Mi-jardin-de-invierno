@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LimitadorUbicacion : MonoBehaviour
 {
-    public Collider areaInvernadero; // Área válida para colocar objetos
+    public Collider areaInvernadero; // Area valida para colocar objetos
     private Vector3 ultimaPosicionValida;
     public float tamanioCelda = 1f; // ajustar esto desde el Inspector
 
@@ -34,12 +34,12 @@ public class LimitadorUbicacion : MonoBehaviour
     {
         if (areaInvernadero == null) return true;
 
-        Ray ray = new Ray(transform.position, Vector3.down);
+        Ray ray = new Ray(transform.position + Vector3.up * 0.5f, Vector3.down);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 5f)) // distancia según el tamaño de tus objetos
+        if (Physics.Raycast(ray, out hit, 10f)) // distancia segun tamaño objetos
         {
-            // Si el objeto debajo es parte del invernadero
+
             if (hit.collider == areaInvernadero)
             {
                 return true;
@@ -47,14 +47,14 @@ public class LimitadorUbicacion : MonoBehaviour
         }
 
         return false;
-    }   
+    }
 
     public void AjustarAGrilla()
     {
         Vector3 posicion = transform.position;
 
         float x = Mathf.Round(posicion.x / tamanioCelda) * tamanioCelda;
-        float y = posicion.y; // Mantenemos la altura actual
+        float y = posicion.y; // Dejar la altura actual
         float z = Mathf.Round(posicion.z / tamanioCelda) * tamanioCelda;
 
         transform.position = new Vector3(x, y, z);

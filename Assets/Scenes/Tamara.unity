@@ -281,6 +281,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &927250974
 MeshCollider:
+--- !u!65 &927250978
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -297,10 +299,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: -1
-  m_Mesh: {fileID: -462981019419857548, guid: 685e435f208c3f54cb47be2c35ca970a, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.03624867, y: 0.07492005, z: 0}
+  m_Center: {x: 0, y: 0.012654707, z: 0}
 --- !u!1 &967215513 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4025503759453917287, guid: 7ef194da3868d1e45a504dfd4abd7abe, type: 3}
@@ -318,7 +319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb1deb9968d6e141baae39463073d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaInvernadero: {fileID: 927250974}
+  areaInvernadero: {fileID: 0}
   tamanioCelda: 0.55
 --- !u!114 &967215519
 MonoBehaviour:
@@ -364,7 +365,7 @@ MonoBehaviour:
   filas: 6
   columnas: 13
   tamanioCelda: 0.55
-  colorGrilla: {r: 0.7433963, g: 0.48855457, b: 0.22301881, a: 0.47058824}
+  colorGrilla: {r: 0.7433963, g: 0.48855457, b: 0.22301881, a: 0.44313726}
 --- !u!4 &1581412725
 Transform:
   m_ObjectHideFlags: 0
@@ -535,7 +536,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: -7029948723529949830, guid: 685e435f208c3f54cb47be2c35ca970a, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 927250974}
+      addedObject: {fileID: 927250978}
   m_SourcePrefab: {fileID: 100100000, guid: 685e435f208c3f54cb47be2c35ca970a, type: 3}
 --- !u!1001 &7780025362830417673
 PrefabInstance:
