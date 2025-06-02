@@ -12,6 +12,7 @@ public class Arrastrable : MonoBehaviour
 
     private Renderer rend;
     private Color colorOriginal;
+    private Vector2Int celdaAnterior;
 
     void Start()
     {
@@ -63,8 +64,13 @@ public class Arrastrable : MonoBehaviour
 
     Vector3 ObtenerPuntoMouse()
     {
-        Vector3 punto = Input.mousePosition;
-        punto.z = Mathf.Abs(camara.transform.position.z - transform.position.z);
-        return camara.ScreenToWorldPoint(punto);
+        Ray ray = camara.ScreenPointToRay(Input.mousePosition);
+        int layerMask = LayerMask.GetMask("Piso");
+
+        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, layerMask))
+        {
+            return hit.point;
+        }
+        return transform.position;
     }
 }

@@ -5,29 +5,58 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class DibujarGrilla : MonoBehaviour
 {
+    public float tamanoCelda = 1f;
     public int filas = 10;
     public int columnas = 5;
-    public float tamanioCelda = 1f;
-    public Color colorGrilla = Color.gray;
+    public Vector3 origen = Vector3.zero;
 
-    void OnDrawGizmos()
+    private Dictionary<Vector2Int, GameObject> grillaOcupada = new Dictionary<Vector2Int, GameObject>();
+
+    public Vector3 ObtenerPosicionAjustada(Vector3 posicion)
     {
-        Gizmos.color = colorGrilla;
+        Vector3 localPos = posicion - origen;
+        int x = Mathf.RoundToInt(localPos.x / tamanoCelda);
+        int z = Mathf.RoundToInt(localPos.z / tamanoCelda);
+        return new Vector3(x * tamanoCelda, 0f, z * tamanoCelda) + origen;
+    }
 
-        Vector3 origen = transform.position;
+    public bool EstaDentroDeLaGrilla(Vector3 posicion)
+    {
+        Vector3 localPos = posicion - origen;
+        int x = Mathf.RoundToInt(localPos.x / tamanoCelda);
+        int z = Mathf.RoundToInt(localPos.z / tamanoCelda);
+        return x >= 0 && x < columnas && z >= 0 && z < filas;
+    }
 
-        for (int i = 0; i <= filas; i++)
+    public Vector2Int ObtenerCelda(Vector3 posicion)
+    {
+        Vector3 localPos = posicion - origen;
+        int x = Mathf.RoundToInt(localPos.x / tamanoCelda);
+        int z = Mathf.RoundToInt(localPos.z / tamanoCelda);
+        return new Vector2Int(x, z);
+    }
+
+    public bool EstaOcupada(Vector2Int celda)
+    {
+        return grillaOcupada.ContainsKey(celda);
+    }
+
+    public void OcuparCelda(Vector2Int celda, GameObject objeto)
+    {
+        grillaOcupada[celda] = objeto;
+    }
+
+    public void LiberarCelda(Vector2Int celda)
+    {
+        if (grillaOcupada.ContainsKey(celda))
         {
-            Vector3 inicio = origen + Vector3.forward * i * tamanioCelda;
-            Vector3 fin = inicio + Vector3.right * columnas * tamanioCelda;
-            Gizmos.DrawLine(inicio, fin);
+            grillaOcupada.Remove(celda);
         }
+    }
 
-        for (int j = 0; j <= columnas; j++)
-        {
-            Vector3 inicio = origen + Vector3.right * j * tamanioCelda;
-            Vector3 fin = inicio + Vector3.forward * filas * tamanioCelda;
-            Gizmos.DrawLine(inicio, fin);
-        }
+    public GameObject ObtenerObjetoEnCelda(Vector2Int celda)
+    {
+        grillaOcupada.TryGetValue(celda, out var obj);
+        return obj;
     }
 }
