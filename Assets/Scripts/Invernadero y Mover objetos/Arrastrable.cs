@@ -9,16 +9,20 @@ public class Arrastrable : MonoBehaviour
     private Camera camara;
     private LimitadorUbicacion limitador;
     private bool arrastrando = false;
+    public ControladorGrilla grilla;
+    public float alturaObjeto = 0.5f;
+    private Vector3 posicionMouseInicial;
+    private bool movimientoReal = false;
 
     private Renderer rend;
     private Color colorOriginal;
-    private Vector2Int celdaAnterior;
 
     void Start()
     {
         camara = Camera.main;
         limitador = GetComponent<LimitadorUbicacion>();
 
+        // Guardamos el material original
         rend = GetComponent<Renderer>();
         if (rend != null)
         {
@@ -29,36 +33,57 @@ public class Arrastrable : MonoBehaviour
     void OnMouseDown()
     {
         arrastrando = true;
+        movimientoReal = false;
+        posicionMouseInicial = Input.mousePosition;
         offset = transform.position - ObtenerPuntoMouse();
+
     }
 
     void OnMouseDrag()
     {
         if (arrastrando)
         {
+            if (!movimientoReal && Vector3.Distance(Input.mousePosition, posicionMouseInicial) > 10f)
+            {
+                movimientoReal = true;
+            }
+
             transform.position = ObtenerPuntoMouse() + offset;
 
-            // Color segun posicion
             if (rend != null)
             {
-                if (limitador.EstaDentroDelInvernadero())
-                    rend.material.color = Color.green;
-                else
-                    rend.material.color = Color.red;
+                rend.material.color = limitador.EstaDentroDelInvernadero() ? Color.green : Color.red;
             }
         }
     }
 
     void OnMouseUp()
     {
+        if (!movimientoReal)
+        {
+            arrastrando = false;
+            return; 
+        }
+
         arrastrando = false;
-        limitador.AjustarAGrilla();
         limitador.IntentarUbicar();
 
-        // Volver color original
         if (rend != null)
         {
             rend.material.color = colorOriginal;
+        }
+
+        if (grilla != null)
+        {
+            Vector3 ajustada = grilla.ObtenerPosicionAjustada(transform.position);
+            if (grilla.EstaDentroDeLaGrilla(ajustada))
+            {
+                transform.position = new Vector3(ajustada.x, alturaObjeto, ajustada.z);
+            }
+            else
+            {
+                Debug.Log("¡Fuera de la grilla!");
+            }
         }
     }
 

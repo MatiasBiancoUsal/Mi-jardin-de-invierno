@@ -13,5 +13,6 @@ public class MostrarAreaInvernadero : MonoBehaviour
         if (areaInvernadero == null) return;
 
         Gizmos.color = color;
+        Gizmos.DrawCube(areaInvernadero.bounds.center, areaInvernadero.bounds.size);
     }
 }
