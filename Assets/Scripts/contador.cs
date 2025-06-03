@@ -5,22 +5,21 @@ using UnityEngine;
 
 public class contador : MonoBehaviour
 {
-    public int count = 0;
-    public TextMeshProUGUI counterText;
+    public int puntos = 0;
+    public TextMeshProUGUI textoPuntos;  // Arrastrá el texto desde el Inspector
 
-    void Start()
+    public void SumarPunto()
     {
-        UpdateCounterText();
+        puntos++;
+        ActualizarTexto();
     }
 
-    public void SumarSemilla()
+    void ActualizarTexto()
     {
-        count++;
-        UpdateCounterText();
-    }
-
-    void UpdateCounterText()
-    {
-        counterText.text = count.ToString();
+        if (textoPuntos != null)
+        {
+            textoPuntos.text = puntos.ToString();
+        }
     }
 }
+
