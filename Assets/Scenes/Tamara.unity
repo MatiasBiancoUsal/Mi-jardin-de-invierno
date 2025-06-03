@@ -199,6 +199,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a7ac3ac60b7e7241b874252d2c1377e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grilla: {fileID: 0}
+  alturaObjeto: 0.5
 --- !u!114 &812882651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,7 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb1deb9968d6e141baae39463073d51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  areaInvernadero: {fileID: 0}
+  areaInvernadero: {fileID: 927250978}
   tamanioCelda: 0.55
 --- !u!114 &967215519
 MonoBehaviour:
@@ -362,6 +364,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a7ac3ac60b7e7241b874252d2c1377e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grilla: {fileID: 0}
+  alturaObjeto: 0.5
 --- !u!1 &1581412723
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1581412725}
   - component: {fileID: 1581412724}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GrillaVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,10 +395,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a5a08b2ceb7a164983887211763954f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamanoCelda: 1
-  filas: 6
-  columnas: 13
-  origen: {x: 0, y: 0, z: 0}
+  filas: 7
+  columnas: 15
+  tamanioCelda: 0.47
+  colorGrilla: {r: 0.5, g: 0.5, b: 0.5, a: 1}
 --- !u!4 &1581412725
 Transform:
   m_ObjectHideFlags: 0
