@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Piso
   - Objeto
+  - SnapZone
   layers:
   - Default
   - TransparentFX
@@ -13,7 +14,7 @@ TagManager:
   - Piso
   - Water
   - UI
-  - 
+  - arrastrable
   - 
   - 
   - 
