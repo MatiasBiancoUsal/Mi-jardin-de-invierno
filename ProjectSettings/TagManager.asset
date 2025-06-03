@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Piso
+  - Objeto
   layers:
   - Default
   - TransparentFX

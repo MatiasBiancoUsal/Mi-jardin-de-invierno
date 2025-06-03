@@ -11,6 +11,8 @@ public class Arrastrable : MonoBehaviour
     private bool arrastrando = false;
     public ControladorGrilla grilla;
     public float alturaObjeto = 0.5f;
+    private Vector3 posicionMouseInicial;
+    private bool movimientoReal = false;
 
     private Renderer rend;
     private Color colorOriginal;
@@ -31,13 +33,21 @@ public class Arrastrable : MonoBehaviour
     void OnMouseDown()
     {
         arrastrando = true;
+        movimientoReal = false;
+        posicionMouseInicial = Input.mousePosition;
         offset = transform.position - ObtenerPuntoMouse();
+
     }
 
     void OnMouseDrag()
     {
         if (arrastrando)
         {
+            if (!movimientoReal && Vector3.Distance(Input.mousePosition, posicionMouseInicial) > 10f)
+            {
+                movimientoReal = true;
+            }
+
             transform.position = ObtenerPuntoMouse() + offset;
 
             if (rend != null)
@@ -49,6 +59,12 @@ public class Arrastrable : MonoBehaviour
 
     void OnMouseUp()
     {
+        if (!movimientoReal)
+        {
+            arrastrando = false;
+            return; 
+        }
+
         arrastrando = false;
         limitador.IntentarUbicar();
 
