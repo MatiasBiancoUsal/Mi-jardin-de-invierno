@@ -1,11 +1,11 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class DraggableObject : MonoBehaviour
 {
     private bool isDragging = false;
-    private Transform lastValidSnapZone = null;
+    private SnapZone currentSnapZone = null;
+    private Vector3 originalPosition;
 
     void Update()
     {
@@ -17,11 +17,21 @@ public class DraggableObject : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            // Comenzar drag si el mouse está cerca del objeto
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit) && hit.transform == transform)
+            if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                isDragging = true;
+                if (hit.transform == transform || hit.transform.IsChildOf(transform))
+                {
+                    isDragging = true;
+                    originalPosition = transform.position;
+
+                    
+                    if (currentSnapZone != null)
+                    {
+                        currentSnapZone.Release();
+                        currentSnapZone = null;
+                    }
+                }
             }
         }
 
@@ -29,10 +39,18 @@ public class DraggableObject : MonoBehaviour
         {
             isDragging = false;
 
-            if (lastValidSnapZone != null)
+            if (lastValidSnapZone != null && !lastValidSnapZone.isOccupied)
             {
-                transform.position = lastValidSnapZone.position;
+                transform.position = lastValidSnapZone.GetSnapPosition().position;
+                lastValidSnapZone.Occupy();
+                currentSnapZone = lastValidSnapZone;
             }
+            else
+            {
+                transform.position = originalPosition;
+            }
+
+            lastValidSnapZone = null;
         }
     }
 
@@ -46,20 +64,29 @@ public class DraggableObject : MonoBehaviour
         return transform.position;
     }
 
+    private SnapZone lastValidSnapZone = null;
+
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Entró al trigger con: " + other.gameObject.name);
+
         if (other.CompareTag("SnapZone"))
         {
-            lastValidSnapZone = other.transform;
+            Debug.Log("Detectó un SnapZone válido");
+            currentSnapZone = other.GetComponent<SnapZone>();
+            lastValidSnapZone = currentSnapZone; 
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("SnapZone") && other.transform == lastValidSnapZone)
+        if (other.CompareTag("SnapZone"))
         {
-            lastValidSnapZone = null;
+            Debug.Log("Salió del SnapZone: " + other.name);
+            if (other.GetComponent<SnapZone>() == currentSnapZone)
+            {
+                currentSnapZone = null;
+            }
         }
     }
 }
-

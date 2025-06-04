@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SnapZone : MonoBehaviour
@@ -10,5 +8,14 @@ public class SnapZone : MonoBehaviour
     {
         return transform;
     }
-}
 
+    public void Occupy()
+    {
+        isOccupied = true;
+    }
+
+    public void Release()
+    {
+        isOccupied = false;
+    }
+}

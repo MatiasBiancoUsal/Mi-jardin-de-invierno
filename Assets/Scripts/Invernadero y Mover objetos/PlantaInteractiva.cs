@@ -1,21 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlantaInteractiva : MonoBehaviour
 {
     public GameObject cartelUI;
-    public CartelManager cartelManager;
 
-    void OnMouseDown()
+    void Update()
     {
-        if (cartelUI != null)
+        // Botón derecho
+        if (Input.GetMouseButtonDown(1))
         {
-            cartelUI.SetActive(true);
-            // cambiar la frase o mostrar/ocultar el sol/gota desde acá 
-            cartelManager.MostrarCartel();
+            
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit))
+            {
+                
+                if (hit.transform == transform || hit.transform.IsChildOf(transform))
+                {
+                    
+                    cartelUI.SetActive(!cartelUI.activeSelf);
+                }
+            }
         }
     }
 }
+
+
 
