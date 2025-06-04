@@ -5,18 +5,17 @@ using UnityEngine;
 public class Regaderatrigger : MonoBehaviour
 {
   
-    //Codigo para activar la animacion en primera instancia 
-    //aun no funciona 
-    //hay que modificar para que sea point and click 
     private Animator anim;
     private bool idleregar = false; 
+    //private bool estaregando =false; 
+    //public float tiempoanim = 0.5f; 
     void Start()
     {
         anim = GetComponent<Animator>();
     }
 
     void Update()
-    {
+    {   //if (Input.GetMouseButtonDown(0) && !estaregando)
         if (Input.GetMouseButtonDown(0)) // Click izquierdo
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -36,7 +35,16 @@ public class Regaderatrigger : MonoBehaviour
                     anim.SetBool("Regando", true);
                
                     idleregar = false;
+                    //estaregando = false; 
+                    //Invoke(nameof(DetenerAnimacion), tiempoanim); 
+
                 }
+                //void DetenerAnimacion()
+                //{
+                    //anim.SetBool("Regando", false);
+                    //estaregando = false; 
+
+               // }
             }
         }
         

@@ -14,6 +14,19 @@ public class contador : MonoBehaviour
         ActualizarTexto();
     }
 
+    public void GastarSemillas()
+    {
+        if (puntos >= 2)
+        {
+            puntos -= 2;
+            ActualizarTexto();
+        }
+        else
+        {
+            Debug.Log("No hay suficientes semillas.");
+        }
+    }
+
     void ActualizarTexto()
     {
         if (textoPuntos != null)
