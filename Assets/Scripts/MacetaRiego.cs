@@ -99,7 +99,7 @@ public class MacetaRiego : MonoBehaviour
     void ActualizarTexto()
     {
         if (contadorTexto != null)
-            contadorTexto.text = contadorAgua.ToString();
+            contadorTexto.text = "Agua: " + contadorAgua + "/3";
     }
 
     // Este método enciende/apaga el cartel de selección según el parámetro
