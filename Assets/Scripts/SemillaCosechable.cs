@@ -5,7 +5,7 @@ using UnityEngine;
 public class SemillaCosechable : MonoBehaviour
 {
     private bool yaCosechada = false;
-    public MacetaCiclica miMaceta; // Maceta asociada
+    public MacetaRiego miMaceta; // Referencia a la maceta asociada
 
     void OnMouseDown()
     {
@@ -18,10 +18,10 @@ public class SemillaCosechable : MonoBehaviour
             contador.SumarPunto();
         }
 
-        // Avisar a la maceta que ya se recolectó
+        // Avisar a la maceta que la semilla fue recogida para permitir regar de nuevo
         if (miMaceta != null)
         {
-            miMaceta.NotificarSemillaDesactivada();
+            miMaceta.NotificarSemillaRecogida();
         }
 
         gameObject.SetActive(false);
