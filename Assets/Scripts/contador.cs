@@ -5,22 +5,34 @@ using UnityEngine;
 
 public class contador : MonoBehaviour
 {
-    public int count = 0;
-    public TextMeshProUGUI counterText;
+    public int puntos = 0;
+    public TextMeshProUGUI textoPuntos;  // Arrastrá el texto desde el Inspector
 
-    void Start()
+    public void SumarPunto()
     {
-        UpdateCounterText();
+        puntos++;
+        ActualizarTexto();
     }
 
-    public void SumarSemilla()
+    public void GastarSemillas()
     {
-        count++;
-        UpdateCounterText();
+        if (puntos >= 2)
+        {
+            puntos -= 2;
+            ActualizarTexto();
+        }
+        else
+        {
+            Debug.Log("No hay suficientes semillas.");
+        }
     }
 
-    void UpdateCounterText()
+    void ActualizarTexto()
     {
-        counterText.text = count.ToString();
+        if (textoPuntos != null)
+        {
+            textoPuntos.text = puntos.ToString();
+        }
     }
 }
+

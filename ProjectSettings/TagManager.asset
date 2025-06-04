@@ -4,18 +4,18 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Piso
+  - SnapZone
+  - objeto
   - Objeto
-  - Seed
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Piso
+  - 
   - Water
   - UI
-  - 
-  - 
+  - Objeto
+  - SnapZone
   - 
   - 
   - 
