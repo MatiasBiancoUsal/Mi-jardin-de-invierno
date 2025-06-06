@@ -11,11 +11,12 @@ TagManager:
   - ObjetoPiso
   - ObjetoPared
   - SnapZonePisoRotacion
+  - objeto
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - regaract
   - Water
   - UI
   - Objeto

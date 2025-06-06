@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class Regaderatrigger : MonoBehaviour
 {
-  
     private Animator anim;
-    private bool idleregar = false; 
-    //private bool estaregando =false; 
-    //public float tiempoanim = 0.5f; 
+    private bool idleregar = false;
+    private RegarMaceta macetaPadre;
+
     void Start()
     {
         anim = GetComponent<Animator>();
+        macetaPadre = GetComponentInParent<RegarMaceta>();
     }
 
     void Update()
-    {   //if (Input.GetMouseButtonDown(0) && !estaregando)
-        if (Input.GetMouseButtonDown(0)) // Click izquierdo
+    {
+        if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;// para poder hacer cllic en un espacio3d
+            RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit))
             {
@@ -28,27 +28,24 @@ public class Regaderatrigger : MonoBehaviour
                 if (!idleregar && objetoClickeado == gameObject)
                 {
                     idleregar = true;
-                   
                 }
                 else if (idleregar && objetoClickeado.CompareTag("regaract"))
                 {
                     anim.SetBool("Regando", true);
-               
                     idleregar = false;
-                    //estaregando = false; 
-                    //Invoke(nameof(DetenerAnimacion), tiempoanim); 
 
+                    // Esperamos 1 segundo para que se vea la animación
+                    Invoke(nameof(SumarYDesactivar), 2.6f);
                 }
-                //void DetenerAnimacion()
-                //{
-                    //anim.SetBool("Regando", false);
-                    //estaregando = false; 
-
-               // }
             }
         }
-        
-        
+    }
 
-}
+    void SumarYDesactivar()
+    {
+        if (macetaPadre != null)
+            macetaPadre.SumarAgua();
+
+        anim.SetBool("Regando", false);
+    }
 }
