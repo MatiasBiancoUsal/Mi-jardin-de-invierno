@@ -7,10 +7,11 @@ public class MacetaRiego : MonoBehaviour
 {
     public GameObject regaderaAnimada;
     public GameObject semilla;
-    public TextMeshProUGUI contadorTexto;
-    public GameObject cartelSeleccionado;  // Asigná en el Inspector el cartelito que aparecerá al seleccionar
+    public TextMeshProUGUI contadorAgua; // Cambiado el nombre acá
+    public GameObject cartelSeleccionado;
+    public int aguaNecesaria = 3;
 
-    private int contadorAgua = 0;
+    private int contador = 0;
     private bool semillaActiva = false;
 
     void Start()
@@ -18,24 +19,25 @@ public class MacetaRiego : MonoBehaviour
         if (semilla != null) semilla.SetActive(false);
         if (regaderaAnimada != null) regaderaAnimada.SetActive(false);
         if (cartelSeleccionado != null) cartelSeleccionado.SetActive(false);
+        if (contadorAgua != null) contadorAgua.gameObject.SetActive(false);
 
         ActualizarTexto();
     }
 
     void OnMouseDown()
     {
-        // Deseleccionar la maceta anterior (si existe y no es esta)
         if (NewRegadera.macetaSeleccionada != null && NewRegadera.macetaSeleccionada != this)
         {
             NewRegadera.macetaSeleccionada.ActivarCartel(false);
+            NewRegadera.macetaSeleccionada.ActivarContador(false);
         }
 
-        // Seleccionamos esta maceta
         NewRegadera.macetaSeleccionada = this;
         Debug.Log("Maceta seleccionada");
 
-        // Activamos su cartelito
         ActivarCartel(true);
+        ActivarContador(true);
+        ActualizarTexto();
     }
 
     public void Regar()
@@ -50,15 +52,13 @@ public class MacetaRiego : MonoBehaviour
             {
                 anim.SetTrigger("Regar");
             }
-
-            // Desactivar después de X segundos (duración de la animación)
-            Invoke(nameof(DesactivarRegadera), 2.5f); // Ajustá este tiempo según dure tu animación
+            Invoke(nameof(DesactivarRegadera), 2.5f);
         }
 
-        contadorAgua++;
+        contador++;
         ActualizarTexto();
 
-        if (contadorAgua >= 3)
+        if (contador >= aguaNecesaria)
         {
             ActivarSemilla();
         }
@@ -78,7 +78,7 @@ public class MacetaRiego : MonoBehaviour
         {
             semilla.SetActive(true);
             semillaActiva = true;
-            contadorAgua = 0;
+            contador = 0;
             ActualizarTexto();
 
             Animator anim = semilla.GetComponent<Animator>();
@@ -92,20 +92,25 @@ public class MacetaRiego : MonoBehaviour
     public void NotificarSemillaRecogida()
     {
         semillaActiva = false;
-        contadorAgua = 0;
+        contador = 0;
         ActualizarTexto();
     }
 
     void ActualizarTexto()
     {
-        if (contadorTexto != null)
-            contadorTexto.text = "Agua: " + contadorAgua + "/3";
+        if (contadorAgua != null)
+            contadorAgua.text = $"Agua: {contador}/{aguaNecesaria}";
     }
 
-    // Este método enciende/apaga el cartel de selección según el parámetro
     public void ActivarCartel(bool activo)
     {
         if (cartelSeleccionado != null)
             cartelSeleccionado.SetActive(activo);
+    }
+
+    public void ActivarContador(bool activo)
+    {
+        if (contadorAgua != null)
+            contadorAgua.gameObject.SetActive(activo);
     }
 }
