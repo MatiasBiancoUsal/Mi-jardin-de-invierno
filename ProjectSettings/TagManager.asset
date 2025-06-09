@@ -3,17 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - SnapZone
-  - Objeto
-  - SnapZonePiso
-  - SnapZonePared
-  - ObjetoPiso
-  - ObjetoPared
-  - SnapZonePisoRotacion
-  - Maceta
-  - regaract
-  - '"Maceta"'
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -21,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - Objeto
-  - SnapZone
+  - 
+  - 
   - 
   - 
   - 
