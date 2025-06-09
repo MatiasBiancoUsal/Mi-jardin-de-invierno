@@ -12,6 +12,7 @@ TagManager:
   - ObjetoPared
   - SnapZonePisoRotacion
   - Maceta
+  - regaract
   layers:
   - Default
   - TransparentFX

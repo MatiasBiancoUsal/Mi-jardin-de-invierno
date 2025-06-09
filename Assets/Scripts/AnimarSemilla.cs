@@ -5,9 +5,10 @@ using UnityEngine;
 public class AnimarSemilla : MonoBehaviour
 {
     public Animator anim;
+    public Transform semillaTransform; 
     private bool puedePlantar = false;
 
-    // Llamado por el botón
+    // Método que se llama desde el botón
     public void ActivarModoPlantar()
     {
         puedePlantar = true;
@@ -23,19 +24,22 @@ public class AnimarSemilla : MonoBehaviour
             {
                 if (hit.collider.CompareTag("Maceta"))
                 {
-                    ReproducirAnimacion();
-                    puedePlantar = false; // desactiva el modo plantar
+                    Vector3 posicionMaceta = hit.collider.transform.position;
+                    ReproducirAnimacion(posicionMaceta);
+                    puedePlantar = false;
                 }
             }
         }
     }
 
-    void ReproducirAnimacion()
+    void ReproducirAnimacion(Vector3 posicion)
     {
-        anim.SetBool("ActivarAr", true);
-        Invoke(nameof(ResetAnimacion), 1f);
-    }
-
+    Debug.Log("Posición de la maceta: " + posicion);
+    semillaTransform.position = posicion + new Vector3(0, 0.5f, 0); // offset vertical
+    Debug.Log("Posición de la semilla después de mover: " + semillaTransform.position);
+    anim.SetBool("ActivarAr", true);
+    Invoke(nameof(ResetAnimacion), 1f);
+}
     void ResetAnimacion()
     {
         anim.SetBool("ActivarAr", false);
