@@ -5,8 +5,14 @@ using UnityEngine;
 public class AnimarSemilla : MonoBehaviour
 {
     public Animator anim;
-    public Transform semillaTransform; 
+    public Transform semillaTransform;
     private bool puedePlantar = false;
+
+    void Start()
+    {
+        // Ocultamos la semilla al inicio
+        semillaTransform.gameObject.SetActive(false);
+    }
 
     // Método que se llama desde el botón
     public void ActivarModoPlantar()
@@ -34,14 +40,20 @@ public class AnimarSemilla : MonoBehaviour
 
     void ReproducirAnimacion(Vector3 posicion)
     {
-    Debug.Log("Posición de la maceta: " + posicion);
-    semillaTransform.position = posicion + new Vector3(0, 0.5f, 0); // offset vertical
-    Debug.Log("Posición de la semilla después de mover: " + semillaTransform.position);
-    anim.SetBool("ActivarAr", true);
-    Invoke(nameof(ResetAnimacion), 1f);
-}
+        semillaTransform.position = posicion + new Vector3(0, 0.5f, 0); // offset visual
+        semillaTransform.gameObject.SetActive(true); // Hacer visible la semilla
+
+        anim.Rebind(); // Reiniciar animator
+        anim.Update(0f);
+
+        anim.SetBool("ActivarAr", true);
+
+        Invoke(nameof(ResetAnimacion), 1f); // Duración de la animación
+    }
+
     void ResetAnimacion()
     {
         anim.SetBool("ActivarAr", false);
+        semillaTransform.gameObject.SetActive(false); // Ocultamos la semilla
     }
 }
