@@ -2,119 +2,87 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
 public class MuebleArrastrable : MonoBehaviour
 {
-    private Vector3 offset;
-    private Camera camara;
-    private bool arrastrando = false;
+    private bool isDragging = false;
+    private SnapZonePared currentSnapZonePared = null;
+    private SnapZonePared lastValidSnapZonePared = null;
+    private Vector3 originalPosition;
 
-    private Renderer rend;
-    private Color colorOriginal;
-
-    private Transform snapZoneActual = null;
-    private string[] tagsSnapZoneValidos = { "SnapZonePisoRotacion", "SnapZonePiso", "SnapZonePared" };
-
-    void Start()
+    void Update()
     {
-        camara = Camera.main;
-
-        rend = GetComponent<Renderer>();
-        if (rend != null)
+        if (isDragging)
         {
-            colorOriginal = rend.material.color;
+            Vector3 newPos = GetMouseWorldPosition();
+            transform.position = newPos;
         }
-    }
 
-    void OnMouseDown()
-    {
-        // Usamos el punto real donde se hizo clic para calcular el offset
-        Vector3 puntoMouse = ObtenerPuntoMouse();
-        offset = transform.position - puntoMouse;
-        arrastrando = true;
-    }
-
-    void OnMouseDrag()
-    {
-        if (arrastrando)
+        if (Input.GetMouseButtonDown(0))
         {
-            Vector3 puntoMouse = ObtenerPuntoMouse();
-            transform.position = puntoMouse + offset;
-
-            if (rend != null)
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out RaycastHit hit))
             {
-                rend.material.color = Color.yellow;
+                if (hit.transform == transform || hit.transform.IsChildOf(transform))
+                {
+                    isDragging = true;
+                    originalPosition = transform.position;
+
+                    if (currentSnapZonePared != null)
+                    {
+                        currentSnapZonePared.Release();
+                        currentSnapZonePared = null;
+                    }
+                }
             }
         }
+
+        if (Input.GetMouseButtonUp(0) && isDragging)
+        {
+            isDragging = false;
+
+            if (lastValidSnapZonePared != null && !lastValidSnapZonePared.isOccupied)
+            {
+                transform.position = lastValidSnapZonePared.GetSnapPosition().position;
+                lastValidSnapZonePared.Occupy();
+                currentSnapZonePared = lastValidSnapZonePared;
+            }
+            else
+            {
+                transform.position = originalPosition;
+            }
+
+            lastValidSnapZonePared = null;
+        }
     }
 
-    void OnMouseUp()
+    Vector3 GetMouseWorldPosition()
     {
-        arrastrando = false;
-
-        if (rend != null)
-        {
-            rend.material.color = colorOriginal;
-        }
-
-        if (snapZoneActual != null)
-        {
-            transform.position = snapZoneActual.position;
-            transform.rotation = ObtenerRotacionSnapZone(snapZoneActual);
-        }
-
-        snapZoneActual = null;
-    }
-
-    Vector3 ObtenerPuntoMouse()
-    {
-        Ray ray = camara.ScreenPointToRay(Input.mousePosition);
-
-        // Acá nos aseguramos de que el raycast detecte la capa "Piso"
-        // Si no tenés una capa llamada "Piso", cambiá el nombre abajo o usá `~0` para que detecte todo.
-        int layerMask = LayerMask.GetMask("Piso");
-
-        if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, layerMask))
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit, 100f))
         {
             return hit.point;
         }
-
         return transform.position;
     }
 
     void OnTriggerEnter(Collider other)
     {
-        foreach (string tagSnap in tagsSnapZoneValidos)
+        if (other.CompareTag("SnapZonePared"))
         {
-            if (other.CompareTag(tagSnap))
-            {
-                snapZoneActual = other.transform;
-                break;
-            }
+            Debug.Log("Entró al SnapZonePared: " + other.name);
+            lastValidSnapZonePared = other.GetComponent<SnapZonePared>();
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (snapZoneActual != null && other.transform == snapZoneActual)
+        if (other.CompareTag("SnapZonePared"))
         {
-            snapZoneActual = null;
-        }
-    }
-
-    Quaternion ObtenerRotacionSnapZone(Transform snapZone)
-    {
-        if (snapZone.CompareTag("SnapZonePisoRotacion"))
-        {
-            return Quaternion.Euler(0, 90, 0);
-        }
-        else if (snapZone.CompareTag("SnapZonePared"))
-        {
-            return snapZone.rotation;
-        }
-        else
-        {
-            return Quaternion.identity;
+            Debug.Log("Salió del SnapZonePared: " + other.name);
+            if (other.GetComponent<SnapZonePared>() == lastValidSnapZonePared)
+            {
+                lastValidSnapZonePared = null;
+            }
         }
     }
 }

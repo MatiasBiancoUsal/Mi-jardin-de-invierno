@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class SnapZonePared : MonoBehaviour
 {
-    public string tagObjetoValido = "SnapZonePared"; // Mismo tag que el anterior
+    public bool isOccupied = false;
 
-    void OnTriggerEnter(Collider other)
+    public Transform GetSnapPosition()
     {
-        if (other.CompareTag(tagObjetoValido))
-        {
-            other.transform.position = transform.position;
-            other.transform.rotation = transform.rotation; // Mantiene rotación del snapzone
-        }
+        return transform;
+    }
+
+    public void Occupy()
+    {
+        isOccupied = true;
+    }
+
+    public void Release()
+    {
+        isOccupied = false;
     }
 }

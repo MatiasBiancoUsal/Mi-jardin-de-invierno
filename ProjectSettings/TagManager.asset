@@ -8,9 +8,7 @@ TagManager:
   - objeto
   - Objeto
   - regaract
-  - SnapZonePiso
   - SnapZonePared
-  - SnapZonePisoRotacion
   layers:
   - Default
   - TransparentFX
@@ -19,7 +17,7 @@ TagManager:
   - Water
   - UI
   - Background
-  - 
+  - Ground
   - 
   - 
   - 
