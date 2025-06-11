@@ -36,7 +36,7 @@ public class AnimarSemilla : MonoBehaviour
                     animSemilla.Update(0f);
                     animSemilla.SetBool("ActivarAr", true);
 
-                    StartCoroutine(DesactivarLuego(animSemilla, 1f));
+                    StartCoroutine(DesactivarLuego(animSemilla, 4f));
                 }
                 else
                 {

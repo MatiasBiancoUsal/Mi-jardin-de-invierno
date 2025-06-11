@@ -20,7 +20,7 @@ public class InventorySlot : MonoBehaviour, IDropHandler
                 nameText.text = info.plantName;
                 seasonText.text = info.season;
                 icon.enabled = true;
-                Destroy(dragged); // Opcional: eliminar de escena al guardar
+                dragged.SetActive(false); // Opcional: eliminar de escena al guardar
             }
         }
     }
