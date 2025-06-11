@@ -195,6 +195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 90275055}
+  - component: {fileID: 90275056}
   m_Layer: 7
   m_Name: SnapZone_Piso (2)
   m_TagString: SnapZonePiso
@@ -217,6 +218,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1758136901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &90275056
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90275054}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.29
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &149449808
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,168 +567,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 169084052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &216619219
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 216619226}
-  - component: {fileID: 216619225}
-  - component: {fileID: 216619224}
-  - component: {fileID: 216619223}
-  - component: {fileID: 216619222}
-  - component: {fileID: 216619221}
-  - component: {fileID: 216619220}
-  m_Layer: 6
-  m_Name: Cube
-  m_TagString: Objeto
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &216619220
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216619219}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &216619221
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216619219}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &216619222
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216619219}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &216619223
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216619219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d988ca3d40ed2844fbfba6bc4f235ae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cartelUI: {fileID: 421056169}
---- !u!114 &216619224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216619219}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8630592f1eebad54bae10eba0f762df3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!33 &216619225
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216619219}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &216619226
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 216619219}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.16, y: 2.0900002, z: -0.2642641}
-  m_LocalScale: {x: 0.19, y: 0.19, z: 0.19}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &247850443
 GameObject:
   m_ObjectHideFlags: 0
@@ -783,6 +643,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 269684989}
+  - component: {fileID: 269684991}
+  - component: {fileID: 269684990}
   m_Layer: 7
   m_Name: SnapZone_Pared (1)
   m_TagString: SnapZonePared
@@ -805,6 +667,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1632167358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &269684990
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269684988}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &269684991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269684988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792d9435418c5c6408f369b8297b811e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagObjetoValido: SnapZonePared
 --- !u!1 &272640127
 GameObject:
   m_ObjectHideFlags: 0
@@ -974,6 +870,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 339576572}
+  - component: {fileID: 339576573}
   m_Layer: 7
   m_Name: SnapZone_Piso (7)
   m_TagString: SnapZonePiso
@@ -996,6 +893,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1758136901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &339576573
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339576571}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.29
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &359582842
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,6 +1057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 382745653}
+  - component: {fileID: 382745654}
   m_Layer: 7
   m_Name: SnapZone_Piso (3)
   m_TagString: SnapZonePiso
@@ -1161,6 +1080,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1758136901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &382745654
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 382745652}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.29
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &421056169 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1966820465024083519, guid: a4ab0d371f935b940964a611ab047843, type: 3}
@@ -1210,6 +1150,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
+--- !u!54 &431465398
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431465389}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &480374896
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,6 +1186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 480374897}
+  - component: {fileID: 480374898}
   m_Layer: 7
   m_Name: SnapZone_Piso (8)
   m_TagString: SnapZonePiso
@@ -1241,6 +1209,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1758136901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &480374898
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480374896}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.29
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &480522186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,37 +1297,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 169084052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &555681685
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 555681686}
-  m_Layer: 7
-  m_Name: SnapZone_PisoRotacion (1)
-  m_TagString: SnapZonePisoRotacion
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &555681686
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555681685}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.8399997, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1352134994}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &564947094
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,6 +1306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 564947095}
+  - component: {fileID: 564947096}
   m_Layer: 7
   m_Name: SnapZone_Piso (6)
   m_TagString: SnapZonePiso
@@ -1370,6 +1329,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1758136901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &564947096
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564947094}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.29
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &599985649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1627,37 +1607,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.011425076, y: 0.01, z: 0.02}
   m_Center: {x: 0, y: 0.0017358672, z: 0.001}
---- !u!1 &731401794
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 731401795}
-  m_Layer: 7
-  m_Name: SnapZone_PisoRotacion (2)
-  m_TagString: SnapZonePisoRotacion
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &731401795
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 731401794}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.75, y: 0, z: 0.13}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1352134994}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &738742410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,6 +1616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 738742411}
+  - component: {fileID: 738742412}
   m_Layer: 7
   m_Name: SnapZone_Piso (5)
   m_TagString: SnapZonePiso
@@ -1689,6 +1639,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1758136901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &738742412
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738742410}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.29
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &781912161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1964,42 +1935,85 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
---- !u!1 &910924442
-GameObject:
+--- !u!54 &891070447
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 910924443}
-  m_Layer: 7
-  m_Name: SnapZone_Pared (5)
-  m_TagString: SnapZonePared
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &910924443
-Transform:
+  m_GameObject: {fileID: 891070442}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &891070448
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 910924442}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.2799997, y: -0.29, z: 2.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1632167358}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 891070442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30b72ebcbfe9f5b44be8f4157e724423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &891070449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891070442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a07f470a74a673468ec75edc0642a31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagObjetoValido: SnapZonePisoRotacion
+  isOccupied: 0
+--- !u!65 &891070451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891070442}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.78, z: 3.53}
+  m_Center: {x: 0.9, y: -0.54, z: 0.45}
 --- !u!1 &919633558
 GameObject:
   m_ObjectHideFlags: 0
@@ -2009,6 +2023,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919633559}
+  - component: {fileID: 919633561}
+  - component: {fileID: 919633560}
   m_Layer: 7
   m_Name: SnapZone_Pared (2)
   m_TagString: SnapZonePared
@@ -2031,6 +2047,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1632167358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &919633560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919633558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792d9435418c5c6408f369b8297b811e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagObjetoValido: SnapZonePared
+--- !u!135 &919633561
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919633558}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &927250973 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7029948723529949830, guid: 685e435f208c3f54cb47be2c35ca970a, type: 3}
@@ -2679,39 +2729,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 169084052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1352134993
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1352134994}
-  m_Layer: 7
-  m_Name: SnapZone_PisoRotacion
-  m_TagString: SnapZonePisoRotacion
-  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1352134994
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1352134993}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.45, y: 1.33, z: 1.37}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 555681686}
-  - {fileID: 731401795}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1357626899
 GameObject:
   m_ObjectHideFlags: 0
@@ -2894,6 +2911,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -6027881643611125136, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -2916,7 +2937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
       propertyPath: m_TagString
-      value: Objeto
+      value: SnapZonePisoRotacion
       objectReference: {fileID: 0}
     - target: {fileID: 2894462881985091340, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
       propertyPath: m_Layer
@@ -2932,13 +2953,28 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 891070448}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 891070449}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 891070443}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 891070447}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 891070451}
     - targetCorrespondingSourceObject: {fileID: 2894462881985091340, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
       insertIndex: 2
       addedObject: {fileID: 431465394}
     - targetCorrespondingSourceObject: {fileID: 2894462881985091340, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 431465393}
+    - targetCorrespondingSourceObject: {fileID: 2894462881985091340, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 431465398}
   m_SourcePrefab: {fileID: 100100000, guid: f842a80310f0c75419d295f1b65cfa0e, type: 3}
 --- !u!1 &1443074309
 GameObject:
@@ -3217,6 +3253,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1503793547}
+  - component: {fileID: 1503793549}
+  - component: {fileID: 1503793548}
   m_Layer: 7
   m_Name: SnapZone_Pared (3)
   m_TagString: SnapZonePared
@@ -3239,37 +3277,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1632167358}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1575270546
-GameObject:
+--- !u!114 &1503793548
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1575270547}
-  m_Layer: 7
-  m_Name: SnapZone_Pared (4)
-  m_TagString: SnapZonePared
-  m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1575270547
-Transform:
+  m_GameObject: {fileID: 1503793546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792d9435418c5c6408f369b8297b811e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagObjetoValido: SnapZonePared
+--- !u!135 &1503793549
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1575270546}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.2799997, y: 0.55999994, z: 2.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1632167358}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1503793546}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1580729464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,6 +3454,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1632167358}
+  - component: {fileID: 1632167360}
+  - component: {fileID: 1632167359}
   m_Layer: 7
   m_Name: SnapZone_Pared
   m_TagString: SnapZonePared
@@ -3436,10 +3479,42 @@ Transform:
   - {fileID: 269684989}
   - {fileID: 919633559}
   - {fileID: 1503793547}
-  - {fileID: 1575270547}
-  - {fileID: 910924443}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1632167359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632167357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792d9435418c5c6408f369b8297b811e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tagObjetoValido: SnapZonePared
+--- !u!135 &1632167360
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632167357}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.25
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1633966422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3851,6 +3926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1758136901}
+  - component: {fileID: 1758136902}
   m_Layer: 7
   m_Name: SnapZone_Piso
   m_TagString: SnapZonePiso
@@ -3881,6 +3957,27 @@ Transform:
   - {fileID: 564947095}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1758136902
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1758136900}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.29
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1770140285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3957,6 +4054,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1795420361}
+  - component: {fileID: 1795420362}
   m_Layer: 7
   m_Name: SnapZone_Piso (1)
   m_TagString: SnapZonePiso
@@ -3979,6 +4077,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1758136901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1795420362
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795420360}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.29
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1799330800
 GameObject:
   m_ObjectHideFlags: 0
@@ -4243,6 +4362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1856140614}
+  - component: {fileID: 1856140615}
   m_Layer: 7
   m_Name: SnapZone_Piso (4)
   m_TagString: SnapZonePiso
@@ -4265,6 +4385,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1758136901}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &1856140615
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856140613}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.29
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1857117063
 GameObject:
   m_ObjectHideFlags: 0
@@ -4900,9 +5041,7 @@ SceneRoots:
   - {fileID: 975346592}
   - {fileID: 1825470468}
   - {fileID: 615338463}
-  - {fileID: 216619226}
   - {fileID: 169084052}
   - {fileID: 781912161}
   - {fileID: 1758136901}
   - {fileID: 1632167358}
-  - {fileID: 1352134994}

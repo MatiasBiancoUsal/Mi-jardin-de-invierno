@@ -4,44 +4,58 @@ using UnityEngine;
 
 public class AnimarSemilla : MonoBehaviour
 {
-    public Animator anim;
-    public Transform semillaTransform; 
-    private bool puedePlantar = false;
+    private bool modoPlantar = false;
 
-    // Método que se llama desde el botón
+    
     public void ActivarModoPlantar()
     {
-        puedePlantar = true;
+        modoPlantar = true;
         Debug.Log("Modo plantar activado. Hacé clic en una maceta.");
     }
 
     void Update()
     {
-        if (puedePlantar && Input.GetMouseButtonDown(0)) // Clic izquierdo
+        if (!modoPlantar || !Input.GetMouseButtonDown(0)) return;
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out RaycastHit hit))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray, out RaycastHit hit))
+            if (hit.collider.CompareTag("Maceta"))
             {
-                if (hit.collider.CompareTag("Maceta"))
+                Transform maceta = hit.collider.transform;
+
+                // Buscar semilla inactiva dentro de la maceta
+                Animator animSemilla = maceta.GetComponentInChildren<Animator>(true);
+                if (animSemilla != null)
                 {
-                    Vector3 posicionMaceta = hit.collider.transform.position;
-                    ReproducirAnimacion(posicionMaceta);
-                    puedePlantar = false;
+                    GameObject semillaGO = animSemilla.gameObject;
+                    semillaGO.SetActive(true);
+                    semillaGO.transform.position = maceta.position + new Vector3(0, 0.1f, 0); 
+
+                    animSemilla.Rebind();
+                    animSemilla.Update(0f);
+                    animSemilla.SetBool("ActivarAr", true);
+
+                    StartCoroutine(DesactivarLuego(animSemilla, 4f));
                 }
+                else
+                {
+                    Debug.LogWarning("La maceta no tiene una semilla como hijo.");
+                }
+
+                modoPlantar = false; // Solo después de hacer clic en una maceta válida
+            }
+            else
+            {
+                Debug.Log("Eso no es una maceta. Tocá una para plantar.");
             }
         }
     }
 
-    void ReproducirAnimacion(Vector3 posicion)
+    private System.Collections.IEnumerator DesactivarLuego(Animator anim, float delay)
     {
-    Debug.Log("Posición de la maceta: " + posicion);
-    semillaTransform.position = posicion + new Vector3(0, 0.5f, 0); // offset vertical
-    Debug.Log("Posición de la semilla después de mover: " + semillaTransform.position);
-    anim.SetBool("ActivarAr", true);
-    Invoke(nameof(ResetAnimacion), 1f);
-}
-    void ResetAnimacion()
-    {
+        yield return new WaitForSeconds(delay);
         anim.SetBool("ActivarAr", false);
+        anim.gameObject.SetActive(false);
     }
 }
