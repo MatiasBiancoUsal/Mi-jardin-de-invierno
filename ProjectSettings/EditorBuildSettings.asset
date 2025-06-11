@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Individuales/Guadalupe.unity
     guid: 320465c0a6aa08d408a8b4eb8d0ea070
   - enabled: 1
     path: Assets/Scenes/PantallaInicio.unity
     guid: 8ffa0d051015bac48a0e545901ddab0f
+  - enabled: 1
+    path: Assets/Scenes/Plantilla de Controles.unity
+    guid: 7bd84a6e9f2b6a445b3ed18b8a9fc303
   - enabled: 1
     path: Assets/Scenes/Invernadero.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
