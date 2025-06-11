@@ -326,6 +326,7 @@ GameObject:
   - component: {fileID: 105460444}
   - component: {fileID: 105460443}
   - component: {fileID: 105460442}
+  - component: {fileID: 105460445}
   m_Layer: 5
   m_Name: BotonSemillas (10)
   m_TagString: Untagged
@@ -396,18 +397,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -458,6 +447,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 105460440}
   m_CullTransparentMesh: 1
+--- !u!114 &105460445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105460440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 105460442}
+  "botonA\xF1adido": {fileID: 1204569701}
 --- !u!1 &129216940
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +617,7 @@ GameObject:
   - component: {fileID: 139231304}
   - component: {fileID: 139231303}
   - component: {fileID: 139231302}
+  - component: {fileID: 139231305}
   m_Layer: 5
   m_Name: BotonSemillas (5)
   m_TagString: Untagged
@@ -684,18 +688,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -746,6 +738,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139231300}
   m_CullTransparentMesh: 1
+--- !u!114 &139231305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139231300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 139231302}
+  "botonA\xF1adido": {fileID: 621764545}
 --- !u!1 &174188474
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,6 +764,7 @@ GameObject:
   - component: {fileID: 174188478}
   - component: {fileID: 174188477}
   - component: {fileID: 174188476}
+  - component: {fileID: 174188479}
   m_Layer: 5
   m_Name: BotonSemillas (2)
   m_TagString: Untagged
@@ -828,18 +835,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -890,6 +885,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174188474}
   m_CullTransparentMesh: 1
+--- !u!114 &174188479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174188474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 174188476}
+  "botonA\xF1adido": {fileID: 582519936}
 --- !u!1 &178171803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1201,6 +1210,7 @@ GameObject:
   - component: {fileID: 338086979}
   - component: {fileID: 338086978}
   - component: {fileID: 338086977}
+  - component: {fileID: 338086980}
   m_Layer: 5
   m_Name: BotonSemillas
   m_TagString: Untagged
@@ -1271,18 +1281,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -1333,6 +1331,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338086975}
   m_CullTransparentMesh: 1
+--- !u!114 &338086980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338086975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 338086977}
+  "botonA\xF1adido": {fileID: 1724250504}
 --- !u!1 &387742369
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,6 +1901,7 @@ GameObject:
   - component: {fileID: 486532975}
   - component: {fileID: 486532974}
   - component: {fileID: 486532973}
+  - component: {fileID: 486532976}
   m_Layer: 5
   m_Name: BotonSemillas (6)
   m_TagString: Untagged
@@ -1959,18 +1972,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -2021,6 +2022,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 486532971}
   m_CullTransparentMesh: 1
+--- !u!114 &486532976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 486532971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 486532973}
+  "botonA\xF1adido": {fileID: 958756351}
 --- !u!1 &530622334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,6 +2048,7 @@ GameObject:
   - component: {fileID: 530622338}
   - component: {fileID: 530622337}
   - component: {fileID: 530622336}
+  - component: {fileID: 530622339}
   m_Layer: 5
   m_Name: BotonSemillas (11)
   m_TagString: Untagged
@@ -2103,18 +2119,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -2165,6 +2169,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530622334}
   m_CullTransparentMesh: 1
+--- !u!114 &530622339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530622334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 530622336}
+  "botonA\xF1adido": {fileID: 952556885}
 --- !u!1 &533289539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,6 +2402,7 @@ GameObject:
   - component: {fileID: 582519940}
   - component: {fileID: 582519939}
   - component: {fileID: 582519938}
+  - component: {fileID: 582519941}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (2)"
   m_TagString: Untagged
@@ -2504,6 +2523,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 582519936}
   m_CullTransparentMesh: 1
+--- !u!114 &582519941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582519936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &609794291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2636,6 +2669,7 @@ GameObject:
   - component: {fileID: 621764549}
   - component: {fileID: 621764548}
   - component: {fileID: 621764547}
+  - component: {fileID: 621764550}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (5)"
   m_TagString: Untagged
@@ -2756,6 +2790,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 621764545}
   m_CullTransparentMesh: 1
+--- !u!114 &621764550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 621764545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &729912751
 GameObject:
   m_ObjectHideFlags: 0
@@ -3119,6 +3167,7 @@ GameObject:
   - component: {fileID: 889927700}
   - component: {fileID: 889927699}
   - component: {fileID: 889927698}
+  - component: {fileID: 889927701}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (4)"
   m_TagString: Untagged
@@ -3239,6 +3288,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 889927696}
   m_CullTransparentMesh: 1
+--- !u!114 &889927701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 889927696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &923658850
 GameObject:
   m_ObjectHideFlags: 0
@@ -3383,6 +3446,7 @@ GameObject:
   - component: {fileID: 940759925}
   - component: {fileID: 940759924}
   - component: {fileID: 940759923}
+  - component: {fileID: 940759926}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (8)"
   m_TagString: Untagged
@@ -3503,6 +3567,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940759921}
   m_CullTransparentMesh: 1
+--- !u!114 &940759926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940759921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &952556885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3515,6 +3593,7 @@ GameObject:
   - component: {fileID: 952556889}
   - component: {fileID: 952556888}
   - component: {fileID: 952556887}
+  - component: {fileID: 952556890}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (11)"
   m_TagString: Untagged
@@ -3635,6 +3714,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 952556885}
   m_CullTransparentMesh: 1
+--- !u!114 &952556890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952556885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &958756351
 GameObject:
   m_ObjectHideFlags: 0
@@ -3647,6 +3740,7 @@ GameObject:
   - component: {fileID: 958756355}
   - component: {fileID: 958756354}
   - component: {fileID: 958756353}
+  - component: {fileID: 958756356}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (6)"
   m_TagString: Untagged
@@ -3767,6 +3861,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 958756351}
   m_CullTransparentMesh: 1
+--- !u!114 &958756356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958756351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &992855763
 GameObject:
   m_ObjectHideFlags: 0
@@ -3797,6 +3905,8 @@ RectTransform:
   m_Children:
   - {fileID: 1759722624}
   - {fileID: 533289540}
+  - {fileID: 1749343120}
+  - {fileID: 30250764}
   - {fileID: 1724250505}
   - {fileID: 338086976}
   - {fileID: 1056341757}
@@ -3805,8 +3915,6 @@ RectTransform:
   - {fileID: 174188475}
   - {fileID: 1589641496}
   - {fileID: 1410515209}
-  - {fileID: 1749343120}
-  - {fileID: 30250764}
   - {fileID: 889927697}
   - {fileID: 1620466471}
   - {fileID: 1732012774}
@@ -3964,6 +4072,7 @@ GameObject:
   - component: {fileID: 1056341760}
   - component: {fileID: 1056341759}
   - component: {fileID: 1056341758}
+  - component: {fileID: 1056341761}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (1)"
   m_TagString: Untagged
@@ -4033,19 +4142,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1056341759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: BotonSemillas
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1056341759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4084,6 +4181,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056341756}
   m_CullTransparentMesh: 1
+--- !u!114 &1056341761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056341756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &1112715858
 GameObject:
   m_ObjectHideFlags: 0
@@ -4291,6 +4402,7 @@ GameObject:
   - component: {fileID: 1177039032}
   - component: {fileID: 1177039031}
   - component: {fileID: 1177039030}
+  - component: {fileID: 1177039033}
   m_Layer: 5
   m_Name: BotonSemillas (7)
   m_TagString: Untagged
@@ -4361,18 +4473,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -4423,6 +4523,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177039028}
   m_CullTransparentMesh: 1
+--- !u!114 &1177039033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177039028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 1177039030}
+  "botonA\xF1adido": {fileID: 1732012773}
 --- !u!1 &1184716731
 GameObject:
   m_ObjectHideFlags: 0
@@ -4675,6 +4789,7 @@ GameObject:
   - component: {fileID: 1204569705}
   - component: {fileID: 1204569704}
   - component: {fileID: 1204569703}
+  - component: {fileID: 1204569706}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (10)"
   m_TagString: Untagged
@@ -4795,6 +4910,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204569701}
   m_CullTransparentMesh: 1
+--- !u!114 &1204569706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204569701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &1262497031
 GameObject:
   m_ObjectHideFlags: 0
@@ -5094,6 +5223,7 @@ GameObject:
   - component: {fileID: 1399832624}
   - component: {fileID: 1399832623}
   - component: {fileID: 1399832622}
+  - component: {fileID: 1399832625}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (9)"
   m_TagString: Untagged
@@ -5214,6 +5344,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1399832620}
   m_CullTransparentMesh: 1
+--- !u!114 &1399832625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1399832620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &1410515208
 GameObject:
   m_ObjectHideFlags: 0
@@ -5226,6 +5370,7 @@ GameObject:
   - component: {fileID: 1410515212}
   - component: {fileID: 1410515211}
   - component: {fileID: 1410515210}
+  - component: {fileID: 1410515213}
   m_Layer: 5
   m_Name: BotonSemillas (3)
   m_TagString: Untagged
@@ -5296,18 +5441,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -5358,6 +5491,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410515208}
   m_CullTransparentMesh: 1
+--- !u!114 &1410515213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410515208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 1410515210}
+  "botonA\xF1adido": {fileID: 1589641495}
 --- !u!1 &1420836611
 GameObject:
   m_ObjectHideFlags: 0
@@ -5370,6 +5517,7 @@ GameObject:
   - component: {fileID: 1420836615}
   - component: {fileID: 1420836614}
   - component: {fileID: 1420836613}
+  - component: {fileID: 1420836616}
   m_Layer: 5
   m_Name: BotonSemillas (8)
   m_TagString: Untagged
@@ -5440,18 +5588,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -5502,6 +5638,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420836611}
   m_CullTransparentMesh: 1
+--- !u!114 &1420836616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420836611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 1420836613}
+  "botonA\xF1adido": {fileID: 940759921}
 --- !u!1 &1430425796
 GameObject:
   m_ObjectHideFlags: 0
@@ -5514,6 +5664,7 @@ GameObject:
   - component: {fileID: 1430425800}
   - component: {fileID: 1430425799}
   - component: {fileID: 1430425798}
+  - component: {fileID: 1430425801}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (12)"
   m_TagString: Untagged
@@ -5634,6 +5785,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430425796}
   m_CullTransparentMesh: 1
+--- !u!114 &1430425801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430425796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &1445290734
 GameObject:
   m_ObjectHideFlags: 0
@@ -6040,6 +6205,7 @@ GameObject:
   - component: {fileID: 1573749433}
   - component: {fileID: 1573749432}
   - component: {fileID: 1573749431}
+  - component: {fileID: 1573749434}
   m_Layer: 5
   m_Name: BotonSemillas (9)
   m_TagString: Untagged
@@ -6110,18 +6276,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -6172,6 +6326,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573749429}
   m_CullTransparentMesh: 1
+--- !u!114 &1573749434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573749429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 1573749431}
+  "botonA\xF1adido": {fileID: 1399832620}
 --- !u!1 &1589641495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6184,6 +6352,7 @@ GameObject:
   - component: {fileID: 1589641499}
   - component: {fileID: 1589641498}
   - component: {fileID: 1589641497}
+  - component: {fileID: 1589641500}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (3)"
   m_TagString: Untagged
@@ -6304,6 +6473,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1589641495}
   m_CullTransparentMesh: 1
+--- !u!114 &1589641500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589641495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &1616909150
 GameObject:
   m_ObjectHideFlags: 0
@@ -6316,6 +6499,7 @@ GameObject:
   - component: {fileID: 1616909154}
   - component: {fileID: 1616909153}
   - component: {fileID: 1616909152}
+  - component: {fileID: 1616909155}
   m_Layer: 5
   m_Name: BotonSemillas (1)
   m_TagString: Untagged
@@ -6386,18 +6570,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -6448,6 +6620,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1616909150}
   m_CullTransparentMesh: 1
+--- !u!114 &1616909155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616909150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 1616909152}
+  "botonA\xF1adido": {fileID: 1056341756}
 --- !u!1 &1620466470
 GameObject:
   m_ObjectHideFlags: 0
@@ -6460,6 +6646,7 @@ GameObject:
   - component: {fileID: 1620466474}
   - component: {fileID: 1620466473}
   - component: {fileID: 1620466472}
+  - component: {fileID: 1620466475}
   m_Layer: 5
   m_Name: BotonSemillas (4)
   m_TagString: Untagged
@@ -6530,18 +6717,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -6592,6 +6767,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620466470}
   m_CullTransparentMesh: 1
+--- !u!114 &1620466475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620466470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 1620466472}
+  "botonA\xF1adido": {fileID: 889927696}
 --- !u!1 &1622826020
 GameObject:
   m_ObjectHideFlags: 0
@@ -6742,7 +6931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b39cbc8db8b04df41928640d46d2b507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  semillas: {fileID: 338086977}
+  semillas: {fileID: 0}
 --- !u!4 &1680626799
 Transform:
   m_ObjectHideFlags: 0
@@ -6782,6 +6971,7 @@ GameObject:
   - component: {fileID: 1724250508}
   - component: {fileID: 1724250507}
   - component: {fileID: 1724250506}
+  - component: {fileID: 1724250509}
   m_Layer: 5
   m_Name: "BotonA\xF1adido"
   m_TagString: Untagged
@@ -6805,7 +6995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -838.1251, y: 276.0417}
+  m_AnchoredPosition: {x: -844.3751, y: 276.0417}
   m_SizeDelta: {x: 94.204, y: 42.594}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1724250506
@@ -6815,7 +7005,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724250504}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
@@ -6851,19 +7041,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1724250507}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: BotonSemillas
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1724250507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6902,6 +7080,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724250504}
   m_CullTransparentMesh: 1
+--- !u!114 &1724250509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1724250504}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &1732012773
 GameObject:
   m_ObjectHideFlags: 0
@@ -6914,6 +7106,7 @@ GameObject:
   - component: {fileID: 1732012777}
   - component: {fileID: 1732012776}
   - component: {fileID: 1732012775}
+  - component: {fileID: 1732012778}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (7)"
   m_TagString: Untagged
@@ -7034,6 +7227,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732012773}
   m_CullTransparentMesh: 1
+--- !u!114 &1732012778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732012773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 0}
+  "botonA\xF1adido": {fileID: 0}
 --- !u!1 &1735504880
 GameObject:
   m_ObjectHideFlags: 0
@@ -7178,6 +7385,7 @@ GameObject:
   - component: {fileID: 1736124768}
   - component: {fileID: 1736124767}
   - component: {fileID: 1736124766}
+  - component: {fileID: 1736124769}
   m_Layer: 5
   m_Name: BotonSemillas (12)
   m_TagString: Untagged
@@ -7248,18 +7456,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1680626798}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: "BotonA\xF1adido"
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1976946953}
         m_TargetAssemblyTypeName: contador, Assembly-CSharp
         m_MethodName: GastarSemillas
@@ -7310,6 +7506,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1736124764}
   m_CullTransparentMesh: 1
+--- !u!114 &1736124769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736124764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botonComprar: {fileID: 1736124766}
+  "botonA\xF1adido": {fileID: 1430425796}
 --- !u!1 &1749343119
 GameObject:
   m_ObjectHideFlags: 0
