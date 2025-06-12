@@ -11,6 +11,8 @@ TagManager:
   - SnapZonePiso
   - SnapZonePared
   - SnapZonePisoRotacion
+  - Maceta
+  - abonoact
   layers:
   - Default
   - TransparentFX
