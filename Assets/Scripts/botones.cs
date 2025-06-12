@@ -27,6 +27,12 @@ public Button semillas;
         SceneManager.LoadScene("Invernadero");
     }
 
+    public void IrASiguienteEscena()
+    {
+        int indiceActual = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(indiceActual + 1);
+    }
+
     public void CargarNivel(string NombreNivel)
 
     {
