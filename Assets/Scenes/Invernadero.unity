@@ -528,7 +528,7 @@ RectTransform:
   m_GameObject: {fileID: 88158499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -904}
-  m_LocalScale: {x: 0.04, y: 0.048, z: 0.04}
+  m_LocalScale: {x: 0.03, y: 0.044999998, z: 0.03}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 288925865}
@@ -726,6 +726,52 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2105088828}
   m_SourcePrefab: {fileID: 100100000, guid: 24882b9e1b937a54580b99fe30de0117, type: 3}
+--- !u!1 &107701803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9072346142249407479, guid: 94f2ef74db2db654db4fc81135e6fd0d, type: 3}
+  m_PrefabInstance: {fileID: 521648540415984212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &107701807
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107701803}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &107701808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107701803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d988ca3d40ed2844fbfba6bc4f235ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cartelUI: {fileID: 1814996510}
+  mensajePlanta: {fileID: 1791240364}
 --- !u!1 &114731299
 GameObject:
   m_ObjectHideFlags: 0
@@ -1854,6 +1900,10 @@ PrefabInstance:
       propertyPath: cartelUI
       value: 
       objectReference: {fileID: 1814996510}
+    - target: {fileID: 8594644458073700699, guid: eac73eaa826782a44b11c43383edd3b9, type: 3}
+      propertyPath: mensajePlanta
+      value: 
+      objectReference: {fileID: 1791240364}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2240,7 +2290,7 @@ Transform:
   m_GameObject: {fileID: 453394274}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0923902, y: 0.913418, z: -5.072597}
+  m_LocalPosition: {x: -92, y: 0.913418, z: -5.072597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2377,15 +2427,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 498600495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -904.05}
-  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_LocalPosition: {x: 0, y: 0, z: -903.99}
+  m_LocalScale: {x: 0.03, y: 0.044999998, z: 0.03}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 288925865}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.93, y: -12.05}
+  m_AnchoredPosition: {x: -14.28, y: -12}
   m_SizeDelta: {x: 160, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &498600497
@@ -2464,7 +2514,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 46de9e0339aae994f92ad75802182a17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0086658919ad4444fb3686d33ed18c24, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4638,6 +4688,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOccupied: 0
+--- !u!1 &974101164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 974101165}
+  m_Layer: 0
+  m_Name: --------Controles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &974101165
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974101164}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.44775, y: 0.28864956, z: -0.9803543}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &999028772
 GameObject:
   m_ObjectHideFlags: 0
@@ -5692,7 +5773,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -905.18}
   m_LocalScale: {x: 0.39, y: 0.39, z: 0.39}
-  m_ConstrainProportionsScale: 1
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2135413626}
   m_Father: {fileID: 288925865}
@@ -6155,6 +6236,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plantName: pensamiento
   season: "oto\xF1o"
+--- !u!114 &1221430176 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2719328504777403498, guid: a4ab0d371f935b940964a611ab047843, type: 3}
+  m_PrefabInstance: {fileID: 1814996509}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1249204914
 GameObject:
   m_ObjectHideFlags: 0
@@ -7299,6 +7391,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8594644458073700699, guid: eac73eaa826782a44b11c43383edd3b9, type: 3}
+      propertyPath: mensajePlanta
+      value: 
+      objectReference: {fileID: 1791240364}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7707,6 +7803,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600042904}
   m_CullTransparentMesh: 1
+--- !u!1 &1655262903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1655262904}
+  m_Layer: 0
+  m_Name: --------Plantas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1655262904
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655262903}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.44775, y: 0.28864956, z: -0.9803543}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1681910475
 GameObject:
   m_ObjectHideFlags: 0
@@ -8108,6 +8235,7 @@ GameObject:
   - component: {fileID: 1791240361}
   - component: {fileID: 1791240362}
   - component: {fileID: 1791240363}
+  - component: {fileID: 1791240364}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -8182,6 +8310,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoContadorSemillas: {fileID: 1184303292}
+--- !u!114 &1791240364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791240358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27444c8281d2a64cad3d7f4baff2344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textoMensaje: {fileID: 1221430176}
+  cartelMensaje: {fileID: 1814996510}
+  frases:
+  - "Ten\xE9s una forma tan linda de estar en el mundo."
+  - "Hac\xE9s bien al mundo solo por ser vos."
+  - Tu amabilidad hace sonreir a todos.
+  - "Ten\xE9s una ternura que contagia."
+  - Sos mi lugar seguro.
+  - Lo que das vuelve, y vos das amor.
+  - Sos una caricia al alma.
+  - Tu presencia hace bien.
+  - "Lo que hac\xE9s con amor, deja huella."
+  - Sos de esas personas que hacen que todo funcione.
+  - Sos una persona de esas que sostienen el mundo sin hacer ruido.
+  - Gracias por ser tan vos, siempre.
+  - "Tu atenci\xF3n es un acto de amor."
 --- !u!1 &1798040015
 GameObject:
   m_ObjectHideFlags: 0
@@ -8290,6 +8446,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2719328504777403498, guid: a4ab0d371f935b940964a611ab047843, type: 3}
+      propertyPath: m_text
+      value: "Ten\xE9s una forma tan linda de estar en el mundo."
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719328504777403498, guid: a4ab0d371f935b940964a611ab047843, type: 3}
+      propertyPath: m_fontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2719328504777403498, guid: a4ab0d371f935b940964a611ab047843, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 5347488723338250060, guid: a4ab0d371f935b940964a611ab047843, type: 3}
       propertyPath: m_SizeDelta.x
       value: 60
@@ -8355,6 +8523,18 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -8364,7 +8544,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -908.15
       objectReference: {fileID: 0}
     - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8384,11 +8564,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -0.42
       objectReference: {fileID: 0}
     - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -8401,6 +8581,10 @@ PrefabInstance:
     - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8484170350747911184, guid: a4ab0d371f935b940964a611ab047843, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8986,6 +9170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cartelUI: {fileID: 1814996510}
+  mensajePlanta: {fileID: 0}
 --- !u!114 &1996063692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9604,6 +9789,52 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2124529214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2218060717831838811, guid: cf0953af85793c141ab45441318e02fd, type: 3}
+  m_PrefabInstance: {fileID: 5381895306354417648}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &2124529220
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124529214}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &2124529221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2124529214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d988ca3d40ed2844fbfba6bc4f235ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cartelUI: {fileID: 1814996510}
+  mensajePlanta: {fileID: 1791240364}
 --- !u!1 &2135413623
 GameObject:
   m_ObjectHideFlags: 0
@@ -9892,10 +10123,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: suculenta
       objectReference: {fileID: 0}
+    - target: {fileID: 9072346142249407479, guid: 94f2ef74db2db654db4fc81135e6fd0d, type: 3}
+      propertyPath: m_TagString
+      value: Objeto
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9072346142249407479, guid: 94f2ef74db2db654db4fc81135e6fd0d, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 107701808}
+    - targetCorrespondingSourceObject: {fileID: 9072346142249407479, guid: 94f2ef74db2db654db4fc81135e6fd0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 107701807}
   m_SourcePrefab: {fileID: 100100000, guid: 94f2ef74db2db654db4fc81135e6fd0d, type: 3}
 --- !u!1001 &5381895306354417648
 PrefabInstance:
@@ -9949,6 +10190,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pensamiento
       objectReference: {fileID: 0}
+    - target: {fileID: 2218060717831838811, guid: cf0953af85793c141ab45441318e02fd, type: 3}
+      propertyPath: m_TagString
+      value: Objeto
+      objectReference: {fileID: 0}
     - target: {fileID: 3248278850109642287, guid: cf0953af85793c141ab45441318e02fd, type: 3}
       propertyPath: textoContadorSemillas
       value: 
@@ -9960,7 +10205,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2218060717831838811, guid: cf0953af85793c141ab45441318e02fd, type: 3}
+      insertIndex: 4
+      addedObject: {fileID: 2124529221}
+    - targetCorrespondingSourceObject: {fileID: 2218060717831838811, guid: cf0953af85793c141ab45441318e02fd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2124529220}
   m_SourcePrefab: {fileID: 100100000, guid: cf0953af85793c141ab45441318e02fd, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -9978,24 +10229,26 @@ SceneRoots:
   - {fileID: 45567850}
   - {fileID: 1996063694}
   - {fileID: 603798998}
-  - {fileID: 1787698160}
+  - {fileID: 910566774}
+  - {fileID: 158011096}
+  - {fileID: 974101165}
+  - {fileID: 453394275}
   - {fileID: 1791240360}
   - {fileID: 1681910477}
-  - {fileID: 5381895306354417648}
+  - {fileID: 1850504194}
   - {fileID: 1540048767}
   - {fileID: 637887178}
-  - {fileID: 521648540415984212}
+  - {fileID: 1787698160}
   - {fileID: 1046504032}
   - {fileID: 2022102531}
-  - {fileID: 1850504194}
   - {fileID: 830132485}
   - {fileID: 511014828}
   - {fileID: 1945734198}
   - {fileID: 1700414548}
   - {fileID: 1460602354}
   - {fileID: 1569066209}
-  - {fileID: 453394275}
-  - {fileID: 910566774}
+  - {fileID: 1655262904}
+  - {fileID: 5381895306354417648}
+  - {fileID: 521648540415984212}
   - {fileID: 349221103}
   - {fileID: 1517021190}
-  - {fileID: 158011096}
