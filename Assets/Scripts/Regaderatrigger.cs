@@ -51,11 +51,11 @@ public class Regaderatrigger : MonoBehaviour
 
     public void SumarAguaMaceta()
     {
-        Debug.Log("La maceta recibió agua 🌱💧");
+        Debug.Log("La maceta recibió agua");
     }
 
     public void SumarAgua()
     {
-    Debug.Log("🌱 La maceta fue regada con SumARagua!");
+    Debug.Log("La maceta fue regada con SumARagua!");
     }
 }

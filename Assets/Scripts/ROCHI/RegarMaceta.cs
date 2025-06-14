@@ -10,7 +10,7 @@ public class RegarMaceta : MonoBehaviour
 
     public void SumarAgua()
 {
-    Debug.Log("🌱 La maceta fue regada correctamente desde RegarMaceta!");
+    Debug.Log("La maceta fue regada correctamente desde RegarMaceta!");
 }
 
 }

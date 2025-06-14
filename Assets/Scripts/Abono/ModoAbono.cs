@@ -7,7 +7,7 @@ public class ModoAbono : MonoBehaviour
 {
     public static bool activo = false;
 
-    [Header("Opcional: botón para cambiar color")]
+    [Header("Opcional: botï¿½n para cambiar color")]
     public Button botonAbono; // Asignalo desde el Inspector
     public Color colorActivo = new Color(0.4f, 0.8f, 0.4f); // Verde claro
     public Color colorNormal = Color.white;
@@ -17,7 +17,7 @@ public class ModoAbono : MonoBehaviour
         activo = !activo;
         Debug.Log("Modo abono: " + activo);
 
-        // Cambiar color del botón
+        // Cambiar color del botï¿½n
         if (botonAbono != null)
         {
             var image = botonAbono.GetComponent<Image>();
@@ -26,7 +26,8 @@ public class ModoAbono : MonoBehaviour
         }
 
         // Mostrar contadores si se activa
-        AbonoMaceta[] macetas = FindObjectsOfType<AbonoMaceta>();
+        //AbonoMaceta[] macetas = FindObjectsOfType<AbonoMaceta>();//
+        AbonoMaceta[] macetas = Object.FindObjectsByType<AbonoMaceta>(FindObjectsSortMode.None);
         foreach (var maceta in macetas)
         {
             if (activo)

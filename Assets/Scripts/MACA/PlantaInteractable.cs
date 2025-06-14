@@ -9,7 +9,7 @@ public class PlantaInteractable : MonoBehaviour
 
     private void Start()
     {
-        canvas = FindObjectOfType<Canvas>();
+        canvas = FindFirstObjectByType<Canvas>();
     }
 
     void OnMouseDown()
@@ -28,7 +28,7 @@ public class PlantaInteractable : MonoBehaviour
     public void GuardarEnInventario()
     {
         PlantInfo info = GetComponent<PlantInfo>();
-        ControladorInventario inventario = FindObjectOfType<ControladorInventario>();
+        ControladorInventario inventario = FindFirstObjectByType<ControladorInventario>();
 
         Sprite icono = iconoUI.GetComponent<Image>().sprite;
         inventario.AgregarAlInventario(icono, info.plantName, info.season);

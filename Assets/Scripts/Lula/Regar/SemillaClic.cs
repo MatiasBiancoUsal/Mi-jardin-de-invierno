@@ -6,7 +6,7 @@ using UnityEngine;
 public class SemillaClic : MonoBehaviour
 {
     public TMP_Text textoContadorSemillas;  // Texto para mostrar el contador de semillas
-    private int contadorSemillas = 0;
+    //private int contadorSemillas = 0;//
 
     void OnMouseDown()
     {
@@ -16,7 +16,7 @@ public class SemillaClic : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No se encontró el ControladorSemillas en la escena.");
+            Debug.LogWarning("No se encontrï¿½ el ControladorSemillas en la escena.");
         }
 
         gameObject.SetActive(false);
