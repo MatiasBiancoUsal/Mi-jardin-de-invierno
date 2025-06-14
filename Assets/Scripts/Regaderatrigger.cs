@@ -34,7 +34,7 @@ public class Regaderatrigger : MonoBehaviour
                     anim.SetBool("Regando", true);
                     idleregar = false;
 
-                    // Esperamos 1 segundo para que se vea la animaci�n
+                    // Esperamos 1 segundo para que se vea la animaci�n
                     Invoke(nameof(SumarYDesactivar), 2.6f);
                 }
             }
@@ -47,5 +47,15 @@ public class Regaderatrigger : MonoBehaviour
             macetaPadre.SumarAgua();
 
         anim.SetBool("Regando", false);
+    }
+
+    public void SumarAguaMaceta()
+    {
+        Debug.Log("La maceta recibió agua 🌱💧");
+    }
+
+    public void SumarAgua()
+    {
+    Debug.Log("🌱 La maceta fue regada con SumARagua!");
     }
 }
