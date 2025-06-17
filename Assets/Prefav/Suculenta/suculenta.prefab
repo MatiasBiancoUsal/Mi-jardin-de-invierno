@@ -102,6 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5716520743993565887}
+  - component: {fileID: 1336514496369763385}
   m_Layer: 0
   m_Name: Regadera
   m_TagString: Untagged
@@ -125,6 +126,18 @@ Transform:
   - {fileID: 3251196811754292858}
   m_Father: {fileID: 8551387996477786445}
   m_LocalEulerAnglesHint: {x: 0, y: -56.209, z: 0}
+--- !u!114 &1336514496369763385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5335530343996491649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56210caedc744af46bd058f9f241403a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7799126979888649820
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a0f06a5404281419206aaef9b8a41d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planta: {fileID: 7696619699741354640}
 --- !u!64 &33767152957830546
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -515,7 +529,10 @@ PrefabInstance:
       addedObject: {fileID: 6309994290301596270}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2149323000497936094}
+      addedObject: {fileID: 7696619699741354640}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4496906613070743794}
   m_SourcePrefab: {fileID: 100100000, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
 --- !u!4 &8551387996477786445 stripped
 Transform:
@@ -548,7 +565,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.42297077, y: 0.5259757, z: 0.50473833}
   m_Center: {x: 0.61377573, y: 0.7082349, z: -3.617644}
---- !u!114 &2149323000497936094
+--- !u!114 &7696619699741354640
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -557,10 +574,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 9072346142249407479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d930b990600a4eb40bb519ca724c1b98, type: 3}
+  m_Script: {fileID: 11500000, guid: 582e14f1537d0314db51f03d1716c686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  regadera: {fileID: 5335530343996491649}
-  semilla: {fileID: 7799126979888649820}
-  RiegoNecesario: 1
-  textoRiego: {fileID: 0}
+  Luz: 0
+  Agua: 0
+  Abono: 0
+  TiempoFelicidad: 0
+  ContadorFelicidad: 0
+  EnMantenimiento: 0
+  LuzMaxima: 3
+  AguaMaxima: 3
+  AbonoMaximo: 3
+  FelicidadMaxima: 3
+  DuracionFelicidad: 60
+  textoAgua: {fileID: 0}
+  textoAbono: {fileID: 0}
+  Semilla: {fileID: 0}
+--- !u!114 &4496906613070743794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9072346142249407479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba0085c2e271e84b96bcfadb8d05223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Regadera: {fileID: 5335530343996491649}
+  Abono: {fileID: 0}

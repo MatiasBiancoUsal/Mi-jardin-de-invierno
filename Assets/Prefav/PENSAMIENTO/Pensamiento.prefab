@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2808398868401433420}
+  - component: {fileID: 1488469830455142876}
   m_Layer: 0
   m_Name: Regadera
   m_TagString: Untagged
@@ -32,6 +33,18 @@ Transform:
   - {fileID: 3549633263899389472}
   m_Father: {fileID: 8271702537054274612}
   m_LocalEulerAnglesHint: {x: 0, y: -56.209, z: 0}
+--- !u!114 &1488469830455142876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1106017128160749317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56210caedc744af46bd058f9f241403a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3947525851882408395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,6 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a0f06a5404281419206aaef9b8a41d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planta: {fileID: 2443395359746893806}
 --- !u!64 &4448478138190335094
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -230,16 +244,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2104826757056283423, guid: f4f79d47491c9ca479055cc24c052e2c, type: 3}
       propertyPath: m_Name
-      value: "OTO\xD1OPENSAMIENTO  Variant"
+      value: Pensamiento
       objectReference: {fileID: 0}
     - target: {fileID: 2104826757056283423, guid: f4f79d47491c9ca479055cc24c052e2c, type: 3}
       propertyPath: m_TagString
       value: regaract
       objectReference: {fileID: 0}
-    - target: {fileID: 7813233627779314239, guid: f4f79d47491c9ca479055cc24c052e2c, type: 3}
-      propertyPath: miMaceta
-      value: 
-      objectReference: {fileID: 5252143306955746865}
     m_RemovedComponents:
     - {fileID: 1818145288724616912, guid: f4f79d47491c9ca479055cc24c052e2c, type: 3}
     - {fileID: 7813233627779314239, guid: f4f79d47491c9ca479055cc24c052e2c, type: 3}
@@ -251,7 +261,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2104826757056283423, guid: f4f79d47491c9ca479055cc24c052e2c, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5252143306955746865}
+      addedObject: {fileID: 2443395359746893806}
+    - targetCorrespondingSourceObject: {fileID: 2104826757056283423, guid: f4f79d47491c9ca479055cc24c052e2c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8127308381750666660}
     - targetCorrespondingSourceObject: {fileID: 2008323839902491977, guid: f4f79d47491c9ca479055cc24c052e2c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5358504082867705082}
@@ -266,7 +279,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2104826757056283423, guid: f4f79d47491c9ca479055cc24c052e2c, type: 3}
   m_PrefabInstance: {fileID: 7256695129991470481}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5252143306955746865
+--- !u!114 &2443395359746893806
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -275,13 +288,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 8755328685690658446}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d930b990600a4eb40bb519ca724c1b98, type: 3}
+  m_Script: {fileID: 11500000, guid: 582e14f1537d0314db51f03d1716c686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  regadera: {fileID: 1106017128160749317}
-  semilla: {fileID: 9181161929969039576}
-  RiegoNecesario: 2
-  textoRiego: {fileID: 0}
+  Luz: 0
+  Agua: 0
+  Abono: 0
+  TiempoFelicidad: 0
+  ContadorFelicidad: 0
+  EnMantenimiento: 0
+  LuzMaxima: 3
+  AguaMaxima: 3
+  AbonoMaximo: 3
+  FelicidadMaxima: 3
+  DuracionFelicidad: 60
+  textoAgua: {fileID: 0}
+  textoAbono: {fileID: 0}
+  Semilla: {fileID: 0}
+--- !u!114 &8127308381750666660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8755328685690658446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba0085c2e271e84b96bcfadb8d05223, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Regadera: {fileID: 1106017128160749317}
+  Abono: {fileID: 0}
 --- !u!1 &9181161929969039576 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2008323839902491977, guid: f4f79d47491c9ca479055cc24c052e2c, type: 3}

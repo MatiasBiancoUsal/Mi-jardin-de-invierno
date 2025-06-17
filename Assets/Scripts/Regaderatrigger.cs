@@ -1,17 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scripts.Lula;
 using UnityEngine;
 
 public class Regaderatrigger : MonoBehaviour
 {
+    public Planta planta;
     private Animator anim;
     private bool idleregar = false;
-    private RegarMaceta macetaPadre;
 
     void Start()
     {
         anim = GetComponent<Animator>();
-        macetaPadre = GetComponentInParent<RegarMaceta>();
     }
 
     void Update()
@@ -29,7 +29,7 @@ public class Regaderatrigger : MonoBehaviour
                 {
                     idleregar = true;
                 }
-                else if (idleregar && objetoClickeado.CompareTag("regaract"))
+                else if (idleregar && objetoClickeado.GetComponent<Planta>() == planta)
                 {
                     anim.SetBool("Regando", true);
                     idleregar = false;
@@ -43,9 +43,7 @@ public class Regaderatrigger : MonoBehaviour
 
     void SumarYDesactivar()
     {
-        if (macetaPadre != null)
-            macetaPadre.SumarAgua();
-
+        planta.SubirAgua();
         anim.SetBool("Regando", false);
     }
 
