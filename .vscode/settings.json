@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Mi-jardin-de-invierno.sln"
+    "dotnet.defaultSolution": "Mi-jardin.sln"
 }
