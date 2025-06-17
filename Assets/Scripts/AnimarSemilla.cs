@@ -6,11 +6,11 @@ public class AnimarSemilla : MonoBehaviour
 {
     private bool modoPlantar = false;
 
-    
+   
     public void ActivarModoPlantar()
     {
         modoPlantar = true;
-        Debug.Log("Modo plantar activado. Hacé clic en una maceta.");
+        Debug.Log("Modo plantar activado. Haz clic en una maceta.");
     }
 
     void Update()
@@ -24,38 +24,74 @@ public class AnimarSemilla : MonoBehaviour
             {
                 Transform maceta = hit.collider.transform;
 
-                // Buscar semilla inactiva dentro de la maceta
-                Animator animSemilla = maceta.GetComponentInChildren<Animator>(true);
-                if (animSemilla != null)
+                //Busca el gamebject SemillaPadre dentr de la maceta
+                Transform semillaPadre = maceta.Find("SemillaPadre");
+                Animator animSemilla = null;
+
+                if (semillaPadre != null)
                 {
-                    GameObject semillaGO = animSemilla.gameObject;
-                    semillaGO.SetActive(true);
-                    semillaGO.transform.position = maceta.position + new Vector3(0, 0.1f, 0); 
+                    animSemilla = semillaPadre.GetComponentInChildren<Animator>(true);
+                    if (animSemilla != null)
+                    {
+                        if (!animSemilla.gameObject.activeSelf)
+                            animSemilla.gameObject.SetActive(true);
 
-                    animSemilla.Rebind();
-                    animSemilla.Update(0f);
-                    animSemilla.SetBool("ActivarAr", true);
+                        animSemilla.Rebind();
+                        animSemilla.Update(0f);
+                        animSemilla.SetBool("ActivarAr", true);
 
-                    StartCoroutine(DesactivarLuego(animSemilla, 4f));
+                        StartCoroutine(AnimarPlantaLuego(animSemilla, maceta, 4f, 10f));
+                    }
+                    else
+                    {
+                        Debug.LogWarning("No se encontr Animator en SemillaPadre");
+                    }
                 }
                 else
                 {
-                    Debug.LogWarning("La maceta no tiene una semilla como hijo.");
+                    Debug.LogWarning("No se encontr el objeto SemillaPadre dentro de la maceta");
                 }
 
-                modoPlantar = false; // Solo después de hacer clic en una maceta válida
+                modoPlantar = false;
             }
             else
             {
-                Debug.Log("Eso no es una maceta. Tocá una para plantar.");
+                Debug.Log("Eso no es una maceta. Toca una para plantar.");
             }
         }
     }
 
-    private System.Collections.IEnumerator DesactivarLuego(Animator anim, float delay)
+    private System.Collections.IEnumerator AnimarPlantaLuego(Animator animSemilla, Transform maceta, float durAnimSemilla, float delayPlanta)
     {
-        yield return new WaitForSeconds(delay);
-        anim.SetBool("ActivarAr", false);
-        anim.gameObject.SetActive(false);
+        yield return new WaitForSeconds(durAnimSemilla);
+
+        animSemilla.SetBool("ActivarAr", false);
+        animSemilla.gameObject.SetActive(false);
+
+        yield return new WaitForSeconds(delayPlanta);
+
+        //Busca el gamebject Semillaplanta dentro de la maceta
+        Transform semillaPlanta = maceta.Find("Semillaplanta");
+        Animator animPlanta = null;
+
+        if (semillaPlanta != null)
+        {
+            animPlanta = semillaPlanta.GetComponentInChildren<Animator>(true);
+            if (animPlanta != null)
+            {
+                if (!animPlanta.gameObject.activeSelf)
+                    animPlanta.gameObject.SetActive(true);
+
+                animPlanta.SetBool("ActivarPlanta", true);
+            }
+            else
+            {
+                Debug.LogWarning("No se encontr Animator en Semillaplanta");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("No se encontr el objeto Semillaplanta dentro de la maceta");
+        }
     }
 }
