@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class botones : MonoBehaviour
 {
-    
+
 public Button semillas;
 
     void Start()
