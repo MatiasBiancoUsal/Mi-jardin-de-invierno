@@ -1,13 +1,13 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using Assets.Scripts.Lula;
 using UnityEngine;
 
-public class Regaderatrigger : MonoBehaviour
+public class AbonoTrigger : MonoBehaviour
 {
     public Planta planta;
     private Animator anim;
-    private bool idleregar = false;
+    private bool idleAbonar = false;
 
     void Start()
     {
@@ -25,14 +25,14 @@ public class Regaderatrigger : MonoBehaviour
             {
                 GameObject objetoClickeado = hit.collider.gameObject;
 
-                if (!idleregar && objetoClickeado == gameObject)
+                if (!idleAbonar && objetoClickeado == gameObject)
                 {
-                    idleregar = true;
+                    idleAbonar = true;
                 }
-                else if (idleregar && objetoClickeado.GetComponent<Planta>() == planta)
+                else if (idleAbonar && objetoClickeado.GetComponent<Planta>() == planta)
                 {
-                    anim.SetBool("Regando", true);
-                    idleregar = false;
+                    anim.SetBool("Abonando", true);
+                    idleAbonar = false;
 
                     // Esperamos 1 segundo para que se vea la animaci�n
                     Invoke(nameof(SumarYDesactivar), 2.6f);
@@ -43,17 +43,17 @@ public class Regaderatrigger : MonoBehaviour
 
     void SumarYDesactivar()
     {
-        planta.SubirAgua();
-        anim.SetBool("Regando", false);
+        planta.SubirAbono();
+        anim.SetBool("Abonando", false);
     }
 
-    public void SumarAguaMaceta()
+    public void SumarAbonoMaceta()
     {
-        Debug.Log("La maceta recibió agua");
+        Debug.Log("La maceta recibió abono");
     }
 
-    public void SumarAgua()
+    public void SumarAbono()
     {
-    Debug.Log("La maceta fue regada con SumARagua!");
+        Debug.Log("La maceta fue regada con SumarAbono!");
     }
 }
