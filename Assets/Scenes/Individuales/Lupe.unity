@@ -951,7 +951,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80c6ccaf71038642ba903466ec9093d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.856
+      value: 9.0056
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80c6ccaf71038642ba903466ec9093d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -959,7 +959,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80c6ccaf71038642ba903466ec9093d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.1873
+      value: 3.119
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: b80c6ccaf71038642ba903466ec9093d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1505,6 +1505,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a0f06a5404281419206aaef9b8a41d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planta: {fileID: 0}
 --- !u!64 &1631096161
 MeshCollider:
   m_ObjectHideFlags: 0

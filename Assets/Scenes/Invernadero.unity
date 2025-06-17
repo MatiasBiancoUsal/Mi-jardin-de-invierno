@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2bacdb9defecc543812a5080fe7b822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cartelUI: {fileID: 0}
+  cartelUI: {fileID: 1017599348}
 --- !u!4 &45567850
 Transform:
   m_ObjectHideFlags: 0
