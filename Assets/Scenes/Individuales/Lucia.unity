@@ -672,7 +672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &394306816
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1434,7 +1434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1149033490
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2053,6 +2053,8 @@ MonoBehaviour:
   ModoRiego: 0
   ModoLuz: 0
   ModoAbono: 0
+  contadorAguaGO: {fileID: 1149033489}
+  contadorAbonoGO: {fileID: 394306815}
 --- !u!1 &1787698159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2501,9 +2503,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1549425466}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: contadorAguaGO
+      value: 
+      objectReference: {fileID: 1149033489}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: TiempoFelicidad
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: contadorAbonoGO
+      value: 
+      objectReference: {fileID: 394306815}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: DuracionFelicidad
       value: 10

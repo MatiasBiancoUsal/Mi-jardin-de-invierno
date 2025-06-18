@@ -15,6 +15,9 @@ namespace Assets.Scripts.Lula
         public bool ModoLuz;
         public bool ModoAbono;
 
+        public GameObject contadorAguaGO;
+        public GameObject contadorAbonoGO;
+
 
         public void Awake()
         {
@@ -29,6 +32,12 @@ namespace Assets.Scripts.Lula
             ModoRiego = !ModoRiego;
             ModoAbono = false;
             ModoLuz = false;
+
+            if (contadorAguaGO != null)
+                contadorAguaGO.SetActive(ModoRiego);
+
+            if (contadorAbonoGO != null)
+                contadorAbonoGO.SetActive(false);
         }
 
         public void CambiarModoAbono()
@@ -36,6 +45,12 @@ namespace Assets.Scripts.Lula
             ModoAbono = !ModoAbono;
             ModoRiego = false;
             ModoLuz = false;
+
+            if (contadorAbonoGO != null)
+                contadorAbonoGO.SetActive(ModoAbono);
+
+            if (contadorAguaGO != null)
+                contadorAguaGO.SetActive(false);
         }
     }
 }

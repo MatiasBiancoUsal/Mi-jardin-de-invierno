@@ -26,6 +26,7 @@ namespace Assets.Scripts.Lula
 
         public GameObject Semilla;
 
+
         public void Start()
         {
             Luz = 0;
