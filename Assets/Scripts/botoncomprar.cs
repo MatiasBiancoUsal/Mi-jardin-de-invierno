@@ -4,13 +4,13 @@ using UnityEngine.UI;
 public class botoncomprar : MonoBehaviour
 {
     public Button botonComprar;
-    public GameObject botonAñadido;
+    public GameObject botonAÃ±adido;
 
     void Start()
     {
-        // Asegura que el botón añadido esté oculto al inicio
-        if (botonAñadido != null)
-            botonAñadido.SetActive(false);
+        // Asegura que el boton aÃ±adido esta oculto al inicio
+        if (botonAÃ±adido != null)
+            botonAÃ±adido.SetActive(false);
 
         if (botonComprar != null)
             botonComprar.onClick.AddListener(Comprar);
@@ -21,8 +21,9 @@ public class botoncomprar : MonoBehaviour
         if (botonComprar != null)
             botonComprar.gameObject.SetActive(false);
 
-        if (botonAñadido != null)
-            botonAñadido.SetActive(true);
+        if (botonAÃ±adido != null)
+            botonAÃ±adido.SetActive(true);
+            EstadoObjetosEscena.mostrarMacetaEnInvernadero = true;
     }
 }
 
