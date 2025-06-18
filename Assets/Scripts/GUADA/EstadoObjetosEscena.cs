@@ -5,4 +5,5 @@ using UnityEngine;
 public static class EstadoObjetosEscena
 {
     public static bool mostrarMacetaEnInvernadero = false;
+    public static bool macetaYaComprada = false;
 }
