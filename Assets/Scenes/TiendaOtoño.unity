@@ -1022,6 +1022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 139231302}
   "botonA\xF1adido": {fileID: 621764545}
+  nombreObjeto: Maceta ind
 --- !u!1 &178171803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1783,6 +1784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 387742371}
   "botonA\xF1adido": {fileID: 1572730569}
+  nombreObjeto: 
 --- !u!1 &407054480
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,6 +2070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 456244052}
   "botonA\xF1adido": {fileID: 923658850}
+  nombreObjeto: 
 --- !u!1 &481991777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2335,6 +2338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 486532973}
   "botonA\xF1adido": {fileID: 958756351}
+  nombreObjeto: violeta
 --- !u!1 &491889456
 GameObject:
   m_ObjectHideFlags: 0
@@ -2797,6 +2801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &609794291
 GameObject:
   m_ObjectHideFlags: 0
@@ -3064,6 +3069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &839557927
 GameObject:
   m_ObjectHideFlags: 0
@@ -3499,6 +3505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &923658850
 GameObject:
   m_ObjectHideFlags: 0
@@ -3778,6 +3785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &952556885
 GameObject:
   m_ObjectHideFlags: 0
@@ -3925,6 +3933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &958756351
 GameObject:
   m_ObjectHideFlags: 0
@@ -4072,6 +4081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &992855763
 GameObject:
   m_ObjectHideFlags: 0
@@ -4512,6 +4522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &1072471123
 GameObject:
   m_ObjectHideFlags: 0
@@ -5139,6 +5150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &1257300886
 GameObject:
   m_ObjectHideFlags: 0
@@ -5361,6 +5373,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 1262497033}
   "botonA\xF1adido": {fileID: 331780343}
+  nombreObjeto: 
 --- !u!1 &1300603488
 GameObject:
   m_ObjectHideFlags: 0
@@ -5772,6 +5785,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &1445290734
 GameObject:
   m_ObjectHideFlags: 0
@@ -6426,6 +6440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &1594685923
 GameObject:
   m_ObjectHideFlags: 0
@@ -6859,6 +6874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &1732012773
 GameObject:
   m_ObjectHideFlags: 0
@@ -7006,6 +7022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
+  nombreObjeto: 
 --- !u!1 &1749343119
 GameObject:
   m_ObjectHideFlags: 0

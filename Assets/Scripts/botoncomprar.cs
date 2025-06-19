@@ -8,10 +8,10 @@ public class botoncomprar : MonoBehaviour
 
     void Start()
     {
-        //parte nueva guada: Verifica si ya se compro anteriormente
+        //  NUEVO: Verificamos si ya se compró anteriormente
         if (EstadoObjetosEscena.macetaYaComprada)
         {
-            //parte nueva guada: Ya fue comprada> ocultar boton, mostrar check
+            //  Ya fue comprada → ocultar botón, mostrar check
             if (botonComprar != null)
                 botonComprar.gameObject.SetActive(false);
 
@@ -20,7 +20,7 @@ public class botoncomprar : MonoBehaviour
         }
         else
         {
-            //luisi 
+            // PARTE QUE YA TENÍAS: Inicializa el estado normal
             if (botonAñadido != null)
                 botonAñadido.SetActive(false);
 
@@ -31,16 +31,15 @@ public class botoncomprar : MonoBehaviour
 
     void Comprar()
     {
-        //luisi: Ocultar botón, mostrar check
+        //  PARTE QUE YA TENÍAS: Ocultar botón, mostrar check
         if (botonComprar != null)
             botonComprar.gameObject.SetActive(false);
 
         if (botonAñadido != null)
             botonAñadido.SetActive(true);
 
-        //parte nueva guada: Marcamos que se compro y se debe activar en la otra escena
+        // NUEVO: Marcamos que se compró y se debe activar en la otra escena
         EstadoObjetosEscena.mostrarMacetaEnInvernadero = true;
         EstadoObjetosEscena.macetaYaComprada = true;
     }
 }
-
