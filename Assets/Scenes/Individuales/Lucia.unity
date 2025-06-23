@@ -742,98 +742,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 666136132548942541, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
   m_PrefabInstance: {fileID: 7468250065987684959}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &550167737
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: LuzMaxima
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: textoAgua
-      value: 
-      objectReference: {fileID: 2135413624}
-    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: AguaMaxima
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: textoAbono
-      value: 
-      objectReference: {fileID: 1549425466}
-    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: AbonoMaximo
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: EnMantenimiento
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 9.011
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.2350818
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.671
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: m_Name
-      value: Suculenta
-      objectReference: {fileID: 0}
-    - target: {fileID: 6373764130766578866, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: textoMensaje
-      value: 
-      objectReference: {fileID: 1022639124}
-    - target: {fileID: 6373764130766578866, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      propertyPath: cartelMensaje
-      value: 
-      objectReference: {fileID: 1948536128}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 666136132548942541, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1587601173}
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
 --- !u!1 &690782282
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,7 +878,7 @@ GameObject:
   - component: {fileID: 947760366}
   - component: {fileID: 947760365}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: ContadorPetalo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1413,11 +1321,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 8007961498541435068, guid: 685e435f208c3f54cb47be2c35ca970a, type: 3}
---- !u!4 &1133228542 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 666136132548942541, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-  m_PrefabInstance: {fileID: 550167737}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1136483031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1766,63 +1669,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184303290}
   m_CullTransparentMesh: 1
---- !u!1001 &1194966794
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1133228542}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.6529999
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.7440818
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.4980001
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-      propertyPath: m_Name
-      value: Suculenta
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
 --- !u!1 &1477804257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2271,11 +2117,6 @@ RectTransform:
   m_AnchoredPosition: {x: 7.52, y: -2.09}
   m_SizeDelta: {x: 34.41, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!4 &1587601173 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b8ffcc7a1e4eaa24ab10a6a5a673ca22, type: 3}
-  m_PrefabInstance: {fileID: 1194966794}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1681910475
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,6 +2210,7 @@ GameObject:
   - component: {fileID: 1791240361}
   - component: {fileID: 1791240362}
   - component: {fileID: 1791240363}
+  - component: {fileID: 1791240364}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2443,6 +2285,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoContadorSemillas: {fileID: 1184303292}
+--- !u!114 &1791240364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791240358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74bcd5b42cb44b49af0faef13f2927f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textoContadorPetalos: {fileID: 947760365}
 --- !u!1001 &1814996509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2756,6 +2611,83 @@ RectTransform:
   m_AnchoredPosition: {x: 7.52, y: -2.09}
   m_SizeDelta: {x: 34.41, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &2258333174227595973
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4385692647262329244, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: textoAgua
+      value: 
+      objectReference: {fileID: 2135413624}
+    - target: {fileID: 4385692647262329244, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: textoAbono
+      value: 
+      objectReference: {fileID: 1549425466}
+    - target: {fileID: 7928045670094823470, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_Name
+      value: Suculenta
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021694084485335473, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.011
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021694084485335473, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2350818
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021694084485335473, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.671
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021694084485335473, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021694084485335473, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021694084485335473, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021694084485335473, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021694084485335473, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021694084485335473, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8021694084485335473, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8026686058520617464, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: textoMensaje
+      value: 
+      objectReference: {fileID: 1022639124}
+    - target: {fileID: 8026686058520617464, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: cartelMensaje
+      value: 
+      objectReference: {fileID: 1948536128}
+    - target: {fileID: 8817507047094686277, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
+      propertyPath: textoContadorSemillas
+      value: 
+      objectReference: {fileID: 1184303292}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 01829dd0a66467a4eb1646f44f9b8353, type: 3}
 --- !u!1001 &7468250065987684959
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2852,6 +2784,83 @@ PrefabInstance:
       addedObject: {fileID: 425075204}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+--- !u!1001 &7992917179999402975
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 185020150228092567, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: textoMensaje
+      value: 
+      objectReference: {fileID: 1022639124}
+    - target: {fileID: 185020150228092567, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: cartelMensaje
+      value: 
+      objectReference: {fileID: 1948536128}
+    - target: {fileID: 2149321795027540334, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 11.438
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149321795027540334, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2350818
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149321795027540334, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.671
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149321795027540334, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149321795027540334, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149321795027540334, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149321795027540334, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149321795027540334, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149321795027540334, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2149321795027540334, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3809237571667892863, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: textoContadorSemillas
+      value: 
+      objectReference: {fileID: 1184303292}
+    - target: {fileID: 5353282785424138213, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: m_Name
+      value: Planta Base Nueva
+      objectReference: {fileID: 0}
+    - target: {fileID: 7725979756874817362, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: textoAgua
+      value: 
+      objectReference: {fileID: 2135413624}
+    - target: {fileID: 7725979756874817362, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
+      propertyPath: textoAbono
+      value: 
+      objectReference: {fileID: 1549425466}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8d3b26710c9ef6843b88e248e2c67a9e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -2869,4 +2878,5 @@ SceneRoots:
   - {fileID: 1681910477}
   - {fileID: 1540048767}
   - {fileID: 7468250065987684959}
-  - {fileID: 550167737}
+  - {fileID: 2258333174227595973}
+  - {fileID: 7992917179999402975}
