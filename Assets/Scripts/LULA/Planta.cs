@@ -18,13 +18,16 @@ namespace Assets.Scripts.Lula
         public int LuzMaxima;
         public int AguaMaxima;
         public int AbonoMaximo;
-        public int FelicidadMaxima;
+        public int FelicidadMaxima = 3;
         public float DuracionFelicidad;
 
         public TMP_Text textoAgua;
         public TMP_Text textoAbono;
 
         public GameObject Semilla;
+
+        public GameObject Petalo;               
+        private bool yaTiroPetalo = false;
 
 
         public void Start()
@@ -74,10 +77,25 @@ namespace Assets.Scripts.Lula
         {
             if (Agua == AguaMaxima && Abono == AbonoMaximo)
             {
-                ContadorFelicidad += 1;
+                // Planta entra en estado de felicidad
+                ContadorFelicidad++;
                 TiempoFelicidad = DuracionFelicidad;
-                Semilla.SetActive(true);
                 EnMantenimiento = false;
+
+                // Tira semilla si tiene una
+                if (Semilla != null)
+                    Semilla.SetActive(true);
+
+                // Si alcanza la felicidad máxima y aún no tiró el pétalo
+                if (ContadorFelicidad >= FelicidadMaxima && !yaTiroPetalo)
+                {
+                    yaTiroPetalo = true;
+
+                    if (Petalo != null)
+                        Petalo.SetActive(true);
+
+                    Debug.Log("🌸 La planta alcanzó su FELICIDAD MÁXIMA. ¡Pétalo activado!");
+                }
             }
         }
 
@@ -118,6 +136,7 @@ namespace Assets.Scripts.Lula
         public bool EstaFeliz()
         {
             return ContadorFelicidad == FelicidadMaxima;
+            
         }
     }
 }
