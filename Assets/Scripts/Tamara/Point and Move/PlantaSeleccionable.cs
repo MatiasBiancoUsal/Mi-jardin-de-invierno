@@ -9,6 +9,7 @@ public class PlantaSeleccionable : MonoBehaviour
 
     private Transform puntoActual = null;
     private Estante estanteActual = null;
+    private PuntoDePlantado puntoDePisoActual = null;
 
     void Start()
     {
@@ -26,18 +27,28 @@ public class PlantaSeleccionable : MonoBehaviour
         rend.material.color = colorOriginal;
     }
 
-    public void MoverA(Transform nuevoPunto, Estante nuevoEstante)
+    public void MoverA(Transform nuevoPunto, Estante nuevoEstante = null, PuntoDePlantado nuevoPuntoDePiso = null)
     {
-        // Liberar punto anterior si había
+        // liberar estante anterior si había
         if (estanteActual != null && puntoActual != null)
         {
             estanteActual.LiberarPunto(puntoActual);
         }
 
-        // Mover y asignar
+        // Liberar punto de piso anterior si había
+        if (puntoDePisoActual != null)
+        {
+            puntoDePisoActual.ocupado = false;
+        }
+
+        //Mover planta
         transform.position = nuevoPunto.position;
+
+        // Guardar nueva ubicación
         puntoActual = nuevoPunto;
         estanteActual = nuevoEstante;
+        puntoDePisoActual = nuevoPuntoDePiso;
+
         Deseleccionar();
     }
 }
