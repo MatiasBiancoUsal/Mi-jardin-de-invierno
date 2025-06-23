@@ -2,17 +2,20 @@ using UnityEngine;
 
 public class MostrarMaceta : MonoBehaviour
 {
-    public GameObject maceta;
+    public string nombreObjeto;    
+    public GameObject maceta;       
 
     void Start()
     {
-        if (EstadoObjetosEscena.mostrarMacetaEnInvernadero && maceta != null)
+        if (PlayerPrefs.GetInt(nombreObjeto + "_Comprado", 0) == 1)
         {
-            maceta.SetActive(true);
+            if (maceta != null)
+                maceta.SetActive(true);
         }
         else
         {
-            maceta.SetActive(false);
+            if (maceta != null)
+                maceta.SetActive(false);
         }
     }
 }

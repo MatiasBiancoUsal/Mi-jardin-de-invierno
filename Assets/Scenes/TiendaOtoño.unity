@@ -1022,7 +1022,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 139231302}
   "botonA\xF1adido": {fileID: 621764545}
-  nombreObjeto: Maceta ind
+  nombreObjeto: macetaa
+--- !u!1 &150562955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 150562957}
+  - component: {fileID: 150562956}
+  m_Layer: 0
+  m_Name: ResetManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &150562956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150562955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b18af832f6c00419011bcd9fb69aef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teclaReset: 114
+--- !u!4 &150562957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150562955}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.21767, y: 1.179807, z: 1.6279018}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178171803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2338,7 +2383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 486532973}
   "botonA\xF1adido": {fileID: 958756351}
-  nombreObjeto: violeta
+  nombreObjeto: macetab
 --- !u!1 &491889456
 GameObject:
   m_ObjectHideFlags: 0
@@ -8126,3 +8171,4 @@ SceneRoots:
   - {fileID: 178171806}
   - {fileID: 1445290736}
   - {fileID: 44255350}
+  - {fileID: 150562957}
