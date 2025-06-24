@@ -5,7 +5,7 @@ public class Volver : MonoBehaviour
 {
     public void VolverAEscenaPrincipal()
     {
-        SceneManager.LoadScene("PantallaInicio"); // ← Usa el nombre real de tu escena
+        SceneManager.LoadScene("Intro"); // ← Usa el nombre real de tu escena
     }
 
     public void MostrarControles()
