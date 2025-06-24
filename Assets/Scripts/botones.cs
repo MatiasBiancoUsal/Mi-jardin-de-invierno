@@ -24,7 +24,7 @@ public Button semillas;
        public void EscenaJuego()
 
     {
-        SceneManager.LoadScene("Invernadero");
+        SceneManager.LoadScene("Intro");
     }
 
     public void CargarNivel(string NombreNivel)
