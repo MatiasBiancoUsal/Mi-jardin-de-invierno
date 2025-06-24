@@ -32,4 +32,9 @@ public class ContadorPetalo : MonoBehaviour
         if (textoContadorPetalos != null)
             textoContadorPetalos.text = $"{contadorPetalos}";
     }
+
+    public int CantidadPetalos()
+    {
+        return contadorPetalos;
+    }
 }
