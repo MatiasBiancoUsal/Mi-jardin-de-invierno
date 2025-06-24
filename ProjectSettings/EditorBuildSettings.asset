@@ -39,13 +39,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Inventario Verano.unity
     guid: ecf69b929582acb49ab6d7666b7d58c6
   - enabled: 1
-    path: Assets/Scenes/Invernaderos/Invierno.unity
+    path: Assets/Scenes/Invernaderos/I.unity
     guid: 709c2bb430cd22f4faaec480f741cd3d
   - enabled: 1
-    path: "Assets/Scenes/Invernaderos/Oto\xF1o.unity"
+    path: Assets/Scenes/Invernaderos/O.unity
     guid: 33f3b926ab7981445b3515369ddde846
   - enabled: 1
-    path: Assets/Scenes/Invernaderos/Primavera.unity
+    path: Assets/Scenes/Invernaderos/P.unity
     guid: 5114116cdef180741a045d74e47d28b2
   - enabled: 1
     path: Assets/Scenes/Invernaderos/Verano.unity
