@@ -11326,6 +11326,7 @@ GameObject:
   - component: {fileID: 1791240362}
   - component: {fileID: 1791240363}
   - component: {fileID: 1791240364}
+  - component: {fileID: 1791240365}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -11413,6 +11414,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoContadorPetalos: {fileID: 118210516}
+--- !u!114 &1791240365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791240358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9eb29d53a3286a14cbbe29a1733962eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  petalosNecesarios: 3
+  nombreEscenaSiguiente: 
 --- !u!1 &1794622036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
