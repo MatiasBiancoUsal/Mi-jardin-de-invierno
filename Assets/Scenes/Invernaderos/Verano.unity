@@ -3037,7 +3037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObjeto: macetaa
+  nombreObjeto: suculenta
   maceta: {fileID: 520773660}
 --- !u!114 &520773669
 MonoBehaviour:
@@ -3052,6 +3052,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetoNuevo: {fileID: 1794622036}
+  nombreObjeto: suculenta
   tiempoEspera: 23
 --- !u!1001 &521238052
 PrefabInstance:
