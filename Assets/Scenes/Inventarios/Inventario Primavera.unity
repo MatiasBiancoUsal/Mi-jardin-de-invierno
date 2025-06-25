@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344c9f7e6a010304ab2c3773d1bac7fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Primavera
+  nombreEscena: Verano
 --- !u!114 &1830630285
 MonoBehaviour:
   m_ObjectHideFlags: 0

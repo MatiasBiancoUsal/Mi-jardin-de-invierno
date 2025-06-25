@@ -8,6 +8,6 @@ public class IraInventario : MonoBehaviour
 
     public void IrAEscena()
     {
-        SceneManager.LoadScene("Inventario Otoño");
+        SceneManager.LoadScene("Inventario Invierno");
     }
 }

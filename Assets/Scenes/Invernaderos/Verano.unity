@@ -3967,7 +3967,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 676713154}
-        m_TargetAssemblyTypeName: IraInventario, Assembly-CSharp
+        m_TargetAssemblyTypeName: CambiarEscena, Assembly-CSharp
         m_MethodName: IrAEscena
         m_Mode: 1
         m_Arguments:
@@ -4025,9 +4025,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 676713149}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa49c10baf78647469f382d9e8c7f0e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 344c9f7e6a010304ab2c3773d1bac7fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombreEscena: Inventario Verano
 --- !u!1 &688831229 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8dfd4e7e8a2464543a6a7c384d271edb, type: 3}
