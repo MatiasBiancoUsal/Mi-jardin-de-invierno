@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 139231302}
   "botonA\xF1adido": {fileID: 621764545}
-  nombreObjeto: 
+  nombreObjeto: Inviernouno
 --- !u!1 &178171803
 GameObject:
   m_ObjectHideFlags: 0
@@ -1690,7 +1690,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 382786191}
   "botonA\xF1adido": {fileID: 1230461136}
-  nombreObjeto: 
+  nombreObjeto: Inviernouno
 --- !u!114 &382786191
 MonoBehaviour:
   m_ObjectHideFlags: 0

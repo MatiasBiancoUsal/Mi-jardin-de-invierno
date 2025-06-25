@@ -6010,7 +6010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetoNuevo: {fileID: 1794622036}
-  nombreObjeto: 
+  nombreObjeto: macetaa
   tiempoEspera: 23
 --- !u!1001 &521238052
 PrefabInstance:
@@ -10895,7 +10895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 980703708}
   "botonA\xF1adido": {fileID: 209362219}
-  nombreObjeto: 
+  nombreObjeto: macetaa
 --- !u!114 &980703708
 MonoBehaviour:
   m_ObjectHideFlags: 0
