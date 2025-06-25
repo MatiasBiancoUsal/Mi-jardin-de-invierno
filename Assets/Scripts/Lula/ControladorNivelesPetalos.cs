@@ -14,13 +14,13 @@ public class ControladorNivelesPetalos : MonoBehaviour
         if (ContadorPetalo.instancia != null &&
             ContadorPetalo.instancia.CantidadPetalos() >= petalosNecesarios)
         {
-            CambiarDeNivel();
+           // CambiarDeNivel();
         }
     }
 
-    void CambiarDeNivel()
-    {
-        Debug.Log($"✅ Se recolectaron {petalosNecesarios} pétalos. Cargando: {nombreEscenaSiguiente}");
-        SceneManager.LoadScene(nombreEscenaSiguiente);
-    }
+   // void CambiarDeNivel()
+  //  {
+    //    Debug.Log($"✅ Se recolectaron {petalosNecesarios} pétalos. Cargando: {nombreEscenaSiguiente}");
+    //    SceneManager.LoadScene(nombreEscenaSiguiente);
+    //}
 }

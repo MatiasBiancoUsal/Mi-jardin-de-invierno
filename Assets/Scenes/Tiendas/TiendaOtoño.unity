@@ -2383,7 +2383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 486532973}
   "botonA\xF1adido": {fileID: 958756351}
-  nombreObjeto: macetab
+  nombreObjeto: MB
 --- !u!1 &491889456
 GameObject:
   m_ObjectHideFlags: 0
@@ -7309,7 +7309,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Invernadero
+          m_StringArgument: "Oto\xF1o"
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1805653359
