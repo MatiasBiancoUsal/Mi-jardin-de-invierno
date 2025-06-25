@@ -4,6 +4,51 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 3eef543652178834d8c7f44936053823
+  - enabled: 1
+    path: Assets/Scenes/PantallaInicio.unity
+    guid: 8ffa0d051015bac48a0e545901ddab0f
+  - enabled: 1
+    path: Assets/Scenes/Plantilla de Controles.unity
+    guid: 7bd84a6e9f2b6a445b3ed18b8a9fc303
+  - enabled: 1
+    path: Assets/Scenes/Invernaderos/Invierno.unity
+    guid: 35c8415124b366446b7309a3548ec988
+  - enabled: 1
+    path: "Assets/Scenes/Invernaderos/Oto\xF1o.unity"
+    guid: 469f016186208e047962716a7f44ad01
+  - enabled: 1
+    path: Assets/Scenes/Invernaderos/Primavera.unity
+    guid: 5aeef97945959654d89ea40c8e73738a
+  - enabled: 1
+    path: Assets/Scenes/Invernaderos/Verano.unity
+    guid: 0286ba4d3d34262448adbe999bb64ab7
+  - enabled: 1
+    path: Assets/Scenes/Inventarios/Inventario Invierno.unity
+    guid: 3c8f5f7516564db40b12067788642366
+  - enabled: 1
+    path: "Assets/Scenes/Inventarios/Inventario Oto\xF1o.unity"
+    guid: 2372aebc80c28044ab6d3d77109a9ea1
+  - enabled: 1
+    path: Assets/Scenes/Inventarios/Inventario Primavera.unity
+    guid: 9e178879cd5d3ed4a8c8aff528d9b3c1
+  - enabled: 1
+    path: Assets/Scenes/Inventarios/Inventario Verano.unity
+    guid: 36b33e0ee5418e248bb7f00e07604560
+  - enabled: 1
+    path: Assets/Scenes/Tiendas/TiendaInvierno.unity
+    guid: 5343a3c81cffa1841b4bd1d3425d0587
+  - enabled: 1
+    path: "Assets/Scenes/Tiendas/TiendaOto\xF1o.unity"
+    guid: 03d45d63f80d92441ad7dc9955f8db78
+  - enabled: 1
+    path: Assets/Scenes/Tiendas/TiendaPrimavera.unity
+    guid: b4aa7638abf99a447b67221dbb6ff3b0
+  - enabled: 1
+    path: Assets/Scenes/Tiendas/TiendaVerano.unity
+    guid: 4c9b84eeddaec4d47af814f1deb8a8a9
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
