@@ -338,13 +338,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582e14f1537d0314db51f03d1716c686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Luz: 0
+  Sol: 0
   Agua: 0
   Abono: 0
   TiempoFelicidad: 10
   ContadorFelicidad: 0
   EnMantenimiento: 0
-  LuzMaxima: 1
   AguaMaxima: 1
   AbonoMaximo: 1
   FelicidadMaxima: 3
@@ -353,6 +352,9 @@ MonoBehaviour:
   textoAbono: {fileID: 0}
   Semilla: {fileID: 4515125560230319748}
   Petalo: {fileID: 6080163758567086830}
+  cantidadDeSol: 0
+  solMaximo: 100
+  velocidadGananciaSol: 5
 --- !u!114 &721928825602264808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -365,8 +367,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba0085c2e271e84b96bcfadb8d05223, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Regadera: {fileID: 3838908838406289959}
   Abono: {fileID: 1571328174582809596}
+  Regadera: {fileID: 3838908838406289959}
+  planta: {fileID: 333255889306756229}
+  duracionAnimacion: 2.6
 --- !u!114 &6373764130766578866
 MonoBehaviour:
   m_ObjectHideFlags: 0

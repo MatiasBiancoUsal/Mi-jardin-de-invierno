@@ -5,8 +5,14 @@ using UnityEngine;
 
 public class ActivarHerramientas : MonoBehaviour
 {
-    public GameObject Regadera;
     public GameObject Abono;
+
+    [Header("Referencias")]
+    public GameObject Regadera;   
+    public Planta planta;          
+
+    [Header("Configuración")]
+    public float duracionAnimacion = 2.6f;
 
 
 
@@ -14,14 +20,9 @@ public class ActivarHerramientas : MonoBehaviour
     // Update is called once per frame
     void OnMouseDown()
     {
-        if (SistemaDePlantas.instancia.ModoRiego)
+        if (SistemaDePlantas.instancia.ModoRiego && Regadera != null && planta != null)
         {
-            Regadera.SetActive(true);
-        }
-
-       else
-        {
-            Regadera.SetActive(false);
+            StartCoroutine(RegarAutomaticamente());
         }
 
 
@@ -34,5 +35,20 @@ public class ActivarHerramientas : MonoBehaviour
         {
             Abono.SetActive(false);
         }
+    }
+
+    private IEnumerator RegarAutomaticamente()
+    {
+     
+        Regadera.SetActive(true);
+
+        
+        yield return new WaitForSeconds(duracionAnimacion);
+
+ 
+        planta.SubirAgua();
+
+     
+        Regadera.SetActive(false);
     }
 }
