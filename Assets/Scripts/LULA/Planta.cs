@@ -8,14 +8,14 @@ namespace Assets.Scripts.Lula
 {
     public class Planta : MonoBehaviour
     {
-        public int Luz;
+        public int Sol;
         public int Agua;
         public int Abono;
         public float TiempoFelicidad;
         public int ContadorFelicidad;
         public bool EnMantenimiento;
 
-        public int LuzMaxima;
+        //public int SolMaxima;
         public int AguaMaxima;
         public int AbonoMaximo;
         public int FelicidadMaxima = 3;
@@ -29,10 +29,14 @@ namespace Assets.Scripts.Lula
         public GameObject Petalo;               
         private bool yaTiroPetalo = false;
 
+        public float cantidadDeSol = 0f;
+        public float solMaximo = 100f;
+        public float velocidadGananciaSol = 5f; // Cuánto sol gana por segundo
+
 
         public void Start()
         {
-            Luz = 0;
+            Sol = 0;
             Agua = 0;
             Abono = 0;
             ContadorFelicidad = 0;
@@ -62,14 +66,14 @@ namespace Assets.Scripts.Lula
 
         }
 
-        public void SubirLuz()
+        public void SubirSol()
         {
             if (EstaFeliz()) return;
-            if (Luz == LuzMaxima) return;
+            if (Sol == solMaximo) return;
 
             if (!EnMantenimiento) return;
 
-            Luz += 1;
+            Sol += 1;
             CheckearFelicidad();
         }
 
@@ -101,6 +105,27 @@ namespace Assets.Scripts.Lula
 
         public void Update()
         {
+
+            Debug.DrawRay(transform.position + Vector3.up * 0.1f, Vector3.down * 2f, Color.yellow);
+
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position + Vector3.up * 0.1f, Vector3.down, out hit, 2f))
+            {
+                ZonaDeSol zona = hit.collider.GetComponent<ZonaDeSol>();
+                if (zona != null)
+                {
+                    if (zona != null)
+                    {
+                        if (Sol < solMaximo)
+                        {
+                            Sol += Mathf.RoundToInt(velocidadGananciaSol * Time.deltaTime);
+                            Sol = Mathf.Min(Sol, (int)solMaximo);
+                            ActualizarTextos(); // si querés que se actualice el texto
+                        }
+                    }
+                }
+            }
+
             if (EstaFeliz()) return;
             if (EnMantenimiento) return;
 
@@ -110,7 +135,7 @@ namespace Assets.Scripts.Lula
                 TiempoFelicidad = 0;
                 Agua = 0;
                 Abono = 0;
-                Luz = 0;
+                Sol = 0;
                 EnMantenimiento = true;
 
                 ActualizarTextos();
