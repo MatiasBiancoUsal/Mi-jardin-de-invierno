@@ -111,17 +111,19 @@ namespace Assets.Scripts.Lula
             RaycastHit hit;
             if (Physics.Raycast(transform.position + Vector3.up * 0.1f, Vector3.down, out hit, 2f))
             {
+                Debug.Log("Raycast tocó: " + hit.collider.name);
+
                 ZonaDeSol zona = hit.collider.GetComponent<ZonaDeSol>();
                 if (zona != null)
                 {
-                    if (zona != null)
+                    Debug.Log("Zona de sol detectada");
+
+                    if (Sol < solMaximo)
                     {
-                        if (Sol < solMaximo)
-                        {
-                            Sol += Mathf.RoundToInt(velocidadGananciaSol * Time.deltaTime);
-                            Sol = Mathf.Min(Sol, (int)solMaximo);
-                            ActualizarTextos(); // si querés que se actualice el texto
-                        }
+                        Debug.Log("Sumando sol...");
+                        Sol += Mathf.RoundToInt(velocidadGananciaSol * Time.deltaTime);
+                        Sol = Mathf.Min(Sol, (int)solMaximo);
+                        ActualizarTextos();
                     }
                 }
             }
