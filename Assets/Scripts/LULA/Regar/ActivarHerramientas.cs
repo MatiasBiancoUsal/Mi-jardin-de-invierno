@@ -5,50 +5,52 @@ using UnityEngine;
 
 public class ActivarHerramientas : MonoBehaviour
 {
-    public GameObject Abono;
-
     [Header("Referencias")]
-    public GameObject Regadera;   
-    public Planta planta;          
+    public GameObject Regadera;
+    public GameObject Abono;
+    public Planta planta;
 
     [Header("Configuración")]
-    public float duracionAnimacion = 2.6f;
+    public float duracionAnimacionRiego = 2.6f;
+    public float duracionAnimacionAbono = 2.6f;
 
-
-
-
-    // Update is called once per frame
     void OnMouseDown()
     {
+        // Riego automático
         if (SistemaDePlantas.instancia.ModoRiego && Regadera != null && planta != null)
         {
             StartCoroutine(RegarAutomaticamente());
         }
 
-
-        if (SistemaDePlantas.instancia.ModoAbono)
+        // Abono automático
+        if (SistemaDePlantas.instancia.ModoAbono && Abono != null && planta != null)
         {
-            Abono.SetActive(true);
+            StartCoroutine(AbonarAutomaticamente());
         }
 
-        else
-        {
-            Abono.SetActive(false);
-        }
     }
 
     private IEnumerator RegarAutomaticamente()
     {
-     
         Regadera.SetActive(true);
 
-        
-        yield return new WaitForSeconds(duracionAnimacion);
+        yield return new WaitForSeconds(duracionAnimacionRiego);
 
- 
+        planta.EnMantenimiento = true; // Nos aseguramos que acepte el riego
         planta.SubirAgua();
 
-     
         Regadera.SetActive(false);
+    }
+
+    private IEnumerator AbonarAutomaticamente()
+    {
+        Abono.SetActive(true);
+
+        yield return new WaitForSeconds(duracionAnimacionAbono);
+
+        planta.EnMantenimiento = true; // Nos aseguramos que acepte el abono
+        planta.SubirAbono();
+
+        Abono.SetActive(false);
     }
 }

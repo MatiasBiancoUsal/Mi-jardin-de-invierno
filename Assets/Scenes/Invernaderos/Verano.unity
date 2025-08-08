@@ -6623,6 +6623,10 @@ PrefabInstance:
       propertyPath: planta
       value: 
       objectReference: {fileID: 1745359582}
+    - target: {fileID: 721928825602264808, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: duracionAnimacionAbono
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.89

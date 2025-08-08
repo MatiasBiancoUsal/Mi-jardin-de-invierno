@@ -41,6 +41,8 @@ namespace Assets.Scripts.Lula
             Abono = 0;
             ContadorFelicidad = 0;
             TiempoFelicidad = 0;
+
+            ActualizarTextos();
         }
 
         public void SubirAgua()
