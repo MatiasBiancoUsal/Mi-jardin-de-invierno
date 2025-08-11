@@ -4361,7 +4361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 400354880}
   "botonA\xF1adido": {fileID: 113831697}
-  nombreObjeto: 
+  nombreObjeto: hibiscus
 --- !u!114 &400354880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21641,6 +21641,179 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1aed8195a09054b478f3839b080c88d7, type: 3}
   m_PrefabInstance: {fileID: 2083378893}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2084470030
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.89
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.107
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.34
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_Name
+      value: mac hibiscus
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2084470034}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2084470033}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2084470032}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2084470036}
+  m_SourcePrefab: {fileID: 100100000, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+--- !u!1 &2084470031 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f6705d21e3ae2e1428213fc4265db36b, type: 3}
+  m_PrefabInstance: {fileID: 2084470030}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2084470032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084470031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoNuevo: {fileID: 0}
+  nombreObjeto: hibiscus
+  tiempoEspera: 14
+--- !u!114 &2084470033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084470031}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObjeto: hibiscus
+  maceta: {fileID: 2084470031}
+--- !u!64 &2084470034
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084470031}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!23 &2084470036
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084470031}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &2097792044
 GameObject:
   m_ObjectHideFlags: 0
@@ -22353,3 +22526,4 @@ SceneRoots:
   - {fileID: 171921513}
   - {fileID: 1046118303}
   - {fileID: 242917088}
+  - {fileID: 2084470030}
