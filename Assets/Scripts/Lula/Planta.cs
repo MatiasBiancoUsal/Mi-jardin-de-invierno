@@ -15,6 +15,8 @@ namespace Assets.Scripts.Lula
         public int ContadorFelicidad;
         public bool EnMantenimiento;
 
+        public GameObject particulasRosas;
+
         //public int SolMaxima;
         public int AguaMaxima;
         public int AbonoMaximo;
@@ -100,8 +102,13 @@ namespace Assets.Scripts.Lula
                     if (Petalo != null)
                         Petalo.SetActive(true);
 
+                    if (particulasRosas != null)
+                        particulasRosas.SetActive(false);
+
                     Debug.Log("🌸 La planta alcanzó su FELICIDAD MÁXIMA. ¡Pétalo activado!");
                 }
+
+
             }
         }
 
