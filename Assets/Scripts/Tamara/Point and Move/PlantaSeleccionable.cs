@@ -4,29 +4,67 @@ using UnityEngine;
 
 public class PlantaSeleccionable : MonoBehaviour
 {
+    [Header("Efecto de selección")]
+    [SerializeField] private GameObject halo; // arrastrar aquí el Quad/Sphere hijo con el material emissive
+
     private Renderer rend;
     private Color colorOriginal;
+    private bool isSelected = false;
 
+    // Tu estado de posicionamiento
     private Transform puntoActual = null;
     private Estante estanteActual = null;
     private PuntoDePlantado puntoDePisoActual = null;
 
-    void Start()
+    void Awake()
     {
+        // Busca Renderer en este objeto o en hijos
         rend = GetComponent<Renderer>();
-        colorOriginal = rend.material.color;
+        if (rend == null) rend = GetComponentInChildren<Renderer>();
+
+        if (rend != null)
+        {
+            // Instanciamos el material para no modificar sharedMaterial de otras plantas
+            rend.material = new Material(rend.material);
+            colorOriginal = rend.material.color;
+        }
+        else
+        {
+            Debug.LogWarning($"[{name}] No se encontró Renderer en este objeto ni en sus hijos.");
+        }
+
+        if (halo != null) halo.SetActive(false); // asegurar que empieza desactivado
+    }
+
+    // Opcional: seleccionar con clic (necesita Collider)
+    void OnMouseDown()
+    {
+        // Si querés un comportamiento "una selección a la vez", usa un SelectionManager externo
+        ToggleSeleccion();
     }
 
     public void Seleccionar()
     {
-        rend.material.color = Color.green;
+        isSelected = true;
+        if (rend != null) rend.material.color = Color.green;
+        if (halo != null) halo.SetActive(true);
+        Debug.Log(name + " seleccionada");
     }
 
     public void Deseleccionar()
     {
-        rend.material.color = colorOriginal;
+        isSelected = false;
+        if (rend != null) rend.material.color = colorOriginal;
+        if (halo != null) halo.SetActive(false);
+        Debug.Log(name + " deseleccionada");
     }
 
+    public void ToggleSeleccion()
+    {
+        if (isSelected) Deseleccionar(); else Seleccionar();
+    }
+
+    // Tu método MoverA (copié el tuyo y lo dejé igual)
     public void MoverA(Transform nuevoPunto, Estante nuevoEstante = null, PuntoDePlantado nuevoPuntoDePiso = null)
     {
         // liberar estante anterior si había
