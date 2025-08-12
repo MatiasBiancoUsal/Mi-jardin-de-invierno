@@ -39,8 +39,11 @@ public class PlantaSeleccionable : MonoBehaviour
     // Opcional: seleccionar con clic (necesita Collider)
     void OnMouseDown()
     {
-        // Si querés un comportamiento "una selección a la vez", usa un SelectionManager externo
-        ToggleSeleccion();
+        // Si ya está seleccionada, no hacer nada (mantener halo)
+        if (isSelected)
+            return;
+
+        Seleccionar();
     }
 
     public void Seleccionar()
