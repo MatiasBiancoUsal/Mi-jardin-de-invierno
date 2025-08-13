@@ -1286,6 +1286,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
       value: Suculenta (1)
@@ -2215,6 +2219,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 190825082}
+  - component: {fileID: 190825084}
+  - component: {fileID: 190825083}
   m_Layer: 8
   m_Name: puntoParaPlanta
   m_TagString: Untagged
@@ -2237,6 +2243,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1136483038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &190825083
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190825081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.58, y: 0.46, z: 0.62}
+  m_Center: {x: 0, y: -0.32, z: 0}
+--- !u!114 &190825084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190825081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47fd7dce5f57034ab4e18e53a2416e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &198194595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2675,6 +2714,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 252345943}
+  - component: {fileID: 252345945}
+  - component: {fileID: 252345944}
   m_Layer: 8
   m_Name: puntoParaPlanta (1)
   m_TagString: Untagged
@@ -2697,6 +2738,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1136483038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &252345944
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252345942}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.58, y: 0.46, z: 0.62}
+  m_Center: {x: 0, y: -0.32, z: 0}
+--- !u!114 &252345945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252345942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47fd7dce5f57034ab4e18e53a2416e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &261509262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5797,12 +5871,20 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: cantidadDeSol
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: TiempoFelicidad
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: DuracionFelicidad
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: velocidadGananciaSol
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 561316115182392660, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoContadorSemillas
@@ -5846,6 +5928,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4372106332514392824, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -6446,6 +6532,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 657751203}
+  - component: {fileID: 657751205}
+  - component: {fileID: 657751204}
   m_Layer: 8
   m_Name: puntoParaPlanta (4)
   m_TagString: Untagged
@@ -6468,6 +6556,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1136483038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &657751204
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657751202}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.58, y: 0.46, z: 0.62}
+  m_Center: {x: 0, y: -0.32, z: 0}
+--- !u!114 &657751205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657751202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47fd7dce5f57034ab4e18e53a2416e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &659437764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6787841564155477449, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
@@ -7535,6 +7656,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4372106332514392824, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -8688,6 +8813,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
       value: Pensamiento
@@ -9389,6 +9518,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 913928864}
+  - component: {fileID: 913928866}
+  - component: {fileID: 913928865}
   m_Layer: 8
   m_Name: puntoParaPlanta (3)
   m_TagString: Untagged
@@ -9411,6 +9542,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1136483038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &913928865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913928863}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.58, y: 0.46, z: 0.62}
+  m_Center: {x: 0, y: -0.32, z: 0}
+--- !u!114 &913928866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913928863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47fd7dce5f57034ab4e18e53a2416e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &924127825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17475,6 +17639,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
