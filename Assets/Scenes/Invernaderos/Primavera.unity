@@ -1696,6 +1696,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 190825082}
+  - component: {fileID: 190825084}
+  - component: {fileID: 190825083}
   m_Layer: 8
   m_Name: puntoParaPlanta
   m_TagString: Untagged
@@ -1718,6 +1720,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1136483038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &190825083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190825081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47fd7dce5f57034ab4e18e53a2416e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &190825084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190825081}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.58, y: 0.46, z: 0.62}
+  m_Center: {x: 0, y: -0.32, z: 0}
 --- !u!1 &195147022 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4e6e23512221738408a7baee27ed9974, type: 3}
@@ -2441,6 +2476,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 252345943}
+  - component: {fileID: 252345945}
+  - component: {fileID: 252345944}
   m_Layer: 8
   m_Name: puntoParaPlanta (1)
   m_TagString: Untagged
@@ -2463,6 +2500,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1136483038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &252345944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252345942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47fd7dce5f57034ab4e18e53a2416e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &252345945
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252345942}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.58, y: 0.46, z: 0.62}
+  m_Center: {x: 0, y: -0.32, z: 0}
 --- !u!1001 &261509262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3595,6 +3665,17 @@ Transform:
   - {fileID: 2102737787}
   m_Father: {fileID: 927731523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &368845642 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3774854549345138097, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 2051846101}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a1174d84afa547af15c36809b74a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &380688903 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52d62097ca2d569499f2b8fb5ca64f7c, type: 3}
@@ -4236,6 +4317,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b80c6ccaf71038642ba903466ec9093d, type: 3}
   m_PrefabInstance: {fileID: 511014828}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &450974846 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3774854549345138097, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 2002084196}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a1174d84afa547af15c36809b74a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &457280343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5973,6 +6065,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: cantidadDeSol
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: FelicidadMaxima
       value: 1
       objectReference: {fileID: 0}
@@ -5982,6 +6078,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: DuracionFelicidad
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: velocidadGananciaSol
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 561316115182392660, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -6028,6 +6128,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4372106332514392824, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Size.x
       value: 0.42
@@ -6068,6 +6172,10 @@ PrefabInstance:
       propertyPath: cartelMensaje
       value: 
       objectReference: {fileID: 1017599348}
+    - target: {fileID: 8460384598367867102, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: barraUI
+      value: 
+      objectReference: {fileID: 1036394165}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -6536,6 +6644,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 657751203}
+  - component: {fileID: 657751205}
+  - component: {fileID: 657751204}
   m_Layer: 8
   m_Name: puntoParaPlanta (4)
   m_TagString: Untagged
@@ -6558,6 +6668,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1136483038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &657751204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657751202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47fd7dce5f57034ab4e18e53a2416e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &657751205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 657751202}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.58, y: 0.46, z: 0.62}
+  m_Center: {x: 0, y: -0.32, z: 0}
 --- !u!4 &659437764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6787841564155477449, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
@@ -7351,6 +7494,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706126042}
   m_CullTransparentMesh: 0
+--- !u!114 &710945443 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3774854549345138097, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 758600536}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a1174d84afa547af15c36809b74a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &715818870
 GameObject:
   m_ObjectHideFlags: 0
@@ -7733,6 +7887,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: cantidadDeSol
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: FelicidadMaxima
       value: 1
       objectReference: {fileID: 0}
@@ -7742,6 +7900,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: DuracionFelicidad
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: velocidadGananciaSol
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 561316115182392660, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -7788,6 +7950,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4372106332514392824, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Size.x
       value: 0.42
@@ -7828,6 +7994,10 @@ PrefabInstance:
       propertyPath: cartelMensaje
       value: 
       objectReference: {fileID: 1017599348}
+    - target: {fileID: 8460384598367867102, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: barraUI
+      value: 
+      objectReference: {fileID: 710945443}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -8587,11 +8757,19 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: cantidadDeSol
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: TiempoFelicidad
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: DuracionFelicidad
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: velocidadGananciaSol
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 561316115182392660, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -8638,6 +8816,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
       value: Pensamiento
@@ -8658,6 +8840,10 @@ PrefabInstance:
       propertyPath: cartelMensaje
       value: 
       objectReference: {fileID: 1017599348}
+    - target: {fileID: 8460384598367867102, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: barraUI
+      value: 
+      objectReference: {fileID: 368845642}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -9405,6 +9591,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 913928864}
+  - component: {fileID: 913928866}
+  - component: {fileID: 913928865}
   m_Layer: 8
   m_Name: puntoParaPlanta (3)
   m_TagString: Untagged
@@ -9427,6 +9615,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1136483038}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &913928865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913928863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f47fd7dce5f57034ab4e18e53a2416e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &913928866
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913928863}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.58, y: 0.46, z: 0.62}
+  m_Center: {x: 0, y: -0.32, z: 0}
 --- !u!1 &919513364
 GameObject:
   m_ObjectHideFlags: 0
@@ -11242,6 +11463,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1033181427}
   m_CullTransparentMesh: 1
+--- !u!114 &1036394165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3774854549345138097, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 578232562}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a1174d84afa547af15c36809b74a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1036495222
 GameObject:
   m_ObjectHideFlags: 0
@@ -18501,6 +18733,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1791097091 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3774854549345138097, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 1942091501}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6a1174d84afa547af15c36809b74a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1791240358
 GameObject:
   m_ObjectHideFlags: 0
@@ -18510,6 +18753,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1791240360}
+  - component: {fileID: 1791240366}
   - component: {fileID: 1791240359}
   - component: {fileID: 1791240361}
   - component: {fileID: 1791240362}
@@ -18625,6 +18869,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   petalosNecesarios: 6
   nombreEscenaSiguiente: Inventario Primavera
+--- !u!114 &1791240366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791240358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af76ae6b89dc874cafe9817fdca3e52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1794622036 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -20140,6 +20396,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: cantidadDeSol
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: FelicidadMaxima
       value: 1
       objectReference: {fileID: 0}
@@ -20149,6 +20409,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: DuracionFelicidad
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: velocidadGananciaSol
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 561316115182392660, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -20195,6 +20459,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4372106332514392824, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Size.x
       value: 0.42
@@ -20235,6 +20503,10 @@ PrefabInstance:
       propertyPath: cartelMensaje
       value: 
       objectReference: {fileID: 1017599348}
+    - target: {fileID: 8460384598367867102, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: barraUI
+      value: 
+      objectReference: {fileID: 450974846}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -20504,12 +20776,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: cantidadDeSol
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: EnMantenimiento
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: FelicidadMaxima
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: velocidadGananciaSol
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 561316115182392660, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoContadorSemillas
@@ -20555,6 +20835,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
       value: Suculenta (2)
@@ -20575,6 +20859,10 @@ PrefabInstance:
       propertyPath: cartelMensaje
       value: 
       objectReference: {fileID: 1017599348}
+    - target: {fileID: 8460384598367867102, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: barraUI
+      value: 
+      objectReference: {fileID: 1791097091}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
