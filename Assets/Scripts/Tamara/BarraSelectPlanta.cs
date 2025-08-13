@@ -16,11 +16,15 @@ public class BarraSelectPlanta : MonoBehaviour
                 if (planta != null)
                 {
                     BarraSolUI nuevaBarra = planta.GetComponentInChildren<BarraSolUI>();
-                    if (barraActiva != null && barraActiva != nuevaBarra)
-                        barraActiva.Ocultar();
 
-                    barraActiva = nuevaBarra;
-                    barraActiva.Mostrar();
+                    if (nuevaBarra != null) //Solo si existe la barra
+                    {
+                        if (barraActiva != null && barraActiva != nuevaBarra)
+                            barraActiva.Ocultar();
+
+                        barraActiva = nuevaBarra;
+                        barraActiva.Mostrar();
+                    }
                 }
                 else if (barraActiva != null)
                 {
