@@ -1,33 +1,46 @@
+using Assets.Scripts.Lula;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class BarraSolUI : MonoBehaviour
 {
-    [SerializeField] private Slider barraSol; // Asigná el Slider desde el inspector
-    [SerializeField] private Canvas canvasUI; // El Canvas hijo de la planta
-    private PlantaConSol planta;
+    [SerializeField] private Slider barraSol;     // El slider que representa el sol
+    private Planta planta;                        // Referencia a la planta
 
-    private void Awake()
+    void Start()
     {
-        planta = GetComponentInParent<PlantaConSol>();
-        Ocultar();
+        Ocultar(); // Arranca oculta
+    }
+    void Awake()
+    {
+        // Si no arrastraste el slider en el inspector, lo busca automáticamente
+        if (barraSol == null)
+            barraSol = GetComponentInChildren<Slider>(true);
+
+        // Busca el script Planta en el padre
+        planta = GetComponentInParent<Planta>();
     }
 
-    private void Update()
+    void Update()
     {
-        if (planta != null)
-        {
-            barraSol.value = planta.Sol / planta.solMaximo;
-        }
+        if (planta == null || barraSol == null) return;
+
+        // Configuración del slider
+        barraSol.minValue = 0f;
+        barraSol.maxValue = (planta.solMaximo <= 0f) ? 1f : planta.solMaximo;
+        barraSol.wholeNumbers = false;
+
+        // Actualiza el valor
+        barraSol.value = Mathf.Clamp(planta.Sol, 0f, barraSol.maxValue);
     }
 
     public void Mostrar()
     {
-        canvasUI.enabled = true;
+        gameObject.SetActive(true);
     }
 
     public void Ocultar()
     {
-        canvasUI.enabled = false;
+        gameObject.SetActive(false);
     }
 }

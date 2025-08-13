@@ -2,21 +2,20 @@ using UnityEngine;
 
 public class PlantaConSol : MonoBehaviour
 {
-    public float Sol = 0;
-    public float solMaximo = 100;
+    public float Sol;
+    public float solMaximo = 100f;
 
-    private static BarraSolUI barraActiva;
+    [SerializeField] private BarraSolUI barraUI;
 
-    [SerializeField] private BarraSolUI barraUI; // Arrastrás el script de la barra desde el inspector
-
-    private void OnMouseDown()
+    void Awake()
     {
-        if (barraActiva != null && barraActiva != barraUI)
-        {
-            barraActiva.Ocultar();
-        }
+        if (barraUI == null) barraUI = GetComponentInChildren<BarraSolUI>(true);
+    }
 
-        barraUI.Mostrar();
-        barraActiva = barraUI;
+    public BarraSolUI ObtenerBarra()
+    {
+        return barraUI;
     }
 }
+
+

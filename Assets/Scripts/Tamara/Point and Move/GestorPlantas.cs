@@ -18,7 +18,7 @@ public class GestorPlantas : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1)) // clic derecho
+        if (Input.GetMouseButtonDown(0)) // clic izquierdo
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

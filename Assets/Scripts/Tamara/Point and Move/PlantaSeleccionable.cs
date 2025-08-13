@@ -51,16 +51,28 @@ public class PlantaSeleccionable : MonoBehaviour
         isSelected = true;
         if (rend != null) rend.material.color = Color.green;
         if (halo != null) halo.SetActive(true);
+
+        // NUEVO: Mostrar barra de sol
+        PlantaConSol plantaSol = GetComponent<PlantaConSol>();
+        if (plantaSol != null && plantaSol.ObtenerBarra() != null)
+        {
+            GestorBarrasSol.instancia?.MostrarSolo(plantaSol.ObtenerBarra());
+        }
+
         Debug.Log(name + " seleccionada");
     }
+
 
     public void Deseleccionar()
     {
         isSelected = false;
-        if (rend != null) rend.material.color = colorOriginal;
+        if (rend != null) rend.material.color = Color.white;
         if (halo != null) halo.SetActive(false);
-        Debug.Log(name + " deseleccionada");
+
+        // OCULTAR todas las barras
+        GestorBarrasSol.instancia?.OcultarTodas();
     }
+
 
     public void ToggleSeleccion()
     {
