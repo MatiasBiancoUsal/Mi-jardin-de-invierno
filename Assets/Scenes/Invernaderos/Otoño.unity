@@ -7068,7 +7068,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1850504193}
         m_TargetAssemblyTypeName: AnimarSemilla, Assembly-CSharp
         m_MethodName: ActivarModoPlantar
         m_Mode: 1
