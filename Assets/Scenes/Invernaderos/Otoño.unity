@@ -6814,8 +6814,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 1afd6320e7082dc4f87732e69819bf59, type: 3}
-  m_Resource: {fileID: 8300000, guid: 1afd6320e7082dc4f87732e69819bf59, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bdd3b04b69489b641a65557638699c30, type: 3}
+  m_Resource: {fileID: 8300000, guid: bdd3b04b69489b641a65557638699c30, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.21
   m_Pitch: 1
@@ -7068,7 +7068,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1850504193}
         m_TargetAssemblyTypeName: AnimarSemilla, Assembly-CSharp
         m_MethodName: ActivarModoPlantar
         m_Mode: 1
@@ -8530,7 +8530,7 @@ PrefabInstance:
       objectReference: {fileID: 2135413624}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: AguaMaxima
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoAbono
@@ -8538,10 +8538,14 @@ PrefabInstance:
       objectReference: {fileID: 566904177}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: AbonoMaximo
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: cantidadDeSol
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: FelicidadMaxima
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -8561,12 +8565,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1184303292}
     - target: {fileID: 666136132548942541, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 666136132548942541, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.47
+      value: -0.295
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.28
+      value: 9.4
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8574,7 +8582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.79
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19560,6 +19568,10 @@ PrefabInstance:
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: EnMantenimiento
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: FelicidadMaxima
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 561316115182392660, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoContadorSemillas

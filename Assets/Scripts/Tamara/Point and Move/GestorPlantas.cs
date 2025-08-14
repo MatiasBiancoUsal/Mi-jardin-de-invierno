@@ -13,7 +13,7 @@ public class GestorPlantas : MonoBehaviour
 
     void Start()
     {
-        puntosDePlantado = FindObjectsOfType<PuntoDePlantado>();
+        puntosDePlantado = FindObjectsByType<PuntoDePlantado>(FindObjectsSortMode.None);
     }
 
     void Update()
@@ -63,14 +63,19 @@ public class GestorPlantas : MonoBehaviour
         }
     }
 
-    void SeleccionarPlanta(PlantaSeleccionable nueva)
-    {
-        if (plantaSeleccionada != null)
-            plantaSeleccionada.Deseleccionar();
+ void SeleccionarPlanta(PlantaSeleccionable nueva)
+{
+    // Si ya es la misma planta seleccionada, no hacer nada
+    if (plantaSeleccionada == nueva)
+        return;
 
-        plantaSeleccionada = nueva;
-        plantaSeleccionada.Seleccionar();
-    }
+    // Si hay una planta seleccionada distinta, deseleccionarla
+    if (plantaSeleccionada != null)
+        plantaSeleccionada.Deseleccionar();
+
+    plantaSeleccionada = nueva;
+    plantaSeleccionada.Seleccionar();
+}
 
     Transform BuscarPuntoMasCercano(Vector3 posicionClick)
     {
