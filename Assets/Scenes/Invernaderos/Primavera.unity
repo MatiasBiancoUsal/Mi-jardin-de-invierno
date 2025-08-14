@@ -18837,7 +18837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aac97fe6de55ed4e985593e241f1802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoContadorSemillas: {fileID: 1184303292}
+  textoContadorSemillas: {fileID: 0}
 --- !u!114 &1791240364
 MonoBehaviour:
   m_ObjectHideFlags: 0

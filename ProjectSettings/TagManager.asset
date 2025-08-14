@@ -13,6 +13,7 @@ TagManager:
   - SnapZonePisoRotacion
   - Maceta
   - Planta
+  - TextoSemillas
   layers:
   - Default
   - TransparentFX
