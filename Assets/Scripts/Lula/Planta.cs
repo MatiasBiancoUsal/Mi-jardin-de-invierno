@@ -15,9 +15,6 @@ namespace Assets.Scripts.Lula
         public int ContadorFelicidad;
         public bool EnMantenimiento;
 
-        public GameObject particulasRosas;
-
-        //public int SolMaxima;
         public int AguaMaxima;
         public int AbonoMaximo;
         public int FelicidadMaxima = 3;
@@ -27,14 +24,13 @@ namespace Assets.Scripts.Lula
         public TMP_Text textoAbono;
 
         public GameObject Semilla;
+        public GameObject Petalo;
 
-        public GameObject Petalo;               
         private bool yaTiroPetalo = false;
 
         public float cantidadDeSol = 0f;
         public float solMaximo = 100f;
         public float velocidadGananciaSol = 5f; // Cuánto sol gana por segundo
-
 
         public void Start()
         {
@@ -67,14 +63,12 @@ namespace Assets.Scripts.Lula
             Abono += 1;
             ActualizarTextos();
             CheckearFelicidad();
-
         }
 
         public void SubirSol()
         {
             if (EstaFeliz()) return;
             if (Sol == solMaximo) return;
-
             if (!EnMantenimiento) return;
 
             Sol += 1;
@@ -102,34 +96,27 @@ namespace Assets.Scripts.Lula
                     if (Petalo != null)
                         Petalo.SetActive(true);
 
-                    if (particulasRosas != null)
-                        particulasRosas.SetActive(false);
+                    // 👉 Sumamos pétalo automáticamente al contador
+                    if (ContadorPetalo.instancia != null)
+                        ContadorPetalo.instancia.SumarPetalo();
 
                     Debug.Log("🌸 La planta alcanzó su FELICIDAD MÁXIMA. ¡Pétalo activado!");
                 }
-
-
             }
         }
 
         public void Update()
         {
-
             Debug.DrawRay(transform.position + Vector3.up * 0.1f, Vector3.down * 2f, Color.yellow);
 
             RaycastHit hit;
             if (Physics.Raycast(transform.position + Vector3.up * 0.1f, Vector3.down, out hit, 2f))
             {
-                Debug.Log("Raycast tocó: " + hit.collider.name);
-
                 ZonaDeSol zona = hit.collider.GetComponent<ZonaDeSol>();
                 if (zona != null)
                 {
-                    Debug.Log("Zona de sol detectada");
-
                     if (Sol < solMaximo)
                     {
-                        Debug.Log("Sumando sol...");
                         Sol += Mathf.RoundToInt(velocidadGananciaSol * Time.deltaTime);
                         Sol = Mathf.Min(Sol, (int)solMaximo);
                         ActualizarTextos();
@@ -160,7 +147,6 @@ namespace Assets.Scripts.Lula
 
             if (textoAbono != null)
                 textoAbono.text = $"{Abono}/{AbonoMaximo}";
-
         }
 
         public bool TieneFelicidad()
@@ -168,11 +154,9 @@ namespace Assets.Scripts.Lula
             return ContadorFelicidad > 0 && !EnMantenimiento;
         }
 
-
         public bool EstaFeliz()
         {
             return ContadorFelicidad == FelicidadMaxima;
-            
         }
     }
 }

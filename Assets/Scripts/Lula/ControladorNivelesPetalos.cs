@@ -9,18 +9,25 @@ public class ControladorNivelesPetalos : MonoBehaviour
     public int petalosNecesarios;
     public string nombreEscenaSiguiente;
 
+    [Header("Transición")]
+    public float delayCambioEscena = 2f; // ⏱ Tiempo de espera en segundos
+
+    private bool yaCambio = false; // Para evitar múltiples llamados
+
     private void Update()
     {
-        if (ContadorPetalo.instancia != null &&
+        if (!yaCambio && ContadorPetalo.instancia != null &&
             ContadorPetalo.instancia.CantidadPetalos() >= petalosNecesarios)
         {
-            CambiarDeNivel();
+            yaCambio = true;
+            StartCoroutine(CambiarDeNivelConDelay());
         }
     }
 
-   void CambiarDeNivel()
-   {
-     
+    private IEnumerator CambiarDeNivelConDelay()
+    {
+        Debug.Log("🌸 Recolectaste los pétalos necesarios. Cambio de escena en " + delayCambioEscena + "s...");
+        yield return new WaitForSeconds(delayCambioEscena);
         SceneManager.LoadScene(nombreEscenaSiguiente);
     }
 }

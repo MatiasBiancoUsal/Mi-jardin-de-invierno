@@ -3028,7 +3028,6 @@ RectTransform:
   m_Children:
   - {fileID: 1017599349}
   - {fileID: 1004170411}
-  - {fileID: 1328204795}
   - {fileID: 1149033490}
   - {fileID: 957105535}
   - {fileID: 498600496}
@@ -14364,81 +14363,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1373750816}
   m_SourcePrefab: {fileID: 100100000, guid: 24882b9e1b937a54580b99fe30de0117, type: 3}
---- !u!1 &1328204794
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1328204795}
-  - component: {fileID: 1328204797}
-  - component: {fileID: 1328204796}
-  m_Layer: 5
-  m_Name: ContadorPetalo
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1328204795
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328204794}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -905}
-  m_LocalScale: {x: 0.24, y: 0.4492308, z: 0.24}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 288925865}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 27.39, y: -9.9}
-  m_SizeDelta: {x: 20, y: 10}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1328204796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328204794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 65cf0f4fd3e3cdb4baa2dae28c66e20e, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1328204797
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328204794}
-  m_CullTransparentMesh: 1
 --- !u!1 &1333313534
 GameObject:
   m_ObjectHideFlags: 0
@@ -18850,15 +18774,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b74bcd5b42cb44b49af0faef13f2927f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  imagenFlor: {fileID: 1328204796}
-  etapasFlor:
-  - {fileID: 21300000, guid: 65cf0f4fd3e3cdb4baa2dae28c66e20e, type: 3}
-  - {fileID: 21300000, guid: b4fa0557072bb2c47a462e19a7b6f889, type: 3}
-  - {fileID: 21300000, guid: 38ec760574491524da912595343b469c, type: 3}
-  - {fileID: 21300000, guid: 3ddf99e22418aca4baa83f9a00fa79e9, type: 3}
-  - {fileID: 21300000, guid: cfe7b96f8d842e94fa1be33494bc8286, type: 3}
-  - {fileID: 21300000, guid: f74052310af02a447a27afb77ec6d5a8, type: 3}
-  - {fileID: 21300000, guid: fa07535741a269b44b274b09cddb5582, type: 3}
+  imagenFlor: {fileID: 0}
+  etapasFlor: []
 --- !u!114 &1791240365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18873,6 +18790,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   petalosNecesarios: 6
   nombreEscenaSiguiente: Inventario Primavera
+  delayCambioEscena: 2
 --- !u!114 &1791240366
 MonoBehaviour:
   m_ObjectHideFlags: 0
