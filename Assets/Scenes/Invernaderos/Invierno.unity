@@ -724,9 +724,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 408285070}
-        m_TargetAssemblyTypeName: botones, Assembly-CSharp
-        m_MethodName: CargarNivel
-        m_Mode: 5
+        m_TargetAssemblyTypeName: Botones, Assembly-CSharp
+        m_MethodName: CerrarTienda
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4603,6 +4603,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   semillas: {fileID: 0}
+  panelTienda: {fileID: 1221484997}
 --- !u!4 &411119387 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1268898811579243585, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
@@ -5393,6 +5394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   semillas: {fileID: 0}
+  panelTienda: {fileID: 0}
 --- !u!4 &509050337
 Transform:
   m_ObjectHideFlags: 0
@@ -20003,7 +20005,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aac97fe6de55ed4e985593e241f1802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoContadorSemillas: {fileID: 1184303292}
+  textosContador:
+  - {fileID: 1184303292}
 --- !u!114 &1791240364
 MonoBehaviour:
   m_ObjectHideFlags: 0
