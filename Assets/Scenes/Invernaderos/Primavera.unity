@@ -1727,7 +1727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetoNuevo: {fileID: 195147022}
-  nombreObjeto: primtami
+  nombreObjeto: primtamicolgante
   tiempoEspera: 14
 --- !u!114 &183197450
 MonoBehaviour:
@@ -1741,7 +1741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObjeto: primtami
+  nombreObjeto: primtamicolgante
   maceta: {fileID: 183197448}
 --- !u!64 &183197451
 MeshCollider:
@@ -3239,7 +3239,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ca96ccd816791f24190aad17cdd9fa4a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.897
+      value: 10.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca96ccd816791f24190aad17cdd9fa4a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3247,7 +3247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca96ccd816791f24190aad17cdd9fa4a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.385
+      value: 1.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ca96ccd816791f24190aad17cdd9fa4a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3297,9 +3297,16 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Maceta
       objectReference: {fileID: 0}
+    - target: {fileID: 7960158976996931061, guid: ca96ccd816791f24190aad17cdd9fa4a, type: 3}
+      propertyPath: m_TagString
+      value: Maceta
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: ca96ccd816791f24190aad17cdd9fa4a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1971755261}
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: ca96ccd816791f24190aad17cdd9fa4a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1520809578}
@@ -3309,9 +3316,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: ca96ccd816791f24190aad17cdd9fa4a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 692360474}
-    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: ca96ccd816791f24190aad17cdd9fa4a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1971755261}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ca96ccd816791f24190aad17cdd9fa4a, type: 3}
       insertIndex: -1
@@ -4697,6 +4701,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
+--- !u!1 &470269217 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5071269982540126008, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+  m_PrefabInstance: {fileID: 1631997840}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &471767288
 GameObject:
   m_ObjectHideFlags: 0
@@ -4729,6 +4738,11 @@ Transform:
   - {fileID: 556904049}
   m_Father: {fileID: 144140505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &478598806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 1845517026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &484450011
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7204,7 +7218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 666683731}
   "botonA\xF1adido": {fileID: 234671359}
-  nombreObjeto: primaveratres
+  nombreObjeto: pritamigato
 --- !u!114 &666683731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8353,7 +8367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetoNuevo: {fileID: 1606491748}
-  nombreObjeto: primaveratres
+  nombreObjeto: pritamigato
   tiempoEspera: 14
 --- !u!114 &748668879
 MonoBehaviour:
@@ -8367,7 +8381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObjeto: primaveratres
+  nombreObjeto: pritamigato
   maceta: {fileID: 748668877}
 --- !u!64 &748668880
 MeshCollider:
@@ -8792,7 +8806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 795685437}
   "botonA\xF1adido": {fileID: 1859819726}
-  nombreObjeto: primtami
+  nombreObjeto: primtamicolgante
 --- !u!114 &795685437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9094,7 +9108,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f6c07c2f299cb6b428c10c4b43baceaa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.897
+      value: 10.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6c07c2f299cb6b428c10c4b43baceaa, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9102,7 +9116,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6c07c2f299cb6b428c10c4b43baceaa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.385
+      value: 1.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f6c07c2f299cb6b428c10c4b43baceaa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10332,7 +10346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 902074638}
   "botonA\xF1adido": {fileID: 1875713791}
-  nombreObjeto: 
+  nombreObjeto: primaca
 --- !u!114 &902074638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10578,7 +10592,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 919513367}
   "botonA\xF1adido": {fileID: 1884433644}
-  nombreObjeto: 
+  nombreObjeto: prilula
 --- !u!114 &919513367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10695,7 +10709,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b4ac4c61a33a64289aee306737ce04, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b4ac4c61a33a64289aee306737ce04, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10703,7 +10717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b4ac4c61a33a64289aee306737ce04, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.87
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b4ac4c61a33a64289aee306737ce04, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11656,7 +11670,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 789a5613a15f8c641855f3d533e0d5f7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.285
+      value: 11.89
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 789a5613a15f8c641855f3d533e0d5f7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13804,7 +13818,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.671
+      value: 9.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -13812,7 +13826,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.313
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -13846,10 +13860,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: mac primavera5
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
+      propertyPath: m_TagString
+      value: Maceta
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1712920434}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1712920433}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1712920432}
   m_SourcePrefab: {fileID: 100100000, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
 --- !u!1 &1179097560
 GameObject:
@@ -14933,6 +14960,40 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52d62097ca2d569499f2b8fb5ca64f7c, type: 3}
   m_PrefabInstance: {fileID: 989560654}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1289878437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 68beb70105b77d94f997d5604b754ab3, type: 3}
+  m_PrefabInstance: {fileID: 1448326125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1289878439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289878437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObjeto: prilula
+  maceta: {fileID: 1289878437}
+--- !u!114 &1289878440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289878437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoNuevo: {fileID: 470269217}
+  nombreObjeto: prilula
+  tiempoEspera: 14
 --- !u!1001 &1295364327
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16915,7 +16976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68beb70105b77d94f997d5604b754ab3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.043
+      value: 8.663
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68beb70105b77d94f997d5604b754ab3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16923,7 +16984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68beb70105b77d94f997d5604b754ab3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.574
+      value: 2.0939999
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68beb70105b77d94f997d5604b754ab3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16961,10 +17022,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Maceta Lula
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68beb70105b77d94f997d5604b754ab3, type: 3}
+      propertyPath: m_TagString
+      value: Maceta
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 68beb70105b77d94f997d5604b754ab3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289878440}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 68beb70105b77d94f997d5604b754ab3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1289878439}
   m_SourcePrefab: {fileID: 100100000, guid: 68beb70105b77d94f997d5604b754ab3, type: 3}
 --- !u!1001 &1460602354
 PrefabInstance:
@@ -18722,11 +18793,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2837274230437356644, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3693752428599603203, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.06
+      value: 8.68
       objectReference: {fileID: 0}
     - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18734,7 +18809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.69
+      value: 2.21
       objectReference: {fileID: 0}
     - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18767,6 +18842,10 @@ PrefabInstance:
     - target: {fileID: 5071269982540126008, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
       propertyPath: m_Name
       value: Primavera Lula
+      objectReference: {fileID: 0}
+    - target: {fileID: 5071269982540126008, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19648,7 +19727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetoNuevo: {fileID: 195147022}
-  nombreObjeto: primtami
+  nombreObjeto: 
   tiempoEspera: 14
 --- !u!114 &1703519108
 MonoBehaviour:
@@ -19662,8 +19741,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObjeto: primtami
+  nombreObjeto: 
   maceta: {fileID: 1703519102}
+--- !u!1 &1712920428 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
+  m_PrefabInstance: {fileID: 1174510073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1712920432
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712920428}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1158131939460066404, guid: 84e89a40e4acdbb4fa253a707468a27c, type: 3}
+--- !u!114 &1712920433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712920428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoNuevo: {fileID: 478598806}
+  nombreObjeto: primaca
+  tiempoEspera: 14
+--- !u!114 &1712920434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712920428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObjeto: primaca
+  maceta: {fileID: 1712920428}
 --- !u!4 &1756633969 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 52d62097ca2d569499f2b8fb5ca64f7c, type: 3}
@@ -20339,7 +20474,7 @@ PrefabInstance:
       objectReference: {fileID: 566904177}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.708
+      value: 9.557001
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20347,7 +20482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.384
+      value: 2.071
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20377,13 +20512,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3250616917799973977, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4124839307903721534, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
       value: _PlantaBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6373764130766578866, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoMensaje
@@ -22319,7 +22462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6a17bb9967621d7438e2dabc4db23a95, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9238
+      value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6a17bb9967621d7438e2dabc4db23a95, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22446,7 +22589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.053
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22802,6 +22945,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1aed8195a09054b478f3839b080c88d7, type: 3}
       propertyPath: m_Name
       value: Mrosa tierra
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1aed8195a09054b478f3839b080c88d7, type: 3}
+      propertyPath: m_TagString
+      value: Maceta
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
