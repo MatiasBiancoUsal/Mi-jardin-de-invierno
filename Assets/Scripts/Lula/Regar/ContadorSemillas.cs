@@ -1,21 +1,22 @@
 using TMPro;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class ContadorSemillas : MonoBehaviour
 {
     public static ContadorSemillas instancia;
 
-    [Header("UI")]
-    public TMP_Text textoContadorSemillas;
+    [Header("UI (pueden ser varios textos en tienda e invernadero)")]
+    public List<TMP_Text> textosContador = new List<TMP_Text>();
 
-    private int contadorSemillas = 100; // Arranca en 100 solo una vez
+    private int contadorSemillas = 100;
 
     void Awake()
     {
         if (instancia == null)
         {
             instancia = this;
-            DontDestroyOnLoad(gameObject); // Se mantiene al cambiar pantallas/escenas
+            DontDestroyOnLoad(gameObject); // Esto mantiene el contador aunque cambies de escena
         }
         else
         {
@@ -50,9 +51,10 @@ public class ContadorSemillas : MonoBehaviour
 
     private void ActualizarTextoUI()
     {
-        if (textoContadorSemillas != null)
+        foreach (TMP_Text texto in textosContador)
         {
-            textoContadorSemillas.text = contadorSemillas.ToString();
+            if (texto != null)
+                texto.text = contadorSemillas.ToString();
         }
     }
 
