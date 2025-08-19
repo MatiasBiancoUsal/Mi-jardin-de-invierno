@@ -20281,7 +20281,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textosContador:
   - {fileID: 1184303292}
-  - {fileID: 1911410275}
 --- !u!114 &1791240364
 MonoBehaviour:
   m_ObjectHideFlags: 0
