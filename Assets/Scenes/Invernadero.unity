@@ -24161,6 +24161,87 @@ Transform:
   m_Children: []
   m_Father: {fileID: 952066465}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2670625662937360787
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1843213141637058830, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: textoContadorSemillas
+      value: 
+      objectReference: {fileID: 1184303292}
+    - target: {fileID: 1928012234262470879, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: textoAgua
+      value: 
+      objectReference: {fileID: 2135413624}
+    - target: {fileID: 1928012234262470879, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: textoAbono
+      value: 
+      objectReference: {fileID: 566904177}
+    - target: {fileID: 2837274230437356644, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.181
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4327372649837489052, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5055979062242713832, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: textoMensaje
+      value: 
+      objectReference: {fileID: 1208052430}
+    - target: {fileID: 5055979062242713832, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: cartelMensaje
+      value: 
+      objectReference: {fileID: 1017599348}
+    - target: {fileID: 5071269982540126008, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
+      propertyPath: m_Name
+      value: Primavera Lula
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
 --- !u!1001 &4864983330289661659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24268,6 +24349,7 @@ SceneRoots:
   - {fileID: 578232562}
   - {fileID: 456535932}
   - {fileID: 125801867}
+  - {fileID: 2670625662937360787}
   - {fileID: 166630306}
   - {fileID: 758600536}
   - {fileID: 1490654201}
