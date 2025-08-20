@@ -4142,6 +4142,7 @@ Transform:
   m_Father: {fileID: 927731523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1 &365536950
 GameObject:
   m_ObjectHideFlags: 0
@@ -4184,6 +4185,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d6a1174d84afa547af15c36809b74a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!4 &380688903 stripped

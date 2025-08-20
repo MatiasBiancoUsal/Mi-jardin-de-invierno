@@ -24111,7 +24111,11 @@ Transform:
   m_Father: {fileID: 952066465}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!1001 &2670625662937360787
+=======
+--- !u!1001 &2973468154327478302
+>>>>>>> Stashed changes
 =======
 --- !u!1001 &2973468154327478302
 >>>>>>> Stashed changes
@@ -24120,6 +24124,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     m_TransformParent: {fileID: 0}
     m_Modifications:
@@ -24191,6 +24196,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Primavera Lula
 =======
+=======
+>>>>>>> Stashed changes
     m_TransformParent: {fileID: 1036495226}
     m_Modifications:
     - target: {fileID: 90066875456061343, guid: fbea531f97d63d14aa9e158b594a57ae, type: 3}
@@ -24284,6 +24291,9 @@ PrefabInstance:
     - target: {fileID: 8126857873912050628, guid: fbea531f97d63d14aa9e158b594a57ae, type: 3}
       propertyPath: m_Name
       value: PaneldeSol
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -24291,8 +24301,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_SourcePrefab: {fileID: 100100000, guid: ff4c0eec203cf95499a99ffede3aed51, type: 3}
 =======
+=======
+>>>>>>> Stashed changes
   m_SourcePrefab: {fileID: 100100000, guid: fbea531f97d63d14aa9e158b594a57ae, type: 3}
 --- !u!1 &2973468154327478303 stripped
 GameObject:
@@ -24315,6 +24328,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1001 &4864983330289661659
 PrefabInstance:
