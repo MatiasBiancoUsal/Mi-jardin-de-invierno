@@ -12,7 +12,7 @@ namespace Assets.Scripts.Lula
         public static SistemaDePlantas instancia;
 
         public bool ModoRiego;
-        public bool ModoLuz;
+        public bool ModoSol;
         public bool ModoAbono;
 
         public GameObject contadorAguaGO;
@@ -22,7 +22,7 @@ namespace Assets.Scripts.Lula
         public void Awake()
         {
             ModoAbono = false;
-            ModoLuz = false;
+            ModoSol = false;
             ModoRiego = false;
             instancia = this;
         }
@@ -31,7 +31,7 @@ namespace Assets.Scripts.Lula
         {
             ModoRiego = !ModoRiego;
             ModoAbono = false;
-            ModoLuz = false;
+            ModoSol = false;
 
             if (contadorAguaGO != null)
                 contadorAguaGO.SetActive(ModoRiego);
@@ -44,7 +44,7 @@ namespace Assets.Scripts.Lula
         {
             ModoAbono = !ModoAbono;
             ModoRiego = false;
-            ModoLuz = false;
+            ModoSol = false;
 
             if (contadorAbonoGO != null)
                 contadorAbonoGO.SetActive(ModoAbono);

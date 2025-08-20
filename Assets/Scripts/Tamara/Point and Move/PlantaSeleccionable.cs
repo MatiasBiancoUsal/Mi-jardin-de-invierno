@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.Lula; // Es necesario para acceder a la clase Planta
 
 public class PlantaSeleccionable : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class PlantaSeleccionable : MonoBehaviour
     private Transform puntoActual = null;
     private Estante estanteActual = null;
     private PuntoDePlantado puntoDePisoActual = null;
+
+    // Cambiado a tipo Planta
+    private Planta planta;
 
     void Awake()
     {
@@ -34,6 +38,9 @@ public class PlantaSeleccionable : MonoBehaviour
         }
 
         if (halo != null) halo.SetActive(false); // asegurar que empieza desactivado
+
+        // Ahora busca y referencia el script Planta
+        planta = GetComponent<Planta>();
     }
 
     // Opcional: seleccionar con clic (necesita Collider)
@@ -52,12 +59,10 @@ public class PlantaSeleccionable : MonoBehaviour
         if (rend != null) rend.material.color = Color.green;
         if (halo != null) halo.SetActive(true);
 
-        // NUEVO: Mostrar barra de sol
-        PlantaConSol plantaSol = GetComponent<PlantaConSol>();
-        if (plantaSol != null && plantaSol.ObtenerBarra() != null)
-        {
-            GestorBarrasSol.instancia?.MostrarSolo(plantaSol.ObtenerBarra());
-        }
+        FuncionamientoCarga instanciaCarga = FindFirstObjectByType<FuncionamientoCarga>();
+        if (instanciaCarga != null)
+            // Llama al método SeleccionarPlanta con el objeto 'planta' de tipo Planta
+            instanciaCarga.SeleccionarPlanta(planta);
 
         Debug.Log(name + " seleccionada");
     }
@@ -69,8 +74,9 @@ public class PlantaSeleccionable : MonoBehaviour
         if (rend != null) rend.material.color = Color.white;
         if (halo != null) halo.SetActive(false);
 
-        // OCULTAR todas las barras
-        GestorBarrasSol.instancia?.OcultarTodas();
+        FuncionamientoCarga instanciaCarga = FindFirstObjectByType<FuncionamientoCarga>();
+        if (instanciaCarga != null)
+            instanciaCarga.DeseleccionarPlanta();
     }
 
 

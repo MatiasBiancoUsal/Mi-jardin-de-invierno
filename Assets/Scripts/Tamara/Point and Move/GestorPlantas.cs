@@ -4,12 +4,26 @@ using UnityEngine;
 
 public class GestorPlantas : MonoBehaviour
 {
+    public static GestorPlantas instancia;
+
     public LayerMask capaPlantas;
     public LayerMask capaEstantes;
     public LayerMask capaPiso;
 
     private PlantaSeleccionable plantaSeleccionada;
     private PuntoDePlantado[] puntosDePlantado;
+
+    void Awake()
+    {
+        if (instancia == null)
+        {
+            instancia = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
@@ -63,19 +77,19 @@ public class GestorPlantas : MonoBehaviour
         }
     }
 
- void SeleccionarPlanta(PlantaSeleccionable nueva)
-{
-    // Si ya es la misma planta seleccionada, no hacer nada
-    if (plantaSeleccionada == nueva)
-        return;
+    void SeleccionarPlanta(PlantaSeleccionable nueva)
+    {
+        // Si ya es la misma planta seleccionada, no hacer nada
+        if (plantaSeleccionada == nueva)
+            return;
 
-    // Si hay una planta seleccionada distinta, deseleccionarla
-    if (plantaSeleccionada != null)
-        plantaSeleccionada.Deseleccionar();
+        // Si hay una planta seleccionada distinta, deseleccionarla
+        if (plantaSeleccionada != null)
+            plantaSeleccionada.Deseleccionar();
 
-    plantaSeleccionada = nueva;
-    plantaSeleccionada.Seleccionar();
-}
+        plantaSeleccionada = nueva;
+        plantaSeleccionada.Seleccionar();
+    }
 
     Transform BuscarPuntoMasCercano(Vector3 posicionClick)
     {
