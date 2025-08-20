@@ -39,4 +39,11 @@ public class botones : MonoBehaviour
         semillas.gameObject.SetActive(false);
     }
 
+    public GameObject panelTienda; // arrastrás el panel de la tienda en el inspector
+
+    public void CerrarTienda()
+    {
+        panelTienda.SetActive(false); // 
+    }
+
 }

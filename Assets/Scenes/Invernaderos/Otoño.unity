@@ -4538,6 +4538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   semillas: {fileID: 0}
+  panelTienda: {fileID: 0}
 --- !u!4 &509050337
 Transform:
   m_ObjectHideFlags: 0
@@ -21631,6 +21632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   semillas: {fileID: 0}
+  panelTienda: {fileID: 700876677}
 --- !u!114 &2125618136
 MonoBehaviour:
   m_ObjectHideFlags: 0
