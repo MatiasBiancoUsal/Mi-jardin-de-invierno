@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2989520727956958561}
   - component: {fileID: 3030975793867643457}
-  - component: {fileID: 801897963783998585}
   m_Layer: 0
   m_Name: Gestor
   m_TagString: Untagged
@@ -54,15 +53,3 @@ MonoBehaviour:
   capaPiso:
     serializedVersion: 2
     m_Bits: 0
---- !u!114 &801897963783998585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4191684356341700623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76f00b71916d0084aae78a3ecc650964, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

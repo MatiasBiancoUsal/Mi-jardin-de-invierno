@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scripts.Lula; // Es necesario para acceder a la clase Planta
 
 public class PlantaSeleccionable : MonoBehaviour
 {
-    [Header("Efecto de selección")]
-    [SerializeField] private GameObject halo; // arrastrar aquí el Quad/Sphere hijo con el material emissive
+    [Header("Efecto de selecci n")]
+    [SerializeField] private GameObject halo; // arrastrar aqu  el Quad/Sphere hijo con el material emissive
 
     private Renderer rend;
     private Color colorOriginal;
@@ -15,6 +16,9 @@ public class PlantaSeleccionable : MonoBehaviour
     private Transform puntoActual = null;
     private Estante estanteActual = null;
     private PuntoDePlantado puntoDePisoActual = null;
+
+    // Cambiado a tipo Planta
+    private Planta planta;
 
     void Awake()
     {
@@ -30,16 +34,19 @@ public class PlantaSeleccionable : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning($"[{name}] No se encontró Renderer en este objeto ni en sus hijos.");
+            Debug.LogWarning($"[{name}] No se encontr  Renderer en este objeto ni en sus hijos.");
         }
 
         if (halo != null) halo.SetActive(false); // asegurar que empieza desactivado
+
+        // Ahora busca y referencia el script Planta
+        planta = GetComponent<Planta>();
     }
 
     // Opcional: seleccionar con clic (necesita Collider)
     void OnMouseDown()
     {
-        // Si ya está seleccionada, no hacer nada (mantener halo)
+        // Si ya est  seleccionada, no hacer nada (mantener halo)
         if (isSelected)
             return;
 
@@ -52,12 +59,10 @@ public class PlantaSeleccionable : MonoBehaviour
         if (rend != null) rend.material.color = Color.green;
         if (halo != null) halo.SetActive(true);
 
-        // NUEVO: Mostrar barra de sol
-        PlantaConSol plantaSol = GetComponent<PlantaConSol>();
-        if (plantaSol != null && plantaSol.ObtenerBarra() != null)
-        {
-            GestorBarrasSol.instancia?.MostrarSolo(plantaSol.ObtenerBarra());
-        }
+        FuncionamientoCarga instanciaCarga = FindFirstObjectByType<FuncionamientoCarga>();
+        if (instanciaCarga != null)
+            // Llama al m todo SeleccionarPlanta con el objeto 'planta' de tipo Planta
+            instanciaCarga.SeleccionarPlanta(planta);
 
         Debug.Log(name + " seleccionada");
     }
@@ -69,8 +74,9 @@ public class PlantaSeleccionable : MonoBehaviour
         if (rend != null) rend.material.color = Color.white;
         if (halo != null) halo.SetActive(false);
 
-        // OCULTAR todas las barras
-        GestorBarrasSol.instancia?.OcultarTodas();
+        FuncionamientoCarga instanciaCarga = FindFirstObjectByType<FuncionamientoCarga>();
+        if (instanciaCarga != null)
+            instanciaCarga.DeseleccionarPlanta();
     }
 
 
@@ -79,16 +85,16 @@ public class PlantaSeleccionable : MonoBehaviour
         if (isSelected) Deseleccionar(); else Seleccionar();
     }
 
-    // Tu método MoverA (copié el tuyo y lo dejé igual)
+    // Tu m todo MoverA (copi  el tuyo y lo dej  igual)
     public void MoverA(Transform nuevoPunto, Estante nuevoEstante = null, PuntoDePlantado nuevoPuntoDePiso = null)
     {
-        // liberar estante anterior si había
+        // liberar estante anterior si hab a
         if (estanteActual != null && puntoActual != null)
         {
             estanteActual.LiberarPunto(puntoActual);
         }
 
-        // Liberar punto de piso anterior si había
+        // Liberar punto de piso anterior si hab a
         if (puntoDePisoActual != null)
         {
             puntoDePisoActual.ocupado = false;
@@ -97,7 +103,7 @@ public class PlantaSeleccionable : MonoBehaviour
         //Mover planta
         transform.position = nuevoPunto.position;
 
-        // Guardar nueva ubicación
+        // Guardar nueva ubicaci n
         puntoActual = nuevoPunto;
         estanteActual = nuevoEstante;
         puntoDePisoActual = nuevoPuntoDePiso;

@@ -8,7 +8,7 @@ namespace Assets.Scripts.Lula
 {
     public class Planta : MonoBehaviour
     {
-        public int Sol;
+        public float Sol;
         public int Agua;
         public int Abono;
         public float TiempoFelicidad;
@@ -34,7 +34,7 @@ namespace Assets.Scripts.Lula
 
         public void Start()
         {
-            Sol = 0;
+            Sol = 0f;
             Agua = 0;
             Abono = 0;
             ContadorFelicidad = 0;
@@ -77,7 +77,7 @@ namespace Assets.Scripts.Lula
 
         private void CheckearFelicidad()
         {
-            if (Agua == AguaMaxima && Abono == AbonoMaximo)
+            if (Agua == AguaMaxima && Abono == AbonoMaximo && Sol == solMaximo)
             {
                 // Planta entra en estado de felicidad
                 ContadorFelicidad++;
@@ -117,9 +117,8 @@ namespace Assets.Scripts.Lula
                 {
                     if (Sol < solMaximo)
                     {
-                        Sol += Mathf.RoundToInt(velocidadGananciaSol * Time.deltaTime);
-                        Sol = Mathf.Min(Sol, (int)solMaximo);
-                        ActualizarTextos();
+                        Sol += velocidadGananciaSol * Time.deltaTime;
+                        Sol = Mathf.Min(Sol, solMaximo);
                     }
                 }
             }
