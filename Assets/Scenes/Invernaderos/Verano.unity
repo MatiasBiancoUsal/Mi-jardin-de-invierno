@@ -342,6 +342,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &21424698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,6 +609,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &39393094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,6 +1194,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5f8784abc313a50429c76a8e59fab476, type: 3}
       propertyPath: m_Name
       value: MD  (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f8784abc313a50429c76a8e59fab476, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5f8784abc313a50429c76a8e59fab476, type: 3}
       propertyPath: m_TagString
@@ -2615,6 +2621,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &209362221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3103,6 +3110,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &244652966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4223,6 +4231,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &341164124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4359,6 +4368,7 @@ MonoBehaviour:
   botonComprar: {fileID: 347801231}
   "botonA\xF1adido": {fileID: 950639755}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &347801231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4928,6 +4938,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &359127461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5187,6 +5198,7 @@ MonoBehaviour:
   botonComprar: {fileID: 404406212}
   "botonA\xF1adido": {fileID: 1047848802}
   nombreObjeto: veranotres
+  mostrarMaceta: {fileID: 377228476}
 --- !u!114 &404406212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6911,6 +6923,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &589493547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7395,6 +7408,7 @@ MonoBehaviour:
   botonComprar: {fileID: 614617946}
   "botonA\xF1adido": {fileID: 1854651279}
   nombreObjeto: lavanda
+  mostrarMaceta: {fileID: 123215648}
 --- !u!114 &614617946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7903,6 +7917,7 @@ MonoBehaviour:
   botonComprar: {fileID: 671101758}
   "botonA\xF1adido": {fileID: 1535426236}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &671101758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9386,7 +9401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7602329875202053220, guid: 5331689954ed439419c80e2a9ecf7b1f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: 7602329875202053220, guid: 5331689954ed439419c80e2a9ecf7b1f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9394,7 +9409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7602329875202053220, guid: 5331689954ed439419c80e2a9ecf7b1f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7602329875202053220, guid: 5331689954ed439419c80e2a9ecf7b1f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10546,15 +10561,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b4ac4c61a33a64289aee306737ce04, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 3.15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b4ac4c61a33a64289aee306737ce04, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.172
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b4ac4c61a33a64289aee306737ce04, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.64
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e5b4ac4c61a33a64289aee306737ce04, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10833,6 +10848,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &942952215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11646,6 +11662,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &979758205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11782,6 +11799,7 @@ MonoBehaviour:
   botonComprar: {fileID: 980703708}
   "botonA\xF1adido": {fileID: 209362219}
   nombreObjeto: suculentalula
+  mostrarMaceta: {fileID: 68297896}
 --- !u!114 &980703708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12599,6 +12617,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &1047848804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12829,6 +12848,7 @@ MonoBehaviour:
   botonComprar: {fileID: 1062515131}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &1062515131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17595,6 +17615,7 @@ MonoBehaviour:
   botonComprar: {fileID: 1461227547}
   "botonA\xF1adido": {fileID: 1343194662}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &1461227547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20639,6 +20660,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &1854651281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20884,7 +20906,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 016db28cf65c8ac4e998dc47d8fd4d4c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 016db28cf65c8ac4e998dc47d8fd4d4c, type: 3}
       propertyPath: m_TagString
@@ -21260,6 +21282,7 @@ MonoBehaviour:
   botonComprar: {fileID: 1904193012}
   "botonA\xF1adido": {fileID: 859210961}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &1904193012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21827,6 +21850,10 @@ PrefabInstance:
       value: MacetaVerano2 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7f12e69e0f089cd4ea22d09d81b40624, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7f12e69e0f089cd4ea22d09d81b40624, type: 3}
       propertyPath: m_TagString
       value: Maceta
       objectReference: {fileID: 0}
@@ -22240,15 +22267,15 @@ PrefabInstance:
       objectReference: {fileID: 1184303292}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.329
+      value: 9.99
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.181
+      value: 1.146
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.053
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23055,7 +23082,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a17bb9967621d7438e2dabc4db23a95, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6a17bb9967621d7438e2dabc4db23a95, type: 3}
       propertyPath: m_TagString
@@ -23359,6 +23386,7 @@ MonoBehaviour:
   botonComprar: {fileID: 2034237178}
   "botonA\xF1adido": {fileID: 129027634}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &2034237178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23689,6 +23717,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &2090450223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24344,6 +24373,7 @@ SceneRoots:
   - {fileID: 1787698160}
   - {fileID: 67537455}
   - {fileID: 2022102531}
+  - {fileID: 1942091501}
   - {fileID: 830132485}
   - {fileID: 511014828}
   - {fileID: 1945734198}
@@ -24352,7 +24382,6 @@ SceneRoots:
   - {fileID: 1460602354}
   - {fileID: 1655262904}
   - {fileID: 1946771303}
-  - {fileID: 1942091501}
   - {fileID: 68297891}
   - {fileID: 125801867}
   - {fileID: 847808053}
