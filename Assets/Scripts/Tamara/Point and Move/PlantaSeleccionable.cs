@@ -56,7 +56,7 @@ public class PlantaSeleccionable : MonoBehaviour
     public void Seleccionar()
     {
         isSelected = true;
-        if (rend != null) rend.material.color = Color.green;
+       // if (rend != null) rend.material.color = Color.green;
         if (halo != null) halo.SetActive(true);
 
         FuncionamientoCarga instanciaCarga = FindFirstObjectByType<FuncionamientoCarga>();
