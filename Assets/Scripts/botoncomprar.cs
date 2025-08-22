@@ -6,6 +6,7 @@ public class botoncomprar : MonoBehaviour
     public Button botonComprar;
     public GameObject botonAñadido;
     public string nombreObjeto; 
+    public MostrarMaceta mostrarMaceta; // referencia al script MostrarMaceta
 
     void Start()
     {
@@ -16,6 +17,9 @@ public class botoncomprar : MonoBehaviour
 
             if (botonAñadido != null)
                 botonAñadido.SetActive(true);
+
+            if (mostrarMaceta != null)
+                mostrarMaceta.ActualizarEstado();
         }
         else
         {
@@ -37,5 +41,9 @@ public class botoncomprar : MonoBehaviour
 
         PlayerPrefs.SetInt(nombreObjeto + "_Comprado", 1);
         PlayerPrefs.Save();
+
+        // Hacer aparecer la maceta
+        if (mostrarMaceta != null)
+            mostrarMaceta.ActualizarEstado();
     }
 }

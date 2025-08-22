@@ -342,6 +342,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &21424698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,6 +604,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &39393094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2529,6 +2531,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &209362221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3017,6 +3020,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &244652966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4137,6 +4141,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &341164124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4273,6 +4278,7 @@ MonoBehaviour:
   botonComprar: {fileID: 347801231}
   "botonA\xF1adido": {fileID: 950639755}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &347801231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4842,6 +4848,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &359127461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5008,11 +5015,11 @@ PrefabInstance:
       objectReference: {fileID: 566904177}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.952
+      value: 10.096
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.19
+      value: 1.202
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5049,6 +5056,10 @@ PrefabInstance:
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
       value: pant vera1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6373764130766578866, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoMensaje
@@ -5125,6 +5136,7 @@ MonoBehaviour:
   botonComprar: {fileID: 404406212}
   "botonA\xF1adido": {fileID: 1047848802}
   nombreObjeto: veranotres
+  mostrarMaceta: {fileID: 377228476}
 --- !u!114 &404406212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6467,6 +6479,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &589493547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6844,6 +6857,7 @@ MonoBehaviour:
   botonComprar: {fileID: 614617946}
   "botonA\xF1adido": {fileID: 1854651279}
   nombreObjeto: lavanda
+  mostrarMaceta: {fileID: 123215648}
 --- !u!114 &614617946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7346,7 +7360,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   botonComprar: {fileID: 671101758}
   "botonA\xF1adido": {fileID: 1535426236}
-  nombreObjeto: 
+  nombreObjeto: veramaca
+  mostrarMaceta: {fileID: 2117041980}
 --- !u!114 &671101758
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8566,6 +8581,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6787841564155477449, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
   m_PrefabInstance: {fileID: 1364810702}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &847199474 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 382655950}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &847785960
 GameObject:
   m_ObjectHideFlags: 0
@@ -9670,6 +9690,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &942952215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10426,6 +10447,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &979758205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10562,6 +10584,7 @@ MonoBehaviour:
   botonComprar: {fileID: 980703708}
   "botonA\xF1adido": {fileID: 209362219}
   nombreObjeto: suculentalula
+  mostrarMaceta: {fileID: 68297896}
 --- !u!114 &980703708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11272,6 +11295,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &1047848804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11502,6 +11526,7 @@ MonoBehaviour:
   botonComprar: {fileID: 1062515131}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &1062515131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15977,6 +16002,7 @@ MonoBehaviour:
   botonComprar: {fileID: 1461227547}
   "botonA\xF1adido": {fileID: 1343194662}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &1461227547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18301,15 +18327,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.896
+      value: 10.062
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.929
+      value: 0.906
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.116
+      value: 2.068
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18349,12 +18375,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2117041981}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2117041980}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2117041979}
   m_SourcePrefab: {fileID: 100100000, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
 --- !u!4 &1756633969 stripped
 Transform:
@@ -19122,6 +19157,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &1854651281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19743,6 +19779,7 @@ MonoBehaviour:
   botonComprar: {fileID: 1904193012}
   "botonA\xF1adido": {fileID: 859210961}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &1904193012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21430,6 +21467,7 @@ MonoBehaviour:
   botonComprar: {fileID: 2034237178}
   "botonA\xF1adido": {fileID: 129027634}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &2034237178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21755,6 +21793,7 @@ MonoBehaviour:
   botonComprar: {fileID: 0}
   "botonA\xF1adido": {fileID: 0}
   nombreObjeto: 
+  mostrarMaceta: {fileID: 0}
 --- !u!114 &2090450223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22118,6 +22157,62 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &2117041975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
+  m_PrefabInstance: {fileID: 1753502722}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2117041979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117041975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoNuevo: {fileID: 847199474}
+  nombreObjeto: veramaca
+  tiempoEspera: 14
+--- !u!114 &2117041980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117041975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nombreObjeto: veramaca
+  maceta: {fileID: 2117041975}
+--- !u!64 &2117041981
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117041975}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2124705421725058983, guid: 661aff306e1de9d4a8ee4be384364def, type: 3}
 --- !u!1 &2126540647
 GameObject:
   m_ObjectHideFlags: 0

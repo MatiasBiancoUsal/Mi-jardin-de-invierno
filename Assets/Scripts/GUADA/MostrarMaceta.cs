@@ -7,6 +7,11 @@ public class MostrarMaceta : MonoBehaviour
 
     void Start()
     {
+        ActualizarEstado();
+    }
+
+    public void ActualizarEstado()
+    {
         if (PlayerPrefs.GetInt(nombreObjeto + "_Comprado", 0) == 1)
         {
             if (maceta != null)
