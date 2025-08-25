@@ -1624,7 +1624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
       propertyPath: m_Name
-      value: MaLenguaSuegra
+      value: MaInvierno1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
       propertyPath: m_IsActive
@@ -21174,7 +21174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
-      value: LenguaSuegra
+      value: Invierno1
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Layer
