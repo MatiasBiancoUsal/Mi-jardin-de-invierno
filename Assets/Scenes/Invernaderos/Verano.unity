@@ -21254,31 +21254,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1af11335a9920242a1feee715fcb21c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.028826
+      value: 8.690878
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1af11335a9920242a1feee715fcb21c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3103306
+      value: 1.951477
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1af11335a9920242a1feee715fcb21c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0056770146
+      value: -0.20015799
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1af11335a9920242a1feee715fcb21c, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.4771547
+      value: -0.16630489
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1af11335a9920242a1feee715fcb21c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.65555745
+      value: -0.7032819
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1af11335a9920242a1feee715fcb21c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.5767823
+      value: -0.6722987
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1af11335a9920242a1feee715fcb21c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.099449225
+      value: -0.16047359
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c1af11335a9920242a1feee715fcb21c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -47859,6 +47859,10 @@ PrefabInstance:
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
       value: Verano 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6373764130766578866, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoMensaje
