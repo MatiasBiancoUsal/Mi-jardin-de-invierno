@@ -1,39 +1,43 @@
 using UnityEngine;
 using System.Collections;
-using UnityEngine.Splines;
-
 public class InsectoSplineMover : MonoBehaviour
 {
-    public Transform[] splinePoints; // puntos del spline
-    public float speed = 2f;         // velocidad
-    private int currentIndex = 0;
+    public float tiempoVisible = 3f;    // Tiempo que el objeto estará visible
+    public float tiempoInvisible = 2f;  // Tiempo que estará oculto
+    private Renderer[] renderers;       // Para mostrar/ocultar visualmente
+    private Collider[] colliders;       // Para desactivar colisiones si querés
 
     void Start()
     {
-        if (splinePoints.Length > 0)
-            transform.position = splinePoints[0].position;
+        // Buscamos todos los renderers y colliders del objeto y sus hijos
+        renderers = GetComponentsInChildren<Renderer>();
+        colliders = GetComponentsInChildren<Collider>();
+
+        // Arrancamos la rutina para alternar visibilidad
+        StartCoroutine(ControlarAparicion());
     }
 
-    void Update()
+    IEnumerator ControlarAparicion()
     {
-        if (splinePoints.Length < 2) return;
-
-        // moverse hacia el siguiente punto
-        Vector3 target = splinePoints[currentIndex + 1].position;
-        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
-
-        // girar hacia el objetivo
-        Vector3 direction = target - transform.position;
-        if (direction != Vector3.zero)
-            transform.rotation = Quaternion.LookRotation(direction);
-
-        // si llegó al punto siguiente
-        if (Vector3.Distance(transform.position, target) < 0.01f)
+        while (true)
         {
-            currentIndex++;
-            if (currentIndex >= splinePoints.Length - 1)
-                currentIndex = 0; // reinicia el recorrido
+            // Mostrar
+            SetEstado(true);
+            yield return new WaitForSeconds(tiempoVisible);
+
+            // Ocultar
+            SetEstado(false);
+            yield return new WaitForSeconds(tiempoInvisible);
         }
     }
-}
 
+    // Activa o desactiva renderers y colliders
+    void SetEstado(bool estado)
+    {
+        foreach (var r in renderers)
+            r.enabled = estado;
+
+        foreach (var c in colliders)
+            c.enabled = estado;
+    }
+}
