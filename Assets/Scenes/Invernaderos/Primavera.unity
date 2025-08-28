@@ -22809,9 +22809,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoNuevo: {fileID: 1606491748}
+  objetoNuevo: {fileID: 1938405354}
   nombreObjeto: pritamigato
-  tiempoEspera: 14
+  tiempoEspera: 25
 --- !u!114 &748668879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42759,6 +42759,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6894428203817054813, guid: d7ae042adc0c57e41889f2f5c441936d, type: 3}
+--- !u!1 &1938405354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 2113604766}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1938861131
 PrefabInstance:
   m_ObjectHideFlags: 0
