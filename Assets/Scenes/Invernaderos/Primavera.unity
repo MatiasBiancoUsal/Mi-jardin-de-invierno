@@ -6593,7 +6593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoNuevo: {fileID: 195147022}
+  objetoNuevo: {fileID: 210259007}
   nombreObjeto: primtamicolgante
   tiempoEspera: 14
 --- !u!114 &183197450
@@ -11751,6 +11751,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6126241582270247307, guid: 846e634476bf921489d70769741a9376, type: 3}
   m_PrefabInstance: {fileID: 1155332472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &210259007 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 1806244079}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &221370708
 GameObject:
