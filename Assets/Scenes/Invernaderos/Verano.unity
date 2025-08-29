@@ -22753,6 +22753,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6787841564155477449, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
   m_PrefabInstance: {fileID: 1043097423}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &771213665 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 2042655935}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &772658635
 GameObject:
   m_ObjectHideFlags: 0
@@ -23176,7 +23181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoNuevo: {fileID: 480703609}
+  objetoNuevo: {fileID: 771213665}
   nombreObjeto: 
   tiempoEspera: 14
 --- !u!1 &829637907
@@ -23282,7 +23287,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.576
+      value: 1.618
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -47264,7 +47269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dd363c5e58cb3d42b37a29ccf32ae82, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.61
+      value: 1.6520001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2dd363c5e58cb3d42b37a29ccf32ae82, type: 3}
       propertyPath: m_LocalPosition.z
