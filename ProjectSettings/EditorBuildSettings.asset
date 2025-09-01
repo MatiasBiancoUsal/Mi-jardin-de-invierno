@@ -50,5 +50,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Invernadero.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Invernaderos/Tutorial.unity
+    guid: 207f7abaefaf3d74e9e841f952ea9c95
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
