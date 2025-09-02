@@ -9672,6 +9672,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: solMaximo
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoAgua
       value: 
       objectReference: {fileID: 2135413624}
@@ -9697,15 +9701,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: TiempoFelicidad
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: DuracionFelicidad
-      value: 10
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: velocidadGananciaSol
-      value: 10
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 561316115182392660, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoContadorSemillas
