@@ -232969,7 +232969,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 53a1f69db92f3924ca4a1533da9dc565, type: 3}
     volumen: 1
   - nombre: plantar
-    clip: {fileID: 8300000, guid: 9674bde7d69804a449c5a1e945fca660, type: 3}
+    clip: {fileID: 8300000, guid: a2070f63cf58a784e972a94ff6b4ddae, type: 3}
     volumen: 1
   - nombre: abonar
     clip: {fileID: 8300000, guid: f2b532f286f95c84b9752a7dfff2b5aa, type: 3}
