@@ -8112,7 +8112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntos: 100
   textoPuntos: {fileID: 1184303292}
 --- !u!1 &430771366 stripped
 GameObject:
@@ -9864,7 +9863,7 @@ PrefabInstance:
       objectReference: {fileID: 2135413624}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: AguaMaxima
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoAbono
@@ -9872,10 +9871,14 @@ PrefabInstance:
       objectReference: {fileID: 566904177}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: AbonoMaximo
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: cantidadDeSol
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: FelicidadMaxima
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -15062,6 +15065,7 @@ GameObject:
   - component: {fileID: 1004170411}
   - component: {fileID: 1004170413}
   - component: {fileID: 1004170412}
+  - component: {fileID: 1004170414}
   m_Layer: 5
   m_Name: ContadorSemillas
   m_TagString: Untagged
@@ -15127,6 +15131,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1004170410}
   m_CullTransparentMesh: 1
+--- !u!114 &1004170414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004170410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b7ccec0861af040a7c05527fa89100, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textoContadorSemillas: {fileID: 1184303292}
 --- !u!1 &1017599348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1966820465024083519, guid: a4ab0d371f935b940964a611ab047843, type: 3}
@@ -26921,7 +26938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb29d53a3286a14cbbe29a1733962eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  petalosNecesarios: 3
+  petalosNecesarios: 2
   nombreEscenaSiguiente: "Inventario Oto\xF1o"
   delayCambioEscena: 2
 --- !u!114 &1791240367
@@ -26936,7 +26953,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntos: 0
   textoPuntos: {fileID: 1184303292}
 --- !u!1 &1796072313 stripped
 GameObject:

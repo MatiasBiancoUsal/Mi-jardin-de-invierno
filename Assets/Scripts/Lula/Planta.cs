@@ -45,7 +45,6 @@ namespace Assets.Scripts.Lula
 
         public void SubirAgua()
         {
-            if (EstaFeliz()) return;
             if (Agua == AguaMaxima) return;
             if (!EnMantenimiento) return;
 
@@ -56,22 +55,11 @@ namespace Assets.Scripts.Lula
 
         public void SubirAbono()
         {
-            if (EstaFeliz()) return;
             if (Abono == AbonoMaximo) return;
             if (!EnMantenimiento) return;
 
             Abono += 1;
             ActualizarTextos();
-            CheckearFelicidad();
-        }
-
-        public void SubirSol()
-        {
-            if (EstaFeliz()) return;
-            if (Sol == solMaximo) return;
-            if (!EnMantenimiento) return;
-
-            Sol += 1;
             CheckearFelicidad();
         }
 
@@ -115,15 +103,10 @@ namespace Assets.Scripts.Lula
                 ZonaDeSol zona = hit.collider.GetComponent<ZonaDeSol>();
                 if (zona != null)
                 {
-                    if (Sol < solMaximo)
-                    {
-                        Sol += velocidadGananciaSol * Time.deltaTime;
-                        Sol = Mathf.Min(Sol, solMaximo);
-                    }
+                    SubirSolPorTiempo();
                 }
             }
 
-            if (EstaFeliz()) return;
             if (EnMantenimiento) return;
 
             TiempoFelicidad -= Time.deltaTime;
@@ -136,6 +119,16 @@ namespace Assets.Scripts.Lula
                 EnMantenimiento = true;
 
                 ActualizarTextos();
+            }
+        }
+
+        private void SubirSolPorTiempo()
+        {
+            if (Sol < solMaximo)
+            {
+                Sol += velocidadGananciaSol * Time.deltaTime;
+                Sol = Mathf.Min(Sol, solMaximo);
+                CheckearFelicidad();
             }
         }
 

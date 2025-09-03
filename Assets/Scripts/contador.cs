@@ -5,21 +5,22 @@ using UnityEngine;
 
 public class contador : MonoBehaviour
 {
-    public int puntos = 0;
     public TextMeshProUGUI textoPuntos;  // Arrastrá el texto desde el Inspector
 
     public void SumarPunto()
     {
+        var puntos = int.Parse(textoPuntos.text);
         puntos++;
-        ActualizarTexto();
+        ActualizarTexto(puntos);
     }
 
     public void GastarSemillas()
     {
+        var puntos = int.Parse(textoPuntos.text);
         if (puntos >= 2)
         {
             puntos -= 2;
-            ActualizarTexto();
+            ActualizarTexto(puntos);
         }
         else
         {
@@ -27,11 +28,8 @@ public class contador : MonoBehaviour
         }
     }
 
-    void ActualizarTexto()
+    void ActualizarTexto(int puntos)
     {
-        if (textoPuntos != null)
-        {
-            textoPuntos.text = puntos.ToString();
-        }
+        textoPuntos.text = puntos.ToString();
     }
 }
