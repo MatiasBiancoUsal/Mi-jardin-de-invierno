@@ -630,7 +630,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 2.3833334
+  - time: 2.2833333
     functionName: RegadoTerminado
     data: 
     objectReferenceParameter: {fileID: 0}

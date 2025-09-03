@@ -9709,7 +9709,7 @@ MonoBehaviour:
   - cartel: {fileID: 567508050}
     accionEsperada: plantar
   - cartel: {fileID: 1977260586}
-    accionEsperada: regar
+    accionEsperada: abono
   - cartel: {fileID: 77366907}
     accionEsperada: sol
   - cartel: {fileID: 1869626857}

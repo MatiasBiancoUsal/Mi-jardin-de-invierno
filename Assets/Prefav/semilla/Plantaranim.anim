@@ -450,7 +450,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 3.8166666
+  - time: 3.6833334
     functionName: PlantadoTerminado
     data: 
     objectReferenceParameter: {fileID: 0}
