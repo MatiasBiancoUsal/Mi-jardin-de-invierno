@@ -8161,7 +8161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntos: 100
   textoPuntos: {fileID: 1184303292}
 --- !u!1 &430771366 stripped
 GameObject:
@@ -12837,7 +12836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 774406812}
-  - component: {fileID: 774406811}
+  - component: {fileID: 774406813}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -12845,7 +12844,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &774406811
+--- !u!4 &774406812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774406810}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &774406813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12862,29 +12876,14 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 53a1f69db92f3924ca4a1533da9dc565, type: 3}
     volumen: 1
   - nombre: plantar
-    clip: {fileID: 8300000, guid: 9674bde7d69804a449c5a1e945fca660, type: 3}
-    volumen: 1
+    clip: {fileID: 8300000, guid: a2070f63cf58a784e972a94ff6b4ddae, type: 3}
+    volumen: 0.28
   - nombre: abonar
     clip: {fileID: 8300000, guid: f2b532f286f95c84b9752a7dfff2b5aa, type: 3}
-    volumen: 0.49
+    volumen: 0.03
   - nombre: abrirTienda
     clip: {fileID: 8300000, guid: a40a3cf955913be47b6eaad9994c13b9, type: 3}
     volumen: 0.49
---- !u!4 &774406812
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774406810}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &774864458
 GameObject:
   m_ObjectHideFlags: 0
@@ -27714,7 +27713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntos: 0
   textoPuntos: {fileID: 1184303292}
 --- !u!1 &1813109132 stripped
 GameObject:
