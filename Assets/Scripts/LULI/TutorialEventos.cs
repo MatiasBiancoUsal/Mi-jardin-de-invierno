@@ -1,18 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class TutorialEventos : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Referencia al gestor del tutorial
+    public TutorialManager tutorialManager;
 
-    // Update is called once per frame
-    void Update()
+    // Llamado por la animación con un Animation Event
+    public void RegadoTerminado()
     {
-        
+        if (tutorialManager != null)
+        {
+            // Llama a RegistrarAccion y le pasas el nombre de la acción que se completó.
+            // Asegúrate de que este string coincida con el que pusiste en el Inspector de Unity
+            // en el campo 'Accion Esperada' del paso correspondiente.
+            tutorialManager.RegistrarAccion("regar");
+        }
+        else
+        {
+            Debug.LogWarning("TutorialManager no está asignado en TutorialEventos");
+        }
+    }
+    
+    public void AbonoTerminado()
+    {
+        if (tutorialManager != null)
+        {
+            // Llama a RegistrarAccion y le pasas el nombre de la acción que se completó.
+            // Asegúrate de que este string coincida con el que pusiste en el Inspector de Unity
+            // en el campo 'Accion Esperada' del paso correspondiente.
+            tutorialManager.RegistrarAccion("abono"); 
+        }
+        else
+        {
+            Debug.LogWarning("TutorialManager no está asignado en TutorialEventos");
+        }
     }
 }
