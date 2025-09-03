@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SonidosBotones : MonoBehaviour
 {
-     public void SonidoRegar()
+    public void SonidoRegar()
     {
         AudioManager.instance.ReproducirSonido("regar");
     }
@@ -15,6 +15,11 @@ public class SonidosBotones : MonoBehaviour
     public void SonidoPlantar()
     {
         AudioManager.instance.ReproducirSonido("plantar");
+    }
+    
+     public void SonidoAbrirTienda()
+    {
+        AudioManager.instance.ReproducirSonido("abrirTienda");
     }
 }
 
