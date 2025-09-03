@@ -191689,6 +191689,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2086406292}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SonidoAbrirTienda
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1355757743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -232830,6 +232842,9 @@ MonoBehaviour:
     volumen: 1
   - nombre: abonar
     clip: {fileID: 8300000, guid: f2b532f286f95c84b9752a7dfff2b5aa, type: 3}
+    volumen: 0.49
+  - nombre: abrirTienda
+    clip: {fileID: 8300000, guid: a40a3cf955913be47b6eaad9994c13b9, type: 3}
     volumen: 0.49
 --- !u!4 &1677108308
 Transform:
@@ -280696,6 +280711,7 @@ GameObject:
   - component: {fileID: 2086406289}
   - component: {fileID: 2086406291}
   - component: {fileID: 2086406290}
+  - component: {fileID: 2086406292}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -280744,6 +280760,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   semillas: {fileID: 0}
   panelTienda: {fileID: 505809985}
+--- !u!114 &2086406292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086406288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a81266182dac0b429477ededd77b340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2086635166
 GameObject:
   m_ObjectHideFlags: 0
