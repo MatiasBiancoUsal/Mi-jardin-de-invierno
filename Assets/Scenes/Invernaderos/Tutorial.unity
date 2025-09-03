@@ -9676,7 +9676,7 @@ MonoBehaviour:
   - cartel: {fileID: 1327665908}
     accionEsperada: abrirTienda
   - cartel: {fileID: 567508050}
-    accionEsperada: plantar
+    accionEsperada: abono
   - cartel: {fileID: 1977260586}
     accionEsperada: regar
   - cartel: {fileID: 77366907}
@@ -10178,7 +10178,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 666136132548942541, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2059576295}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5584035471632130535, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1215998255}
+    - targetCorrespondingSourceObject: {fileID: 951188715550723580, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1099716770}
   m_SourcePrefab: {fileID: 100100000, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
 --- !u!1 &584689455
 GameObject:
@@ -10353,6 +10359,18 @@ MonoBehaviour:
       - m_Target: {fileID: 2069929878}
         m_TargetAssemblyTypeName: InvernaderoToggle, Assembly-CSharp
         m_MethodName: "AlternarPesta\xF1a"
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2125618138}
+        m_TargetAssemblyTypeName: SonidosBotones, Assembly-CSharp
+        m_MethodName: SonidoAbrirTienda
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12773,6 +12791,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6787841564155477449, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
   m_PrefabInstance: {fileID: 1043097423}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &774406810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 774406812}
+  - component: {fileID: 774406811}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &774406811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774406810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3d9b09a4019b74e84578b226eed4ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sonidos:
+  - nombre: regar
+    clip: {fileID: 8300000, guid: 53a1f69db92f3924ca4a1533da9dc565, type: 3}
+    volumen: 1
+  - nombre: plantar
+    clip: {fileID: 8300000, guid: 9674bde7d69804a449c5a1e945fca660, type: 3}
+    volumen: 1
+  - nombre: abonar
+    clip: {fileID: 8300000, guid: f2b532f286f95c84b9752a7dfff2b5aa, type: 3}
+    volumen: 0.49
+  - nombre: abrirTienda
+    clip: {fileID: 8300000, guid: a40a3cf955913be47b6eaad9994c13b9, type: 3}
+    volumen: 0.49
+--- !u!4 &774406812
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774406810}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &774864458
 GameObject:
   m_ObjectHideFlags: 0
@@ -16291,6 +16366,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083893223}
   m_CullTransparentMesh: 1
+--- !u!1 &1099716765 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 951188715550723580, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 578232562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1099716770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099716765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a81266182dac0b429477ededd77b340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1104274418 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 666136132548942541, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -18339,6 +18431,23 @@ MonoBehaviour:
   m_ObjectForwardAxis: 1
   m_ObjectUpAxis: 0
   m_StartOffset: 0
+--- !u!1 &1215998248 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5584035471632130535, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 578232562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1215998255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215998248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a81266182dac0b429477ededd77b340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1217340585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34608,6 +34717,7 @@ GameObject:
   - component: {fileID: 2125618137}
   - component: {fileID: 2125618135}
   - component: {fileID: 2125618136}
+  - component: {fileID: 2125618138}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -34656,6 +34766,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 882691317}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2125618138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2125618134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a81266182dac0b429477ededd77b340, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2135413623
 GameObject:
   m_ObjectHideFlags: 0
@@ -34988,6 +35110,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
+  - {fileID: 774406812}
   - {fileID: 706914573}
   - {fileID: 564434552}
   - {fileID: 326224150}
