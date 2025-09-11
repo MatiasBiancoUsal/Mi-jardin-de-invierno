@@ -65,26 +65,21 @@ public class TutorialEventos : MonoBehaviour
             Debug.LogWarning("TutorialManager no está asignado en TutorialEventos");
         }
     }
+
+    public void SemillaTerminado()
+    {
+        if (tutorialManager != null)
+        {
+            // Llama a RegistrarAccion y le pasas el nombre de la acción que se completó.
+            // Asegúrate de que este string coincida con el que pusiste en el Inspector de Unity
+            // en el campo 'Accion Esperada' del paso correspondiente.
+            tutorialManager.RegistrarAccion("semilla");
+        }
+        else
+        {
+            Debug.LogWarning("TutorialManager no está asignado en TutorialEventos");
+        }
+    }
     
-    private void OnEnable()
-{
-    Mesa.OnPlantaEnMesa += PlantaEnMesaTerminado;
-}
 
-private void OnDisable()
-{
-    Mesa.OnPlantaEnMesa -= PlantaEnMesaTerminado;
-}
-
-private void PlantaEnMesaTerminado()
-{
-    if (tutorialManager != null)
-    {
-        tutorialManager.RegistrarAccion("plantaEnMesa");
-    }
-    else
-    {
-        Debug.LogWarning("TutorialManager no está asignado en TutorialEventos");
-    }
-}
 }
