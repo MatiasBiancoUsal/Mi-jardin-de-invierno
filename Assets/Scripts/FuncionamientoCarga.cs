@@ -12,7 +12,7 @@ public class FuncionamientoCarga : MonoBehaviour
 
     void Start()
     {
-        panelBarra.SetActive(false);
+       
         barraSol.minValue = 0f;
         barraSol.value = 0f;
     }
@@ -49,13 +49,11 @@ public class FuncionamientoCarga : MonoBehaviour
     public void SeleccionarPlanta(Planta planta)
     {
         plantaSeleccionada = planta;
-        panelBarra.SetActive(true);
     }
 
     public void DeseleccionarPlanta()
     {
         plantaSeleccionada = null;
-        panelBarra.SetActive(false);
     }
 
     // Los métodos OnTriggerStay y OnTriggerExit se han eliminado
