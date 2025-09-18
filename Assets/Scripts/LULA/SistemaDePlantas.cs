@@ -33,11 +33,6 @@ namespace Assets.Scripts.Lula
             ModoAbono = false;
             ModoLuz = false;
 
-            if (contadorAguaGO != null)
-                contadorAguaGO.SetActive(ModoRiego);
-
-            if (contadorAbonoGO != null)
-                contadorAbonoGO.SetActive(false);
         }
 
         public void CambiarModoAbono()
@@ -46,11 +41,6 @@ namespace Assets.Scripts.Lula
             ModoRiego = false;
             ModoLuz = false;
 
-            if (contadorAbonoGO != null)
-                contadorAbonoGO.SetActive(ModoAbono);
-
-            if (contadorAguaGO != null)
-                contadorAguaGO.SetActive(false);
         }
     }
 }

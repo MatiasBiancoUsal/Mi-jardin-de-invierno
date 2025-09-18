@@ -5,8 +5,8 @@ using UnityEngine;
 public class AnimarSemilla : MonoBehaviour
 {
     private bool modoPlantar = false;
+    public BotonPlantarControlador botonPlantarControlador;
 
-   
     public void ActivarModoPlantar()
     {
         modoPlantar = true;
@@ -53,6 +53,9 @@ public class AnimarSemilla : MonoBehaviour
                 }
 
                 modoPlantar = false;
+
+                if (botonPlantarControlador != null) botonPlantarControlador.RestaurarColorOriginal();
+
             }
             else
             {
