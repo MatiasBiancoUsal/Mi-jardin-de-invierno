@@ -97,4 +97,10 @@ public class AnimarSemilla : MonoBehaviour
             Debug.LogWarning("No se encontr el objeto Semillaplanta dentro de la maceta");
         }
     }
+
+    public void DesactivarModoPlantar()
+    {
+        modoPlantar = false;
+        Debug.Log("Modo plantar cancelado desde el botón.");
+    }
 }

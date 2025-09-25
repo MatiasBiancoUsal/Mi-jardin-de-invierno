@@ -6604,7 +6604,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 714817148}
         m_TargetAssemblyTypeName: BotonPlantarControlador, Assembly-CSharp
-        m_MethodName: ActivarModoPlantarEnScript
+        m_MethodName: ToggleModoPlantar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
