@@ -12187,7 +12187,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 690304924}
         m_TargetAssemblyTypeName: BotonPlantarControlador, Assembly-CSharp
-        m_MethodName: ActivarModoPlantarEnScript
+        m_MethodName: ToggleModoPlantar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17885,7 +17885,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

@@ -10465,7 +10465,7 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1099716770}
     - targetCorrespondingSourceObject: {fileID: 2136420928374591806, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
-      insertIndex: 4
+      insertIndex: -1
       addedObject: {fileID: 1927702549}
   m_SourcePrefab: {fileID: 100100000, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
 --- !u!1 &584689455
@@ -12240,7 +12240,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 690304924}
         m_TargetAssemblyTypeName: BotonPlantarControlador, Assembly-CSharp
-        m_MethodName: ActivarModoPlantarEnScript
+        m_MethodName: ToggleModoPlantar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

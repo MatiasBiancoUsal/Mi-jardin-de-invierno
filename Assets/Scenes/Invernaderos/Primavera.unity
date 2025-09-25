@@ -52495,7 +52495,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 344486147}
         m_TargetAssemblyTypeName: BotonPlantarControlador, Assembly-CSharp
-        m_MethodName: ActivarModoPlantarEnScript
+        m_MethodName: ToggleModoPlantar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -293564,6 +293564,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8382682664603580, guid: e8bc45733934ca940a78a909faacef05, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4153947456956201925, guid: e8bc45733934ca940a78a909faacef05, type: 3}
       propertyPath: m_Camera
       value: 

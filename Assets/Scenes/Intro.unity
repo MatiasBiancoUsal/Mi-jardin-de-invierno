@@ -148,15 +148,15 @@ RectTransform:
   m_GameObject: {fileID: 23052334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0681407, y: 3.6288214, z: 2.0681407}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.1, y: 1.9300928, z: 1.1}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 319440738}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 727, y: -432}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 727, y: -423}
+  m_SizeDelta: {x: 160, y: 60.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &23052336
 MonoBehaviour:
@@ -234,7 +234,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 63c8ec68e945e1c40bfbc099141bc000, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d4238d4c88c25647af859c34aae835d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -264,7 +264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 344c9f7e6a010304ab2c3773d1bac7fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreEscena: Tutorial
+  nombreEscena: CinematicaInicial
 --- !u!1 &233102144
 GameObject:
   m_ObjectHideFlags: 0
