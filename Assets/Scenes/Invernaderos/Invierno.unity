@@ -3885,11 +3885,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a81266182dac0b429477ededd77b340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &340584511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3989ce9cfdb842f48a969f48376a140f, type: 3}
-  m_PrefabInstance: {fileID: 1421714790}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &348443259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4152,7 +4147,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353159547}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
   m_Name: 
@@ -4188,7 +4183,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353159547}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
   m_Name: 
@@ -4385,7 +4380,7 @@ MonoBehaviour:
   botonComprar: {fileID: 400354880}
   "botonA\xF1adido": {fileID: 113831697}
   nombreObjeto: hibiscus
-  mostrarMaceta: {fileID: 353159550}
+  mostrarMaceta: {fileID: 1941624834}
 --- !u!114 &400354880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5125,11 +5120,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1036495226}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &531742988 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c49dde4931fe88342b0e0554486bd1f1, type: 3}
-  m_PrefabInstance: {fileID: 361815597}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &533920444
 GameObject:
   m_ObjectHideFlags: 0
@@ -11276,7 +11266,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 675820588}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
   m_Name: 
@@ -12463,6 +12453,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 0fb17876b711fdd42894a582713ea5ef, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0fb17876b711fdd42894a582713ea5ef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -19197,7 +19191,7 @@ PrefabInstance:
       objectReference: {fileID: 533920444}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.838
+      value: 8.699
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -20829,7 +20823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
       propertyPath: m_TagString
@@ -27407,6 +27401,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52d62097ca2d569499f2b8fb5ca64f7c, type: 3}
+--- !u!1 &1181391255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 954630671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1183424275
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27429,11 +27428,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.199
+      value: 8.061
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2350818
+      value: 1.104
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -27473,7 +27472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
       propertyPath: m_TagString
@@ -27530,7 +27529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoNuevo: {fileID: 340584511}
+  objetoNuevo: {fileID: 1638244714}
   nombreObjeto: Inviernotres
   tiempoEspera: 14
 --- !u!114 &1183424279
@@ -27540,7 +27539,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183424276}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
   m_Name: 
@@ -29354,7 +29353,7 @@ PrefabInstance:
       objectReference: {fileID: 844293787}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.199
+      value: 8.06
       objectReference: {fileID: 0}
     - target: {fileID: 2473515101457493958, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32066,6 +32065,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6787841564155477449, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
   m_PrefabInstance: {fileID: 1620105838}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1638244714 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+  m_PrefabInstance: {fileID: 1352497795}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1640964220
 PrefabInstance:
@@ -40784,7 +40788,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ae0a55f106c3554793bf89607222424, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.839
+      value: 8.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3ae0a55f106c3554793bf89607222424, type: 3}
       propertyPath: m_LocalPosition.y
@@ -40885,8 +40889,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objetoNuevo: {fileID: 340584511}
-  nombreObjeto: Inviernotres
+  objetoNuevo: {fileID: 1181391255}
+  nombreObjeto: 
   tiempoEspera: 14
 --- !u!114 &1941624834
 MonoBehaviour:
@@ -40900,8 +40904,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObjeto: Inviernodos
-  maceta: {fileID: 531742988}
+  nombreObjeto: hibiscus
+  maceta: {fileID: 1941624831}
 --- !u!64 &1941624835
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -43207,7 +43211,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5084473152229612436, guid: 6f164f1996617984f863f2ef2f0c3877, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.83
+      value: 7.13
       objectReference: {fileID: 0}
     - target: {fileID: 5084473152229612436, guid: 6f164f1996617984f863f2ef2f0c3877, type: 3}
       propertyPath: m_LocalPosition.y
