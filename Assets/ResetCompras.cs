@@ -1,18 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ResetCompras : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Header("Nombres de objetos comprables")]
+    public string[] objetosComprables; // 
 
-    // Update is called once per frame
-    void Update()
+    public void ResetearSoloMacetas()
     {
-        
+        foreach (string nombre in objetosComprables)
+        {
+            PlayerPrefs.DeleteKey(nombre + "_Comprado"); // Estado de compra
+            PlayerPrefs.DeleteKey(nombre + "_Crecido");  // Estado de crecimiento (si lo usás)
+        }
+
+        PlayerPrefs.Save();
+        Debug.Log("Sistema de compras reiniciado (solo macetas)");
     }
 }

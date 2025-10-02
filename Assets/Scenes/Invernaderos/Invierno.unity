@@ -2516,6 +2516,17 @@ Transform:
   - {fileID: 1360364586}
   m_Father: {fileID: 1941624832}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &245361088 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2981058224021817403, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+  m_PrefabInstance: {fileID: 550152175}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e47b35a928cb2046b6510c2d0bc5af0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &252345942
 GameObject:
   m_ObjectHideFlags: 0
@@ -10034,6 +10045,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2981058224021817403, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+      propertyPath: resetCompras
+      value: 
+      objectReference: {fileID: 1946771304}
     - target: {fileID: 4966245040626375774, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
       propertyPath: m_SortingOrder
       value: 5
@@ -10053,6 +10068,18 @@ PrefabInstance:
     - target: {fileID: 8143864585269878942, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793828964820919355, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1420546610}
+    - target: {fileID: 8793828964820919355, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IniciarYResetear
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793828964820919355, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BotonInicio, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8801669863626336019, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
       propertyPath: m_Pivot.x
@@ -12456,7 +12483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0fb17876b711fdd42894a582713ea5ef, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20850,13 +20877,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1377070939}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1377070944}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1377070943}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1377070947}
   m_SourcePrefab: {fileID: 100100000, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
 --- !u!1 &1063413348
 GameObject:
@@ -27530,7 +27557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objetoNuevo: {fileID: 1638244714}
-  nombreObjeto: Inviernotres
+  nombreObjeto: 
   tiempoEspera: 14
 --- !u!114 &1183424279
 MonoBehaviour:
@@ -27544,7 +27571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nombreObjeto: Inviernodos
+  nombreObjeto: 
   maceta: {fileID: 1183424276}
 --- !u!64 &1183424280
 MeshCollider:
@@ -29338,7 +29365,7 @@ PrefabInstance:
     - target: {fileID: 561316115182392660, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoContadorSemillas
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1184303292}
     - target: {fileID: 666136132548942541, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.027
@@ -29423,6 +29450,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: -0.004326895
       objectReference: {fileID: 0}
+    - target: {fileID: 4515125560230319748, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
       value: Invierno2
@@ -29433,7 +29464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6373764130766578866, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoMensaje
@@ -29854,28 +29885,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
   m_PrefabInstance: {fileID: 1046118303}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1377070939
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1377070938}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8172680918820081068, guid: b80c6ccaf71038642ba903466ec9093d, type: 3}
 --- !u!4 &1377070942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 821e1ecec86295a4b9c8eca4390cb706, type: 3}
@@ -29910,6 +29919,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombreObjeto: tulipan
   maceta: {fileID: 1377070938}
+--- !u!65 &1377070947
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377070938}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.003143349, y: 0.003143351, z: 0.002820644}
+  m_Center: {x: -4.458649e-12, y: 1.2904819e-10, z: -0.00019947646}
 --- !u!1 &1389145952
 GameObject:
   m_ObjectHideFlags: 0
@@ -30322,6 +30352,52 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1099386208}
   m_SourcePrefab: {fileID: 100100000, guid: 24882b9e1b937a54580b99fe30de0117, type: 3}
+--- !u!1 &1420546609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1420546611}
+  - component: {fileID: 1420546610}
+  m_Layer: 7
+  m_Name: GameObjectnuevo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1420546610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420546609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27071763454d604b865926c94133212, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apagarCartel: {fileID: 245361088}
+  resetCompras: {fileID: 1946771304}
+--- !u!4 &1420546611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420546609}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 10.329, y: 1.181, z: 2.053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1421714790
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30353,6 +30429,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 3989ce9cfdb842f48a969f48376a140f, type: 3}
       propertyPath: m_Name
       value: invierno3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3989ce9cfdb842f48a969f48376a140f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31930,7 +32010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6373764130766578866, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: textoMensaje
@@ -32188,7 +32268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4911090812920080850, guid: 6103300fae489ba49a076452b10b300f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5185074037580869072, guid: 6103300fae489ba49a076452b10b300f, type: 3}
       propertyPath: m_Pivot.x
@@ -40891,7 +40971,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoNuevo: {fileID: 1181391255}
   nombreObjeto: 
-  tiempoEspera: 14
+  tiempoEspera: 18.9
 --- !u!114 &1941624834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41010,7 +41090,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946771301}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33b18af832f6c00419011bcd9fb69aef, type: 3}
   m_Name: 
@@ -41038,11 +41118,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1946771301}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56de9d031c8dc7440a7a39c2ffcceaa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objetosComprables:
+  - hibiscus
+  - tulipan
+  - Inviernouno
 --- !u!1001 &1962254060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43359,6 +43443,7 @@ SceneRoots:
   - {fileID: 637887178}
   - {fileID: 1787698160}
   - {fileID: 1655262904}
+  - {fileID: 1420546611}
   - {fileID: 1946771303}
   - {fileID: 993491422}
   - {fileID: 607869387}

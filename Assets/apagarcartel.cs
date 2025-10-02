@@ -1,17 +1,18 @@
 using UnityEngine;
 
-public class apagarcartel : MonoBehaviour
+public class ApagarCartel : MonoBehaviour
 {
-    public GameObject cartel; 
+    public GameObject cartel;
+
     void Start()
     {
-        
-        cartel.SetActive(true);
+        if (cartel != null)
+            cartel.SetActive(true);
     }
 
     public void ComenzarJuego()
     {
-        
-        cartel.SetActive(false);
+        if (cartel != null)
+            cartel.SetActive(false);
     }
 }
