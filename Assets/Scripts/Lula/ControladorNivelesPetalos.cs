@@ -31,7 +31,7 @@ public class ControladorNivelesPetalos : MonoBehaviour
     {
         Debug.Log("🌸 Recolectaste los pétalos necesarios. Cambio de escena en " + delayCambioEscena + "s...");
         yield return new WaitForSeconds(delayCambioEscena);
-        SceneManager.LoadScene(nombreEscenaSiguiente);
+      
 
         EscenaActual = SceneManager.GetActiveScene();
 
@@ -45,8 +45,12 @@ public class ControladorNivelesPetalos : MonoBehaviour
        };
 
         AnalyticsService.Instance.RecordEvent(Datos);
-        AnalyticsService.Instance.Flush(); 
 
+        /*Debug.Log("EventoFinalNivel" + "cantidad de semillas " + ContadorSemillas.instancia.contadorSemillas + "Nombre_Invernadero " + EscenaActual.name);*/
+
+        AnalyticsService.Instance.Flush(); 
+        
+        SceneManager.LoadScene(nombreEscenaSiguiente);
         
     }
 
