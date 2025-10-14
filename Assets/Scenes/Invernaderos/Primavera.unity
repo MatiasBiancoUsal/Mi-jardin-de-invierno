@@ -247883,6 +247883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoContadorSemillas: {fileID: 1184303292}
+  contadorSemillas: 0
 --- !u!114 &1791240364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247909,7 +247910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb29d53a3286a14cbbe29a1733962eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  petalosNecesarios: 6
+  petalosNecesarios: 5
   nombreEscenaSiguiente: Inventario Primavera
   delayCambioEscena: 2
 --- !u!114 &1791240366

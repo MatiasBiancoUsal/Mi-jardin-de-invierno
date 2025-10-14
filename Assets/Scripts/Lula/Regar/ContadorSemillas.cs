@@ -8,7 +8,7 @@ public class ContadorSemillas : MonoBehaviour
     public static ContadorSemillas instancia;  // Singleton para acceso global
 
     public TMP_Text textoContadorSemillas;
-    private int contadorSemillas = 0;
+    public int contadorSemillas = 0;
 
     void Awake()
     {

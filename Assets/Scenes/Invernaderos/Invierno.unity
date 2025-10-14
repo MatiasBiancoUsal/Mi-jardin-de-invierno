@@ -27458,7 +27458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
       propertyPath: m_TagString
@@ -27485,13 +27485,13 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1183424280}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 1183424279}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1183424278}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1183424283}
   m_SourcePrefab: {fileID: 100100000, guid: 908dc02efbb5b724b9c275030e5a12c7, type: 3}
 --- !u!1 &1183424276 stripped
 GameObject:
@@ -27532,8 +27532,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nombreObjeto: 
   maceta: {fileID: 1183424276}
---- !u!64 &1183424280
-MeshCollider:
+--- !u!65 &1183424283
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -27550,10 +27550,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -8172680918820081068, guid: b80c6ccaf71038642ba903466ec9093d, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.003143349, y: 0.0031433513, z: 0.0031162167}
+  m_Center: {x: 0.000000006052249, y: 1.196885e-10, z: -0.000051684743}
 --- !u!1 &1184303290
 GameObject:
   m_ObjectHideFlags: 0
@@ -30391,7 +30390,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 3989ce9cfdb842f48a969f48376a140f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34359,6 +34358,7 @@ GameObject:
   - component: {fileID: 1791240362}
   - component: {fileID: 1791240363}
   - component: {fileID: 1791240365}
+  - component: {fileID: 1791240366}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -34432,6 +34432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textoContadorSemillas: {fileID: 1184303292}
+  contadorSemillas: 0
 --- !u!114 &1791240365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34447,6 +34448,20 @@ MonoBehaviour:
   petalosNecesarios: 4
   nombreEscenaSiguiente: Inventario Invierno
   delayCambioEscena: 2
+--- !u!114 &1791240366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791240358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74bcd5b42cb44b49af0faef13f2927f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagenFlor: {fileID: 0}
+  etapasFlor: []
 --- !u!1001 &1793059327
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Services.Analytics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -13,6 +14,8 @@ public class ControladorNivelesPetalos : MonoBehaviour
     public float delayCambioEscena = 2f; // ⏱ Tiempo de espera en segundos
 
     private bool yaCambio = false; // Para evitar múltiples llamados
+
+    private Scene EscenaActual;
 
     private void Update()
     {
@@ -29,5 +32,22 @@ public class ControladorNivelesPetalos : MonoBehaviour
         Debug.Log("🌸 Recolectaste los pétalos necesarios. Cambio de escena en " + delayCambioEscena + "s...");
         yield return new WaitForSeconds(delayCambioEscena);
         SceneManager.LoadScene(nombreEscenaSiguiente);
+
+        EscenaActual = SceneManager.GetActiveScene();
+
+        CustomEvent Datos = new CustomEvent("Final_Nivel")
+       {
+
+            {"Cantidad_Semillas", ContadorSemillas.instancia.contadorSemillas},
+            { "Nombre_Invernadero", EscenaActual.name },
+
+
+       };
+
+        AnalyticsService.Instance.RecordEvent(Datos);
+        AnalyticsService.Instance.Flush(); 
+
+        
     }
+
 }
