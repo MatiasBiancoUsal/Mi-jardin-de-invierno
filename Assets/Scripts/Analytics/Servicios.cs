@@ -6,12 +6,24 @@ using UnityEngine;
 
 public class Servicios : MonoBehaviour
 {
+    private static Servicios Singletone;
 
     async void Start()
     {
         await UnityServices.InitializeAsync();
 
         AnalyticsService.Instance.StartDataCollection();
+    }
+
+    private void Awake()
+    {
+        if (Singletone == null!)
+        {
+            Singletone = this;
+        }
+
+        else Destroy(gameObject);
+
     }
 
 }

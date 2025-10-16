@@ -46,9 +46,9 @@ public class ControladorNivelesPetalos : MonoBehaviour
 
         AnalyticsService.Instance.RecordEvent(Datos);
 
-        /*Debug.Log("EventoFinalNivel" + "cantidad de semillas " + ContadorSemillas.instancia.contadorSemillas + "Nombre_Invernadero " + EscenaActual.name);*/
+        Debug.Log("EventoFinalNivel" + "cantidad de semillas " + ContadorSemillas.instancia.contadorSemillas + "Nombre_Invernadero " + EscenaActual.name);
 
-        AnalyticsService.Instance.Flush(); 
+        AnalyticsService.Instance.Flush();  
         
         SceneManager.LoadScene(nombreEscenaSiguiente);
         
