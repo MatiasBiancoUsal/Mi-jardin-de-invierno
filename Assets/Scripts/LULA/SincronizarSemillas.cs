@@ -5,17 +5,22 @@ using UnityEngine;
 
 public class SincronizarSemillas : MonoBehaviour
 {
-
     public TMP_Text textoContadorSemillas;
 
     void Start()
     {
-        textoContadorSemillas.text = PlayerPrefs.GetString("Semillas", "0");
+        ActualizarTexto(ContadorSemillas.instancia.contadorSemillas);
+        ContadorSemillas.instancia.cambioSemillas += ActualizarTexto;
+    }
+
+    private void ActualizarTexto(int valor)
+    {
+        textoContadorSemillas.text = valor.ToString();
     }
 
     private void OnDestroy()
     {
-        PlayerPrefs.SetString("Semillas", textoContadorSemillas.text);
+        ContadorSemillas.instancia.cambioSemillas -= ActualizarTexto;
     }
 
 }

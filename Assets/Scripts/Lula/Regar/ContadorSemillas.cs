@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -7,11 +8,12 @@ public class ContadorSemillas : MonoBehaviour
 {
     public static ContadorSemillas instancia;  // Singleton para acceso global
 
-    public TMP_Text textoContadorSemillas;
     public int contadorSemillas = 0;
+    public event Action<int> cambioSemillas;
 
     void Awake()
     {
+        contadorSemillas = PlayerPrefs.GetInt("Semillas", 0);
         if (instancia == null)
         {
             instancia = this;
@@ -26,9 +28,8 @@ public class ContadorSemillas : MonoBehaviour
     public void SumarSemilla()
     {
         contadorSemillas++;
+        PlayerPrefs.SetInt("Semillas", contadorSemillas);
         Debug.Log("Semillas totales: " + contadorSemillas);
-
-        if (textoContadorSemillas != null)
-            textoContadorSemillas.text = $"{contadorSemillas}";
+        cambioSemillas.Invoke(contadorSemillas);
     }
 }
