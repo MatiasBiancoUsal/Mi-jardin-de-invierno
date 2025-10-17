@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class ContadorSemillas : MonoBehaviour
 {
+    private const int PrecioPlanta = 2;
+
     public static ContadorSemillas instancia;  // Singleton para acceso global
 
     public int contadorSemillas = 0;
@@ -28,6 +30,24 @@ public class ContadorSemillas : MonoBehaviour
     public void SumarSemilla()
     {
         contadorSemillas++;
+        PlayerPrefs.SetInt("Semillas", contadorSemillas);
+        Debug.Log("Semillas totales: " + contadorSemillas);
+        cambioSemillas.Invoke(contadorSemillas);
+    }
+
+    public void RestarSemillasPorPlanta()
+    {
+        RestarSemilla(PrecioPlanta);
+    }
+
+    public bool TieneSemillasSuficientes()
+    {
+        return contadorSemillas >= PrecioPlanta;
+    }
+
+    private void RestarSemilla(int precioPlanta)
+    {
+        contadorSemillas -= precioPlanta;
         PlayerPrefs.SetInt("Semillas", contadorSemillas);
         Debug.Log("Semillas totales: " + contadorSemillas);
         cambioSemillas.Invoke(contadorSemillas);

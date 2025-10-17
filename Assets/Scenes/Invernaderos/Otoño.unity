@@ -13207,7 +13207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoPuntos: {fileID: 1184303292}
 --- !u!1 &430771366 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 186802289358591939, guid: 5e5b3997dff4b0d45b614b4b9649378a, type: 3}
@@ -18038,6 +18037,24 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &789904434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1863941656651190391, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+  m_PrefabInstance: {fileID: 7409946419386493325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &789904439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789904434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: cerrar_cartel_bienvenido
 --- !u!1 &791570412
 GameObject:
   m_ObjectHideFlags: 0
@@ -23335,6 +23352,7 @@ GameObject:
   - component: {fileID: 1259114920}
   - component: {fileID: 1259114919}
   - component: {fileID: 1259114918}
+  - component: {fileID: 1259114922}
   m_Layer: 5
   m_Name: BotonSemillas (6)
   m_TagString: Untagged
@@ -23471,6 +23489,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259114916}
   m_CullTransparentMesh: 1
+--- !u!114 &1259114922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259114916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: "oto\xF1o2"
 --- !u!1 &1259501272
 GameObject:
   m_ObjectHideFlags: 0
@@ -25878,6 +25909,7 @@ GameObject:
   - component: {fileID: 1645941197}
   - component: {fileID: 1645941196}
   - component: {fileID: 1645941195}
+  - component: {fileID: 1645941199}
   m_Layer: 5
   m_Name: BotonSemillas (5)
   m_TagString: Untagged
@@ -26014,6 +26046,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645941193}
   m_CullTransparentMesh: 1
+--- !u!114 &1645941199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645941193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: "oto\xF1o1"
 --- !u!1 &1655262903
 GameObject:
   m_ObjectHideFlags: 0
@@ -26955,7 +27000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aac97fe6de55ed4e985593e241f1802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoContadorSemillas: {fileID: 1184303292}
   contadorSemillas: 0
 --- !u!114 &1791240365
 MonoBehaviour:
@@ -26984,7 +27028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoPuntos: {fileID: 1184303292}
 --- !u!114 &1791240368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34748,7 +34791,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1863941656651190391, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 789904439}
   m_SourcePrefab: {fileID: 100100000, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

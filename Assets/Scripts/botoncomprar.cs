@@ -3,6 +3,8 @@ using UnityEngine.UI;
 
 public class botoncomprar : MonoBehaviour
 {
+    private const int PrecioPlanta = 2;
+
     public Button botonComprar;
     public GameObject botonAñadido;
     public string nombreObjeto; 
@@ -33,6 +35,9 @@ public class botoncomprar : MonoBehaviour
 
     void Comprar()
     {
+        if (!ContadorSemillas.instancia.TieneSemillasSuficientes()) return;
+
+        ContadorSemillas.instancia.RestarSemillasPorPlanta();
         if (botonComprar != null)
             botonComprar.gameObject.SetActive(false);
 
