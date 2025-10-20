@@ -8395,7 +8395,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoPuntos: {fileID: 1184303292}
 --- !u!1 &430771366 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 186802289358591939, guid: 5e5b3997dff4b0d45b614b4b9649378a, type: 3}
@@ -12939,6 +12938,7 @@ GameObject:
   - component: {fileID: 725518533}
   - component: {fileID: 725518532}
   - component: {fileID: 725518531}
+  - component: {fileID: 725518535}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -13073,6 +13073,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725518529}
   m_CullTransparentMesh: 1
+--- !u!114 &725518535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 725518529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: omitir_tutorial
 --- !u!1001 &758600536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28197,7 +28210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aac97fe6de55ed4e985593e241f1802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoContadorSemillas: {fileID: 1184303292}
+  contadorSemillas: 0
 --- !u!114 &1791240364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28239,7 +28252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoPuntos: {fileID: 1184303292}
 --- !u!1 &1813109132 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8543769036464602324, guid: 5e5b3997dff4b0d45b614b4b9649378a, type: 3}

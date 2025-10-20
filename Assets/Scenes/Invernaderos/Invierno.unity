@@ -4324,6 +4324,7 @@ GameObject:
   - component: {fileID: 400354881}
   - component: {fileID: 400354880}
   - component: {fileID: 400354879}
+  - component: {fileID: 400354883}
   m_Layer: 5
   m_Name: BotonSemillas (7)
   m_TagString: Untagged
@@ -4460,6 +4461,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400354877}
   m_CullTransparentMesh: 1
+--- !u!114 &400354883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400354877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: invierno3
 --- !u!1 &405228341 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d7ae042adc0c57e41889f2f5c441936d, type: 3}
@@ -11860,6 +11874,7 @@ GameObject:
   - component: {fileID: 716564718}
   - component: {fileID: 716564717}
   - component: {fileID: 716564716}
+  - component: {fileID: 716564720}
   m_Layer: 5
   m_Name: BotonSemillas (6)
   m_TagString: Untagged
@@ -11996,6 +12011,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 716564714}
   m_CullTransparentMesh: 1
+--- !u!114 &716564720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716564714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: invierno2
 --- !u!1001 &720561470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12225,7 +12253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoPuntos: {fileID: 1184303292}
 --- !u!1001 &762013996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27962,10 +27989,10 @@ RectTransform:
   - {fileID: 50167933}
   m_Father: {fileID: 230016163}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1111, y: 592.58484}
-  m_SizeDelta: {x: 799.99994, y: 449.99997}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1228382197
 GameObject:
@@ -34426,7 +34453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoPuntos: {fileID: 1184303292}
 --- !u!4 &1791240360
 Transform:
   m_ObjectHideFlags: 0
@@ -34479,7 +34505,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aac97fe6de55ed4e985593e241f1802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoContadorSemillas: {fileID: 1184303292}
   contadorSemillas: 0
 --- !u!114 &1791240365
 MonoBehaviour:
@@ -42506,6 +42531,7 @@ GameObject:
   - component: {fileID: 2081475593}
   - component: {fileID: 2081475592}
   - component: {fileID: 2081475591}
+  - component: {fileID: 2081475595}
   m_Layer: 5
   m_Name: BotonSemillas (5)
   m_TagString: Untagged
@@ -42642,6 +42668,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081475589}
   m_CullTransparentMesh: 1
+--- !u!114 &2081475595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081475589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: Invierno1
 --- !u!1001 &2083378893
 PrefabInstance:
   m_ObjectHideFlags: 0
