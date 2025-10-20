@@ -4320,6 +4320,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400354878}
+  - component: {fileID: 400354884}
   - component: {fileID: 400354882}
   - component: {fileID: 400354881}
   - component: {fileID: 400354880}
@@ -4462,6 +4463,19 @@ CanvasRenderer:
   m_GameObject: {fileID: 400354877}
   m_CullTransparentMesh: 1
 --- !u!114 &400354883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400354877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: invierno3
+--- !u!114 &400354884
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10152,8 +10166,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1863941656651190391, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 550152177}
   m_SourcePrefab: {fileID: 100100000, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+--- !u!1 &550152176 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1863941656651190391, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+  m_PrefabInstance: {fileID: 550152175}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &550152177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550152176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: ' cerrar_cartel_bienvenido'
 --- !u!1001 &560063749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11870,6 +11905,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 716564715}
+  - component: {fileID: 716564721}
   - component: {fileID: 716564719}
   - component: {fileID: 716564718}
   - component: {fileID: 716564717}
@@ -12012,6 +12048,19 @@ CanvasRenderer:
   m_GameObject: {fileID: 716564714}
   m_CullTransparentMesh: 1
 --- !u!114 &716564720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716564714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: invierno2
+--- !u!114 &716564721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19762,6 +19811,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1000625881}
   - component: {fileID: 1000625885}
+  - component: {fileID: 1000625886}
   - component: {fileID: 1000625884}
   - component: {fileID: 1000625883}
   - component: {fileID: 1000625882}
@@ -19901,6 +19951,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000625880}
   m_CullTransparentMesh: 1
+--- !u!114 &1000625886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000625880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: estante_invierno
 --- !u!1 &1004170410
 GameObject:
   m_ObjectHideFlags: 0
@@ -27989,10 +28052,10 @@ RectTransform:
   - {fileID: 50167933}
   m_Father: {fileID: 230016163}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -50}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1111, y: 592.58484}
+  m_SizeDelta: {x: 799.99994, y: 449.99997}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1228382197
 GameObject:
@@ -33949,6 +34012,7 @@ GameObject:
   - component: {fileID: 1774300589}
   - component: {fileID: 1774300588}
   - component: {fileID: 1774300587}
+  - component: {fileID: 1774300591}
   m_Layer: 5
   m_Name: ButonMute
   m_TagString: Untagged
@@ -34057,6 +34121,19 @@ RectTransform:
   m_AnchoredPosition: {x: 479, y: 469}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1774300591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774300586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: mutear_sonido
 --- !u!1 &1774672081
 GameObject:
   m_ObjectHideFlags: 0
@@ -34187,6 +34264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783396162}
   - component: {fileID: 1783396165}
+  - component: {fileID: 1783396166}
   - component: {fileID: 1783396164}
   - component: {fileID: 1783396163}
   m_Layer: 5
@@ -34309,6 +34387,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1783396161}
   m_CullTransparentMesh: 1
+--- !u!114 &1783396166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783396161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: pasar_pagina_inventario
 --- !u!1001 &1786142867
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42528,6 +42619,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2081475590}
   - component: {fileID: 2081475594}
+  - component: {fileID: 2081475596}
   - component: {fileID: 2081475593}
   - component: {fileID: 2081475592}
   - component: {fileID: 2081475591}
@@ -42681,6 +42773,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NombrePlanta: Invierno1
+--- !u!114 &2081475596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081475589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: invierno1
 --- !u!1001 &2083378893
 PrefabInstance:
   m_ObjectHideFlags: 0
