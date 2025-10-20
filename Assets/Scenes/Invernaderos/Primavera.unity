@@ -71008,6 +71008,7 @@ GameObject:
   - component: {fileID: 501187772}
   - component: {fileID: 501187771}
   - component: {fileID: 501187770}
+  - component: {fileID: 501187774}
   m_Layer: 5
   m_Name: "BotonA\xF1adido (4)"
   m_TagString: Untagged
@@ -71128,6 +71129,19 @@ RectTransform:
   m_AnchoredPosition: {x: 77.99995, y: -71.2}
   m_SizeDelta: {x: 94.204, y: 42.594}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &501187774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501187769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: estanteprimavera
 --- !u!1 &502383290
 GameObject:
   m_ObjectHideFlags: 0
@@ -90793,6 +90807,7 @@ GameObject:
   - component: {fileID: 666683732}
   - component: {fileID: 666683731}
   - component: {fileID: 666683730}
+  - component: {fileID: 666683734}
   m_Layer: 5
   m_Name: BotonSemillas (6)
   m_TagString: Untagged
@@ -90816,7 +90831,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -173.00002, y: 278}
+  m_AnchoredPosition: {x: -173, y: 278}
   m_SizeDelta: {x: 94.204, y: 42.594}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &666683730
@@ -90929,6 +90944,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666683728}
   m_CullTransparentMesh: 1
+--- !u!114 &666683734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666683728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: primavera2
 --- !u!1 &667026866
 GameObject:
   m_ObjectHideFlags: 0
@@ -107617,6 +107645,7 @@ GameObject:
   - component: {fileID: 795685438}
   - component: {fileID: 795685437}
   - component: {fileID: 795685436}
+  - component: {fileID: 795685440}
   m_Layer: 5
   m_Name: BotonSemillas (5)
   m_TagString: Untagged
@@ -107753,6 +107782,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795685434}
   m_CullTransparentMesh: 1
+--- !u!114 &795685440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795685434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: primavera1
 --- !u!1 &797268047
 GameObject:
   m_ObjectHideFlags: 0
@@ -120802,6 +120844,7 @@ GameObject:
   - component: {fileID: 902074639}
   - component: {fileID: 902074638}
   - component: {fileID: 902074637}
+  - component: {fileID: 902074641}
   m_Layer: 5
   m_Name: BotonSemillas (7)
   m_TagString: Untagged
@@ -120938,6 +120981,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902074635}
   m_CullTransparentMesh: 1
+--- !u!114 &902074641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 902074635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: primavera3
 --- !u!1 &902118140
 GameObject:
   m_ObjectHideFlags: 0
@@ -122547,6 +122603,7 @@ GameObject:
   - component: {fileID: 919513368}
   - component: {fileID: 919513367}
   - component: {fileID: 919513366}
+  - component: {fileID: 919513370}
   m_Layer: 5
   m_Name: BotonSemillas (8)
   m_TagString: Untagged
@@ -122683,6 +122740,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919513364}
   m_CullTransparentMesh: 1
+--- !u!114 &919513370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919513364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: primavera4
 --- !u!1 &919703589
 GameObject:
   m_ObjectHideFlags: 0
@@ -165127,17 +165197,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1183993304}
   m_Mesh: {fileID: -6495160164057238643, guid: d863686137130554aa363dbd65957575, type: 3}
---- !u!114 &1184303292 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8382682664603580, guid: e8bc45733934ca940a78a909faacef05, type: 3}
-  m_PrefabInstance: {fileID: 1470568134905868944}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1186428957
 GameObject:
   m_ObjectHideFlags: 0
@@ -188354,6 +188413,7 @@ GameObject:
   - component: {fileID: 1370026085}
   - component: {fileID: 1370026084}
   - component: {fileID: 1370026083}
+  - component: {fileID: 1370026086}
   m_Layer: 5
   m_Name: BotonFlechaIzq
   m_TagString: Untagged
@@ -188474,6 +188534,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370026081}
   m_CullTransparentMesh: 1
+--- !u!114 &1370026086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370026081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: pasar_pagina_inventario
 --- !u!1 &1370725764
 GameObject:
   m_ObjectHideFlags: 0
@@ -214144,8 +214217,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1863941656651190391, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1538821969}
   m_SourcePrefab: {fileID: 100100000, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+--- !u!1 &1538821968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1863941656651190391, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+  m_PrefabInstance: {fileID: 1538821967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1538821969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1538821968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: cerrar_cartel_bienvenido
 --- !u!1 &1539521914
 GameObject:
   m_ObjectHideFlags: 0
@@ -224755,6 +224849,7 @@ GameObject:
   - component: {fileID: 1627215388}
   - component: {fileID: 1627215387}
   - component: {fileID: 1627215386}
+  - component: {fileID: 1627215389}
   m_Layer: 5
   m_Name: BotonFlechaDer
   m_TagString: Untagged
@@ -224875,6 +224970,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627215384}
   m_CullTransparentMesh: 1
+--- !u!114 &1627215389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627215384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: pasar_pagina_inventario
 --- !u!1 &1627588226
 GameObject:
   m_ObjectHideFlags: 0
@@ -245246,6 +245354,7 @@ GameObject:
   - component: {fileID: 1774300589}
   - component: {fileID: 1774300588}
   - component: {fileID: 1774300587}
+  - component: {fileID: 1774300591}
   m_Layer: 5
   m_Name: ButonMute
   m_TagString: Untagged
@@ -245354,6 +245463,19 @@ RectTransform:
   m_AnchoredPosition: {x: 482, y: 469}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1774300591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774300586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: mutear_sonido
 --- !u!1 &1774767733
 GameObject:
   m_ObjectHideFlags: 0
@@ -247873,7 +247995,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoPuntos: {fileID: 1184303292}
 --- !u!4 &1791240360
 Transform:
   m_ObjectHideFlags: 0
@@ -247926,7 +248047,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aac97fe6de55ed4e985593e241f1802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoContadorSemillas: {fileID: 1184303292}
   contadorSemillas: 0
 --- !u!114 &1791240364
 MonoBehaviour:
@@ -282308,7 +282428,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoPuntos: {fileID: 1184303292}
 --- !u!1 &2095377701
 GameObject:
   m_ObjectHideFlags: 0
