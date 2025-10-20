@@ -35859,7 +35859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoPuntos: {fileID: 1184303292}
 --- !u!1 &244208512
 GameObject:
   m_ObjectHideFlags: 0
@@ -112540,6 +112539,7 @@ GameObject:
   - component: {fileID: 628529799}
   - component: {fileID: 628529798}
   - component: {fileID: 628529797}
+  - component: {fileID: 628529801}
   m_Layer: 5
   m_Name: ButonMute
   m_TagString: Untagged
@@ -112648,6 +112648,19 @@ RectTransform:
   m_AnchoredPosition: {x: 483, y: 469}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &628529801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628529796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: mutear_sonido
 --- !u!1 &628687536
 GameObject:
   m_ObjectHideFlags: 0
@@ -163183,7 +163196,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00046029856, y: 0.99792165, z: -0.007173045, w: 0.064037226}
+  m_LocalRotation: {x: 0.0004603001, y: 0.99792165, z: -0.00717307, w: 0.06403721}
   m_LocalPosition: {x: 10.627383, y: 2.1563423, z: -2.3395739}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -319713,7 +319726,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755717192}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00046029856, y: 0.99792165, z: -0.007173045, w: 0.064037226}
+  m_LocalRotation: {x: 0.0004603001, y: 0.99792165, z: -0.00717307, w: 0.06403721}
   m_LocalPosition: {x: -0.14280033, y: -0.32553768, z: -2.2749512}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -325697,7 +325710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aac97fe6de55ed4e985593e241f1802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoContadorSemillas: {fileID: 1184303292}
+  contadorSemillas: 0
 --- !u!114 &1791240364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325739,7 +325752,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa92721440b8cf458672d08ed390469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textoPuntos: {fileID: 1184303292}
 --- !u!1 &1791262912
 GameObject:
   m_ObjectHideFlags: 0
@@ -336319,6 +336331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86dff3d0c59901c4f88e2691383438d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  botonPlantarControlador: {fileID: 0}
 --- !u!4 &1850504194
 Transform:
   m_ObjectHideFlags: 0
