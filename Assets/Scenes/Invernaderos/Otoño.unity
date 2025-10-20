@@ -18254,6 +18254,7 @@ GameObject:
   - component: {fileID: 802497392}
   - component: {fileID: 802497391}
   - component: {fileID: 802497390}
+  - component: {fileID: 802497394}
   m_Layer: 5
   m_Name: BotonSemillas (4)
   m_TagString: Untagged
@@ -18390,6 +18391,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802497388}
   m_CullTransparentMesh: 1
+--- !u!114 &802497394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 802497388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bc9a8085d1d7a478988332a154790d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombrePlanta: "estante_oto\xF1o"
 --- !u!1 &829637907
 GameObject:
   m_ObjectHideFlags: 0
@@ -26759,6 +26773,7 @@ GameObject:
   - component: {fileID: 1774300589}
   - component: {fileID: 1774300588}
   - component: {fileID: 1774300587}
+  - component: {fileID: 1774300591}
   m_Layer: 5
   m_Name: ButonMute
   m_TagString: Untagged
@@ -26867,6 +26882,19 @@ RectTransform:
   m_AnchoredPosition: {x: 483, y: 469}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1774300591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774300586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NombreEvento: mutear_sonido
 --- !u!1 &1785238348 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
