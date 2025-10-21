@@ -152411,7 +152411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d513b38dd50d7f43b9cb09b9217aa86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NombreEvento: ' cerrar_cartel_bienvenido'
+  NombreEvento: cerrar_cartel_bienvenido
 --- !u!1 &1090653221
 GameObject:
   m_ObjectHideFlags: 0
