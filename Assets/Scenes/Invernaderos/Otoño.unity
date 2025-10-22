@@ -14966,6 +14966,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: "Oto\xF1o3"
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: cantidadDeSol
       value: 1
       objectReference: {fileID: 0}
@@ -15059,7 +15063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
-      value: "Oto\xF1o 2"
+      value: "Oto\xF1o 3"
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Layer
@@ -17759,6 +17763,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: "oto\xF1o2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: cantidadDeSol
       value: 1
       objectReference: {fileID: 0}
@@ -17852,7 +17860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
-      value: "Oto\xF1o 1"
+      value: "Oto\xF1o 2"
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Layer
@@ -18835,7 +18843,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoNuevo: {fileID: 223446973}
   nombreObjeto: MB
-  tiempoEspera: 23
+  tiempoEspera: 15
 --- !u!1001 &896784892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19974,7 +19982,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoNuevo: {fileID: 1785238348}
   nombreObjeto: pensa
-  tiempoEspera: 20
+  tiempoEspera: 15
 --- !u!114 &972751860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21446,6 +21454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imagenFlor: {fileID: 0}
   etapasFlor: []
+  contadorPetalos: 0
 --- !u!114 &1132974641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25229,7 +25238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objetoNuevo: {fileID: 1116250959}
   nombreObjeto: macetaa
-  tiempoEspera: 23
+  tiempoEspera: 15
 --- !u!114 &1528123057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27631,6 +27640,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: "Oto\xF1o1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: cantidadDeSol
       value: 1
       objectReference: {fileID: 0}
@@ -27724,7 +27737,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
-      value: pensamiento
+      value: "Oto\xF1o 1"
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Layer

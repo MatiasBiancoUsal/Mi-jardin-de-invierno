@@ -19235,6 +19235,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: Verano3
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: EnMantenimiento
       value: 0
       objectReference: {fileID: 0}
@@ -19300,7 +19304,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
-      value: Suculenta
+      value: Verano3
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Layer
@@ -37144,6 +37148,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 566904177}
     - target: {fileID: 2397592242192158498, guid: 4764b90df3deb0c4cb7c994c88bdcd7c, type: 3}
+      propertyPath: nombrePlanta
+      value: Verano4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397592242192158498, guid: 4764b90df3deb0c4cb7c994c88bdcd7c, type: 3}
       propertyPath: FelicidadMaxima
       value: 1
       objectReference: {fileID: 0}
@@ -37285,7 +37293,7 @@ PrefabInstance:
       objectReference: {fileID: 1017599348}
     - target: {fileID: 9071547862121003205, guid: 4764b90df3deb0c4cb7c994c88bdcd7c, type: 3}
       propertyPath: m_Name
-      value: Verano 3 L
+      value: Verano 4
       objectReference: {fileID: 0}
     - target: {fileID: 9071547862121003205, guid: 4764b90df3deb0c4cb7c994c88bdcd7c, type: 3}
       propertyPath: m_Layer
@@ -62929,6 +62937,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 566904177}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: Verano6
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: FelicidadMaxima
       value: 1
       objectReference: {fileID: 0}
@@ -63022,7 +63034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
-      value: pant vera1
+      value: Verano 6
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Layer
@@ -121910,6 +121922,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: Verano2
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: cantidadDeSol
       value: 1
       objectReference: {fileID: 0}
@@ -122007,7 +122023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
-      value: Verano 4
+      value: Verano 2
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Layer
@@ -159923,6 +159939,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imagenFlor: {fileID: 0}
   etapasFlor: []
+  contadorPetalos: 0
 --- !u!114 &1123831410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198668,6 +198685,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: Verano5
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: cantidadDeSol
       value: 1
       objectReference: {fileID: 0}
@@ -198769,7 +198790,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
-      value: Verano 2
+      value: Verano 5
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Layer
@@ -207922,6 +207943,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: Verano1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: cantidadDeSol
       value: 1
       objectReference: {fileID: 0}
@@ -208019,7 +208044,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
-      value: Verano 5
+      value: Verano 1
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Layer
@@ -270025,6 +270050,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 566904177}
     - target: {fileID: 2397592242192158498, guid: 4764b90df3deb0c4cb7c994c88bdcd7c, type: 3}
+      propertyPath: nombrePlanta
+      value: Verano7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2397592242192158498, guid: 4764b90df3deb0c4cb7c994c88bdcd7c, type: 3}
       propertyPath: FelicidadMaxima
       value: 1
       objectReference: {fileID: 0}
@@ -317370,21 +317399,21 @@ SceneRoots:
   - {fileID: 295840848}
   - {fileID: 993491422}
   - {fileID: 1569417540}
-  - {fileID: 125801867}
+  - {fileID: 1428781696}
   - {fileID: 68297891}
-  - {fileID: 1360660723}
-  - {fileID: 1935656869}
-  - {fileID: 227019895}
-  - {fileID: 1872462939}
   - {fileID: 838625403}
+  - {fileID: 1935656869}
+  - {fileID: 125801867}
+  - {fileID: 1872462939}
+  - {fileID: 227019895}
+  - {fileID: 1360660723}
   - {fileID: 1681774907}
-  - {fileID: 1753502722}
   - {fileID: 382655950}
+  - {fileID: 1753502722}
   - {fileID: 1844157196}
   - {fileID: 72778899}
   - {fileID: 509432389}
   - {fileID: 1300635615}
-  - {fileID: 1428781696}
   - {fileID: 668819666}
   - {fileID: 17327997}
   - {fileID: 542735252}

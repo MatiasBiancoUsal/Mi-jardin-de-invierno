@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using System.Text;
 using TMPro;
+using Unity.Services.Analytics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts.Lula
 {
     public class Planta : MonoBehaviour
     {
+        public string nombrePlanta;
         public float Sol;
         public int Agua;
         public int Abono;
@@ -76,6 +79,8 @@ namespace Assets.Scripts.Lula
                 if (Semilla != null)
                     Semilla.SetActive(true);
 
+                AnalyticSemilla();
+
                 // Si alcanza la felicidad máxima y aún no tiró el pétalo
                 if (ContadorFelicidad >= FelicidadMaxima && !yaTiroPetalo)
                 {
@@ -88,9 +93,37 @@ namespace Assets.Scripts.Lula
                     if (ContadorPetalo.instancia != null)
                         ContadorPetalo.instancia.SumarPetalo();
 
+                    AnalyticPetalo();
+
                     Debug.Log("🌸 La planta alcanzó su FELICIDAD MÁXIMA. ¡Pétalo activado!");
                 }
             }
+        }
+
+        private void AnalyticSemilla()
+        {
+            var Datos = new CustomEvent("planta_suelta_semilla")
+            {
+
+                { "Planta", nombrePlanta},
+                { "Nombre_Invernadero", SceneManager.GetActiveScene().name },
+            };
+
+            AnalyticsService.Instance.RecordEvent(Datos);
+            AnalyticsService.Instance.Flush();
+        }
+
+        private void AnalyticPetalo()
+        {
+            var Datos = new CustomEvent("planta_suelta_petalo")
+            {
+
+                { "Planta", nombrePlanta},
+                { "Nombre_Invernadero", SceneManager.GetActiveScene().name },
+            };
+
+            AnalyticsService.Instance.RecordEvent(Datos);
+            AnalyticsService.Instance.Flush();
         }
 
         public void Update()

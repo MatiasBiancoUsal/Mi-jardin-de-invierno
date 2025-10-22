@@ -36982,6 +36982,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 566904177}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: PRimavera1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: FelicidadMaxima
       value: 1
       objectReference: {fileID: 0}
@@ -154002,6 +154006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imagenFlor: {fileID: 0}
   etapasFlor: []
+  contadorPetalos: 0
 --- !u!114 &1132159818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249799,6 +249804,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 566904177}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: Primaver2
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: FelicidadMaxima
       value: 1
       objectReference: {fileID: 0}
@@ -249892,7 +249901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
-      value: Primavera1
+      value: Primavera2
       objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Layer
@@ -254181,6 +254190,10 @@ PrefabInstance:
       propertyPath: textoAbono
       value: 
       objectReference: {fileID: 566904177}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: Primavera5
+      objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: FelicidadMaxima
       value: 1
@@ -263023,6 +263036,10 @@ PrefabInstance:
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: AbonoMaximo
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: Primavera4
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: cantidadDeSol
@@ -288974,6 +288991,10 @@ PrefabInstance:
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: AbonoMaximo
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: nombrePlanta
+      value: Primavera3
       objectReference: {fileID: 0}
     - target: {fileID: 333255889306756229, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: cantidadDeSol
