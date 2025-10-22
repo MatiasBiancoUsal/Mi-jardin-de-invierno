@@ -37037,6 +37037,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6080163758567086830, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6358695303798461282, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
       propertyPath: m_Name
       value: Girasol
@@ -37057,6 +37061,10 @@ PrefabInstance:
       propertyPath: cartelMensaje
       value: 
       objectReference: {fileID: 1017599348}
+    - target: {fileID: 8394953973504651048, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.031
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
