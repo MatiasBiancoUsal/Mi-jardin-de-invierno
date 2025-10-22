@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -13,7 +14,8 @@ public class ContadorPetalo : MonoBehaviour
     public Image imagenFlor;           // El componente UI Image que muestra la flor
     public Sprite[] etapasFlor;        // Array con las imágenes en orden: 0 pétalos, 1 pétalo, etc.
 
-    private int contadorPetalos = 0;
+    public int contadorPetalos = 0;
+    public event Action cambioPetalos;
 
     void Awake()
     {
@@ -34,6 +36,7 @@ public class ContadorPetalo : MonoBehaviour
     public void SumarPetalo()
     {
         contadorPetalos++;
+        cambioPetalos?.Invoke();
         Debug.Log("Pétalos totales: " + contadorPetalos);
 
         // Cambiar sprite de flor según cantidad

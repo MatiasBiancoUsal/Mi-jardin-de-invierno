@@ -11,18 +11,32 @@ public class ControladorNivelesPetalos : MonoBehaviour
     public string nombreEscenaSiguiente;
 
     [Header("Transición")]
-    public float delayCambioEscena = 2f; // ⏱ Tiempo de espera en segundos
+    public float delayCambioEscena = 2f;
 
-    private bool yaCambio = false; // Para evitar múltiples llamados
-
-    private Scene EscenaActual;
-
-    private void Update()
+    public void Start()
     {
-        if (!yaCambio && ContadorPetalo.instancia != null &&
-            ContadorPetalo.instancia.CantidadPetalos() >= petalosNecesarios)
+        ContadorPetalo.instancia.cambioPetalos += CheckearCambioDeEscena;
+    }
+
+    public void OnDestroy()
+    {
+        ContadorPetalo.instancia.cambioPetalos -= CheckearCambioDeEscena;
+    }
+
+    private void CheckearCambioDeEscena()
+    {
+        if (ContadorPetalo.instancia.CantidadPetalos() >= petalosNecesarios)
         {
-            yaCambio = true;
+            ContadorPetalo.instancia.contadorPetalos = 0;
+            var Datos = new CustomEvent("Final_Nivel")
+            {
+
+                {"Cantidad_Semillas", ContadorSemillas.instancia.contadorSemillas},
+                { "Nombre_Invernadero", SceneManager.GetActiveScene().name },
+            };
+
+            AnalyticsService.Instance.RecordEvent(Datos);
+            AnalyticsService.Instance.Flush();
             StartCoroutine(CambiarDeNivelConDelay());
         }
     }
@@ -31,25 +45,6 @@ public class ControladorNivelesPetalos : MonoBehaviour
     {
         Debug.Log("🌸 Recolectaste los pétalos necesarios. Cambio de escena en " + delayCambioEscena + "s...");
         yield return new WaitForSeconds(delayCambioEscena);
-      
-
-        EscenaActual = SceneManager.GetActiveScene();
-
-        CustomEvent Datos = new CustomEvent("Final_Nivel")
-       {
-
-            {"Cantidad_Semillas", ContadorSemillas.instancia.contadorSemillas},
-            { "Nombre_Invernadero", EscenaActual.name },
-
-
-       };
-
-        AnalyticsService.Instance.RecordEvent(Datos);
-
-        Debug.Log("EventoFinalNivel" + "cantidad de semillas " + ContadorSemillas.instancia.contadorSemillas + "Nombre_Invernadero " + EscenaActual.name);
-
-        AnalyticsService.Instance.Flush();  
-        
         SceneManager.LoadScene(nombreEscenaSiguiente);
         
     }

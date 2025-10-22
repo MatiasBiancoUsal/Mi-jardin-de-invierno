@@ -21414,6 +21414,66 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1268898811579243585, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
   m_PrefabInstance: {fileID: 1120483745}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1132974639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1132974642}
+  - component: {fileID: 1132974641}
+  - component: {fileID: 1132974640}
+  m_Layer: 0
+  m_Name: Obj.Globales.NO-TOCAR
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1132974640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132974639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b74bcd5b42cb44b49af0faef13f2927f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  imagenFlor: {fileID: 0}
+  etapasFlor: []
+--- !u!114 &1132974641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132974639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aac97fe6de55ed4e985593e241f1802, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  contadorSemillas: 0
+--- !u!4 &1132974642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1132974639}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.553723, y: 5.0539026, z: 6.4727135}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1136483031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26979,10 +27039,8 @@ GameObject:
   - component: {fileID: 1791240367}
   - component: {fileID: 1791240361}
   - component: {fileID: 1791240362}
-  - component: {fileID: 1791240363}
   - component: {fileID: 1791240365}
   - component: {fileID: 1791240368}
-  - component: {fileID: 1791240369}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -27030,19 +27088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713109b86f077ae418877db9d0f3cae9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1791240363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791240358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aac97fe6de55ed4e985593e241f1802, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  contadorSemillas: 0
 --- !u!114 &1791240365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27083,20 +27128,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cartelParaOcultar: {fileID: 1017599348}
---- !u!114 &1791240369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791240358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b74bcd5b42cb44b49af0faef13f2927f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  imagenFlor: {fileID: 0}
-  etapasFlor: []
 --- !u!1 &1796072313 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 951188715550723580, guid: 0e0ac508029a43e4a9280880f968b4c1, type: 3}
@@ -34880,6 +34911,7 @@ SceneRoots:
   - {fileID: 92672836}
   - {fileID: 397027683}
   - {fileID: 1791240360}
+  - {fileID: 1132974642}
   - {fileID: 1759310930}
   - {fileID: 1850504194}
   - {fileID: 1540048767}
