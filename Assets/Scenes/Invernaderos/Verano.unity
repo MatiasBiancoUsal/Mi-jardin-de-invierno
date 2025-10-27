@@ -104863,7 +104863,7 @@ Transform:
   m_GameObject: {fileID: 706054406}
   serializedVersion: 2
   m_LocalRotation: {x: 0.03102494, y: -0.9631321, z: -0.0086082565, w: -0.2670955}
-  m_LocalPosition: {x: 14.05, y: 1.9512, z: 1.08}
+  m_LocalPosition: {x: 14.36, y: 1.9512, z: 1.08}
   m_LocalScale: {x: 0.113843456, y: 0.113843456, z: 0.113843456}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -211852,7 +211852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 324, y: 26.5}
+  m_AnchoredPosition: {x: 248.2, y: 26.5}
   m_SizeDelta: {x: 36.421, y: 32.374}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1463201765
@@ -237506,7 +237506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -307, y: 26.5}
+  m_AnchoredPosition: {x: -226.3, y: 26.5}
   m_SizeDelta: {x: 36.421, y: 32.374}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634797890
@@ -262730,7 +262730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   petalosNecesarios: 6
   nombreEscenaSiguiente: Inventario Verano
-  delayCambioEscena: 2
+  delayCambioEscena: 4
 --- !u!114 &1791240366
 MonoBehaviour:
   m_ObjectHideFlags: 0

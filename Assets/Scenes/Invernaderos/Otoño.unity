@@ -1365,7 +1365,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 21.164, y: 182.503, z: 7.883}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.05, y: 1.9512}
+  m_AnchoredPosition: {x: 14.36, y: 1.9512}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &218253623
@@ -15884,7 +15884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -307, y: 26.5}
+  m_AnchoredPosition: {x: -229.3, y: 26.5}
   m_SizeDelta: {x: 36.421, y: 32.374}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &612876998
@@ -27184,7 +27184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   petalosNecesarios: 3
   nombreEscenaSiguiente: "Inventario Oto\xF1o"
-  delayCambioEscena: 2
+  delayCambioEscena: 4
 --- !u!114 &1791240367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33758,7 +33758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 324, y: 26.5}
+  m_AnchoredPosition: {x: 247.3, y: 26.5}
   m_SizeDelta: {x: 36.421, y: 32.374}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076656168
