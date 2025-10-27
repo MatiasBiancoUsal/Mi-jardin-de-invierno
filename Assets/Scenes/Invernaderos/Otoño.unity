@@ -21207,6 +21207,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1268898811579243585, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1535201855}
+    - targetCorrespondingSourceObject: {fileID: 1268898811579243585, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7409946419386493326}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e02c1ad5b0ef934c84e5b33e3439f31, type: 3}
 --- !u!1 &1116250959 stripped
@@ -24591,6 +24594,42 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 58456694267076753, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.b
+      value: 0.11160544
+      objectReference: {fileID: 0}
+    - target: {fileID: 58456694267076753, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.g
+      value: 0.49941668
+      objectReference: {fileID: 0}
+    - target: {fileID: 58456694267076753, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.r
+      value: 0.78867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 185413781490693341, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.b
+      value: 0.11372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 185413781490693341, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 185413781490693341, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7921569
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230390109825597767, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.b
+      value: 0.11372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230390109825597767, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230390109825597767, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7921569
+      objectReference: {fileID: 0}
     - target: {fileID: 8223669292366375372, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
       propertyPath: m_Name
       value: Guia 1
@@ -24634,6 +24673,18 @@ PrefabInstance:
     - target: {fileID: 8276835130880969432, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076136589947024464, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.b
+      value: 0.11372549
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076136589947024464, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 9076136589947024464, guid: 3961f1af4377a3f429660c8065d21047, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7921569
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34839,7 +34890,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1977690724}
     m_Modifications:
     - target: {fileID: 2289877314272852908, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
       propertyPath: m_LocalScale.x
@@ -34969,6 +35020,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 789904439}
   m_SourcePrefab: {fileID: 100100000, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+--- !u!224 &7409946419386493326 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8801669863626336019, guid: ce4e1c24e6f9ae14e9e07b4c3f5b008d, type: 3}
+  m_PrefabInstance: {fileID: 7409946419386493325}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -34990,7 +35046,6 @@ SceneRoots:
   - {fileID: 1136483031}
   - {fileID: 1201048370}
   - {fileID: 45567850}
-  - {fileID: 7409946419386493325}
   - {fileID: 1112748725}
   - {fileID: 689981967}
   - {fileID: 974101165}
