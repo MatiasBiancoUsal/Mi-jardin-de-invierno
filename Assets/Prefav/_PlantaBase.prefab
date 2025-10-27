@@ -311,6 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582e14f1537d0314db51f03d1716c686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nombrePlanta: 
   Sol: 0
   Agua: 0
   Abono: 0
@@ -954,15 +955,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 24882b9e1b937a54580b99fe30de0117, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2684137
+      value: 3.78
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 24882b9e1b937a54580b99fe30de0117, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.792587
+      value: 5.342089
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 24882b9e1b937a54580b99fe30de0117, type: 3}
       propertyPath: m_LocalScale.z
-      value: 3.6597683
+      value: 10.906477
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 24882b9e1b937a54580b99fe30de0117, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1003,6 +1004,10 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 24882b9e1b937a54580b99fe30de0117, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 24882b9e1b937a54580b99fe30de0117, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 24882b9e1b937a54580b99fe30de0117, type: 3}
       propertyPath: m_Name
