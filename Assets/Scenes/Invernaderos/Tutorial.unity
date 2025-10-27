@@ -11430,6 +11430,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ed55be249ab5bbf4b92541eafb3f481e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1528123056}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ed55be249ab5bbf4b92541eafb3f481e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1528123060}
   m_SourcePrefab: {fileID: 100100000, guid: ed55be249ab5bbf4b92541eafb3f481e, type: 3}
 --- !u!4 &617280054 stripped
 Transform:
@@ -26240,7 +26243,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1528123050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5144210c3cafe3d468932aa77bebe6d8, type: 3}
   m_Name: 
@@ -26255,13 +26258,27 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1528123050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4fda6e48f87e2aa4984184371fa10bb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nombreObjeto: macetaa
   maceta: {fileID: 1528123050}
+--- !u!114 &1528123060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528123050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66a726a2cd9d42a4b87e3977b0b28797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objetoNuevo: {fileID: 1116250959}
+  tiempoEspera: 14
 --- !u!1 &1532214795
 GameObject:
   m_ObjectHideFlags: 0
@@ -35907,7 +35924,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4911090812920080850, guid: 6103300fae489ba49a076452b10b300f, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5185074037580869072, guid: 6103300fae489ba49a076452b10b300f, type: 3}
       propertyPath: m_Pivot.x
