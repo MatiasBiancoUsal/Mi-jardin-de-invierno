@@ -27186,7 +27186,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645941193}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a4e55cf0adf6ed4684ff6c58fb6e33b, type: 3}
   m_Name: 
@@ -27239,18 +27239,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 427476168}
-        m_TargetAssemblyTypeName: ContadorTutorial, Assembly-CSharp
-        m_MethodName: GastarSemillas
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1645941199}
         m_TargetAssemblyTypeName: BotonComprarPlanta, Assembly-CSharp
         m_MethodName: ComprarPlanta
