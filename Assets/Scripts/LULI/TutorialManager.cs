@@ -10,6 +10,7 @@ public class TutorialManager : MonoBehaviour
     {
         public GameObject cartel;      // El panel/cartel del paso
         public string accionEsperada;  // Nombre de la acción que espera (ej: "regar", "plantar", "abrirTienda")
+        public bool avanzarAlCerrar;   // Nuevo: si este paso debe avanzar automáticamente al cerrar
     }
 
     public List<PasoTutorial> pasos;   // Lista de pasos del tutorial
@@ -36,21 +37,32 @@ public class TutorialManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("Tutorial terminado");
+            Debug.Log("✅ Tutorial terminado");
         }
     }
 
-    // Llamado por el botón "Cerrar" de cada cartel
+    // 🔹 Llamado por el botón "Cerrar" (la flecha) de cada cartel
     public void CerrarCartel()
     {
         if (pasoActual < pasos.Count)
         {
             pasos[pasoActual].cartel.SetActive(false);
-            esperandoAccion = true; // Ahora esperamos la acción del jugador
+
+            // Si el paso tiene marcada la opción "avanzar al cerrar"
+            if (pasos[pasoActual].avanzarAlCerrar)
+            {
+                pasoActual++;
+                MostrarPaso(pasoActual);
+            }
+            else
+            {
+                // Esperar a que ocurra la acción correspondiente
+                esperandoAccion = true;
+            }
         }
     }
 
-    // Este método lo llaman otras partes del juego cuando se hace una acción
+    // 🔹 Llamado por otros scripts cuando se completa una acción esperada
     public void RegistrarAccion(string accion)
     {
         if (esperandoAccion && pasoActual < pasos.Count)
