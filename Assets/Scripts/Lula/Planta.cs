@@ -89,9 +89,7 @@ namespace Assets.Scripts.Lula
                     if (Petalo != null)
                         Petalo.SetActive(true);
 
-                    // 👉 Sumamos pétalo automáticamente al contador
-                    if (ContadorPetalo.instancia != null)
-                        ContadorPetalo.instancia.SumarPetalo();
+                  
 
                     AnalyticPetalo();
 
