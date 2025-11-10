@@ -27019,7 +27019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb29d53a3286a14cbbe29a1733962eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  petalosNecesarios: 3
+  petalosNecesarios: 4
   nombreEscenaSiguiente: "Inventario Oto\xF1o"
   delayCambioEscena: 4
 --- !u!114 &1791240367
