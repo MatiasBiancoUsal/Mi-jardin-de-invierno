@@ -163203,7 +163203,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0004602992, y: 0.99792165, z: -0.007173055, w: 0.064037226}
+  m_LocalRotation: {x: 0.00046029972, y: 0.99792165, z: -0.00717306, w: 0.064037256}
   m_LocalPosition: {x: 10.627383, y: 2.1563423, z: -2.3395739}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -319735,7 +319735,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1755717192}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0004602992, y: 0.99792165, z: -0.007173055, w: 0.064037226}
+  m_LocalRotation: {x: 0.00046029972, y: 0.99792165, z: -0.00717306, w: 0.064037256}
   m_LocalPosition: {x: -0.14280033, y: -0.32553768, z: -2.2749512}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -325659,7 +325659,6 @@ GameObject:
   - component: {fileID: 1791240362}
   - component: {fileID: 1791240363}
   - component: {fileID: 1791240364}
-  - component: {fileID: 1791240365}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -325735,21 +325734,6 @@ MonoBehaviour:
   imagenFlor: {fileID: 0}
   etapasFlor: []
   contadorPetalos: 0
---- !u!114 &1791240365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1791240358}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9eb29d53a3286a14cbbe29a1733962eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  petalosNecesarios: 7
-  nombreEscenaSiguiente: Inventario Verano
-  delayCambioEscena: 2
 --- !u!114 &1791240366
 MonoBehaviour:
   m_ObjectHideFlags: 0
