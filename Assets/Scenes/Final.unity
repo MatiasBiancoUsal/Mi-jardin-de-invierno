@@ -92487,7 +92487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &509050335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145227,7 +145227,7 @@ GameObject:
   - component: {fileID: 839078936}
   - component: {fileID: 839078935}
   - component: {fileID: 839078934}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145241,17 +145241,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839078932}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1403}
-  m_LocalScale: {x: 0.88, y: 4.4, z: 0.88}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.07, y: 5.4176035, z: 1.07}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1772888182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 531, y: 207}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: 333, y: -142}
+  m_SizeDelta: {x: 123.069, y: 23.075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &839078934
 MonoBehaviour:
@@ -174933,6 +174933,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PanelSol
       objectReference: {fileID: 0}
+    - target: {fileID: 1251594625558992618, guid: 6103300fae489ba49a076452b10b300f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4466634856291905895, guid: 6103300fae489ba49a076452b10b300f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -193171,7 +193175,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1103579119
 RectTransform:
   m_ObjectHideFlags: 0
@@ -234336,7 +234340,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1278283127
 RectTransform:
   m_ObjectHideFlags: 0
@@ -234951,7 +234955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1281028492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -284186,7 +284190,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1563537643
 RectTransform:
   m_ObjectHideFlags: 0
@@ -322888,7 +322892,7 @@ GameObject:
   - component: {fileID: 1772888181}
   - component: {fileID: 1772888180}
   - component: {fileID: 1772888179}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333783,7 +333787,7 @@ GameObject:
   - component: {fileID: 1839168960}
   - component: {fileID: 1839168962}
   - component: {fileID: 1839168961}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333797,17 +333801,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839168959}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1403}
-  m_LocalScale: {x: 13.86, y: 8.870399, z: 13.86}
-  m_ConstrainProportionsScale: 1
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 13.38, y: 9.1, z: 9.1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1772888182}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 15, y: 0.4}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 76.918, y: 76.918}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1839168961
 MonoBehaviour:
@@ -346796,7 +346800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1923542797
 RectTransform:
   m_ObjectHideFlags: 0
